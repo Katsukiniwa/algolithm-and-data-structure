@@ -60,3 +60,4 @@ build-iPhoneSimulator/
 # .rubocop-https?--*
 
 /c++/cmake-build-debug
+/c++/CMakeFiles

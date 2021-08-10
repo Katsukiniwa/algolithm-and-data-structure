@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named first
+
+# Build rule for target.
+first: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 first
+.PHONY : first
+
+# fast build rule for target.
+first/fast:
+	$(MAKE) -f CMakeFiles/first.dir/build.make CMakeFiles/first.dir/build
+.PHONY : first/fast
+
+#=============================================================================
 # Target rules for targets named c__
 
 # Build rule for target.
@@ -122,6 +135,33 @@ c__: cmake_check_build_system
 c__/fast:
 	$(MAKE) -f CMakeFiles/c__.dir/build.make CMakeFiles/c__.dir/build
 .PHONY : c__/fast
+
+first-ten-problems/first.o: first-ten-problems/first.cpp.o
+
+.PHONY : first-ten-problems/first.o
+
+# target to build an object file
+first-ten-problems/first.cpp.o:
+	$(MAKE) -f CMakeFiles/first.dir/build.make CMakeFiles/first.dir/first-ten-problems/first.cpp.o
+.PHONY : first-ten-problems/first.cpp.o
+
+first-ten-problems/first.i: first-ten-problems/first.cpp.i
+
+.PHONY : first-ten-problems/first.i
+
+# target to preprocess a source file
+first-ten-problems/first.cpp.i:
+	$(MAKE) -f CMakeFiles/first.dir/build.make CMakeFiles/first.dir/first-ten-problems/first.cpp.i
+.PHONY : first-ten-problems/first.cpp.i
+
+first-ten-problems/first.s: first-ten-problems/first.cpp.s
+
+.PHONY : first-ten-problems/first.s
+
+# target to generate assembly for a file
+first-ten-problems/first.cpp.s:
+	$(MAKE) -f CMakeFiles/first.dir/build.make CMakeFiles/first.dir/first-ten-problems/first.cpp.s
+.PHONY : first-ten-problems/first.cpp.s
 
 main.o: main.cpp.o
 
@@ -158,7 +198,11 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... first"
 	@echo "... c__"
+	@echo "... first-ten-problems/first.o"
+	@echo "... first-ten-problems/first.i"
+	@echo "... first-ten-problems/first.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
