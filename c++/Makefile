@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named sixth
+
+# Build rule for target.
+sixth: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sixth
+.PHONY : sixth
+
+# fast build rule for target.
+sixth/fast:
+	$(MAKE) -f CMakeFiles/sixth.dir/build.make CMakeFiles/sixth.dir/build
+.PHONY : sixth/fast
+
+#=============================================================================
 # Target rules for targets named fifth
 
 # Build rule for target.
@@ -296,6 +309,33 @@ first-ten-problems/second.cpp.s:
 	$(MAKE) -f CMakeFiles/second.dir/build.make CMakeFiles/second.dir/first-ten-problems/second.cpp.s
 .PHONY : first-ten-problems/second.cpp.s
 
+first-ten-problems/sixth.o: first-ten-problems/sixth.cpp.o
+
+.PHONY : first-ten-problems/sixth.o
+
+# target to build an object file
+first-ten-problems/sixth.cpp.o:
+	$(MAKE) -f CMakeFiles/sixth.dir/build.make CMakeFiles/sixth.dir/first-ten-problems/sixth.cpp.o
+.PHONY : first-ten-problems/sixth.cpp.o
+
+first-ten-problems/sixth.i: first-ten-problems/sixth.cpp.i
+
+.PHONY : first-ten-problems/sixth.i
+
+# target to preprocess a source file
+first-ten-problems/sixth.cpp.i:
+	$(MAKE) -f CMakeFiles/sixth.dir/build.make CMakeFiles/sixth.dir/first-ten-problems/sixth.cpp.i
+.PHONY : first-ten-problems/sixth.cpp.i
+
+first-ten-problems/sixth.s: first-ten-problems/sixth.cpp.s
+
+.PHONY : first-ten-problems/sixth.s
+
+# target to generate assembly for a file
+first-ten-problems/sixth.cpp.s:
+	$(MAKE) -f CMakeFiles/sixth.dir/build.make CMakeFiles/sixth.dir/first-ten-problems/sixth.cpp.s
+.PHONY : first-ten-problems/sixth.cpp.s
+
 first-ten-problems/third.o: first-ten-problems/third.cpp.o
 
 .PHONY : first-ten-problems/third.o
@@ -356,6 +396,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... sixth"
 	@echo "... fifth"
 	@echo "... c__"
 	@echo "... forth"
@@ -376,6 +417,9 @@ help:
 	@echo "... first-ten-problems/second.o"
 	@echo "... first-ten-problems/second.i"
 	@echo "... first-ten-problems/second.s"
+	@echo "... first-ten-problems/sixth.o"
+	@echo "... first-ten-problems/sixth.i"
+	@echo "... first-ten-problems/sixth.s"
 	@echo "... first-ten-problems/third.o"
 	@echo "... first-ten-problems/third.i"
 	@echo "... first-ten-problems/third.s"
