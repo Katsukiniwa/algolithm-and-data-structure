@@ -17,6 +17,90 @@
 					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="eighth">
+				<Option output="/Users/katsukiniwa/playground/abc-practice/c++/eighth" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/katsukiniwa/playground/abc-practice/c++"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 eighth"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="eighth/fast">
+				<Option output="/Users/katsukiniwa/playground/abc-practice/c++/eighth" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/katsukiniwa/playground/abc-practice/c++"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 eighth/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="seventh">
+				<Option output="/Users/katsukiniwa/playground/abc-practice/c++/seventh" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/katsukiniwa/playground/abc-practice/c++"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 seventh"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="seventh/fast">
+				<Option output="/Users/katsukiniwa/playground/abc-practice/c++/seventh" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/katsukiniwa/playground/abc-practice/c++"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 seventh/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="sixth">
 				<Option output="/Users/katsukiniwa/playground/abc-practice/c++/sixth" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/katsukiniwa/playground/abc-practice/c++"/>
@@ -332,6 +416,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/katsukiniwa/playground/abc-practice/c++/first-ten-problems/eighth.cpp">
+			<Option target="eighth"/>
+		</Unit>
 		<Unit filename="/Users/katsukiniwa/playground/abc-practice/c++/first-ten-problems/fifth.cpp">
 			<Option target="fifth"/>
 		</Unit>
@@ -343,6 +430,9 @@
 		</Unit>
 		<Unit filename="/Users/katsukiniwa/playground/abc-practice/c++/first-ten-problems/second.cpp">
 			<Option target="second"/>
+		</Unit>
+		<Unit filename="/Users/katsukiniwa/playground/abc-practice/c++/first-ten-problems/seventh.cpp">
+			<Option target="seventh"/>
 		</Unit>
 		<Unit filename="/Users/katsukiniwa/playground/abc-practice/c++/first-ten-problems/sixth.cpp">
 			<Option target="sixth"/>

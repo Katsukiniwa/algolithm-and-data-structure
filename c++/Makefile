@@ -111,6 +111,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named eighth
+
+# Build rule for target.
+eighth: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 eighth
+.PHONY : eighth
+
+# fast build rule for target.
+eighth/fast:
+	$(MAKE) -f CMakeFiles/eighth.dir/build.make CMakeFiles/eighth.dir/build
+.PHONY : eighth/fast
+
+#=============================================================================
+# Target rules for targets named seventh
+
+# Build rule for target.
+seventh: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 seventh
+.PHONY : seventh
+
+# fast build rule for target.
+seventh/fast:
+	$(MAKE) -f CMakeFiles/seventh.dir/build.make CMakeFiles/seventh.dir/build
+.PHONY : seventh/fast
+
+#=============================================================================
 # Target rules for targets named sixth
 
 # Build rule for target.
@@ -200,6 +226,33 @@ first: cmake_check_build_system
 first/fast:
 	$(MAKE) -f CMakeFiles/first.dir/build.make CMakeFiles/first.dir/build
 .PHONY : first/fast
+
+first-ten-problems/eighth.o: first-ten-problems/eighth.cpp.o
+
+.PHONY : first-ten-problems/eighth.o
+
+# target to build an object file
+first-ten-problems/eighth.cpp.o:
+	$(MAKE) -f CMakeFiles/eighth.dir/build.make CMakeFiles/eighth.dir/first-ten-problems/eighth.cpp.o
+.PHONY : first-ten-problems/eighth.cpp.o
+
+first-ten-problems/eighth.i: first-ten-problems/eighth.cpp.i
+
+.PHONY : first-ten-problems/eighth.i
+
+# target to preprocess a source file
+first-ten-problems/eighth.cpp.i:
+	$(MAKE) -f CMakeFiles/eighth.dir/build.make CMakeFiles/eighth.dir/first-ten-problems/eighth.cpp.i
+.PHONY : first-ten-problems/eighth.cpp.i
+
+first-ten-problems/eighth.s: first-ten-problems/eighth.cpp.s
+
+.PHONY : first-ten-problems/eighth.s
+
+# target to generate assembly for a file
+first-ten-problems/eighth.cpp.s:
+	$(MAKE) -f CMakeFiles/eighth.dir/build.make CMakeFiles/eighth.dir/first-ten-problems/eighth.cpp.s
+.PHONY : first-ten-problems/eighth.cpp.s
 
 first-ten-problems/fifth.o: first-ten-problems/fifth.cpp.o
 
@@ -309,6 +362,33 @@ first-ten-problems/second.cpp.s:
 	$(MAKE) -f CMakeFiles/second.dir/build.make CMakeFiles/second.dir/first-ten-problems/second.cpp.s
 .PHONY : first-ten-problems/second.cpp.s
 
+first-ten-problems/seventh.o: first-ten-problems/seventh.cpp.o
+
+.PHONY : first-ten-problems/seventh.o
+
+# target to build an object file
+first-ten-problems/seventh.cpp.o:
+	$(MAKE) -f CMakeFiles/seventh.dir/build.make CMakeFiles/seventh.dir/first-ten-problems/seventh.cpp.o
+.PHONY : first-ten-problems/seventh.cpp.o
+
+first-ten-problems/seventh.i: first-ten-problems/seventh.cpp.i
+
+.PHONY : first-ten-problems/seventh.i
+
+# target to preprocess a source file
+first-ten-problems/seventh.cpp.i:
+	$(MAKE) -f CMakeFiles/seventh.dir/build.make CMakeFiles/seventh.dir/first-ten-problems/seventh.cpp.i
+.PHONY : first-ten-problems/seventh.cpp.i
+
+first-ten-problems/seventh.s: first-ten-problems/seventh.cpp.s
+
+.PHONY : first-ten-problems/seventh.s
+
+# target to generate assembly for a file
+first-ten-problems/seventh.cpp.s:
+	$(MAKE) -f CMakeFiles/seventh.dir/build.make CMakeFiles/seventh.dir/first-ten-problems/seventh.cpp.s
+.PHONY : first-ten-problems/seventh.cpp.s
+
 first-ten-problems/sixth.o: first-ten-problems/sixth.cpp.o
 
 .PHONY : first-ten-problems/sixth.o
@@ -396,6 +476,8 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... eighth"
+	@echo "... seventh"
 	@echo "... sixth"
 	@echo "... fifth"
 	@echo "... c__"
@@ -405,6 +487,9 @@ help:
 	@echo "... second"
 	@echo "... edit_cache"
 	@echo "... first"
+	@echo "... first-ten-problems/eighth.o"
+	@echo "... first-ten-problems/eighth.i"
+	@echo "... first-ten-problems/eighth.s"
 	@echo "... first-ten-problems/fifth.o"
 	@echo "... first-ten-problems/fifth.i"
 	@echo "... first-ten-problems/fifth.s"
@@ -417,6 +502,9 @@ help:
 	@echo "... first-ten-problems/second.o"
 	@echo "... first-ten-problems/second.i"
 	@echo "... first-ten-problems/second.s"
+	@echo "... first-ten-problems/seventh.o"
+	@echo "... first-ten-problems/seventh.i"
+	@echo "... first-ten-problems/seventh.s"
 	@echo "... first-ten-problems/sixth.o"
 	@echo "... first-ten-problems/sixth.i"
 	@echo "... first-ten-problems/sixth.s"
