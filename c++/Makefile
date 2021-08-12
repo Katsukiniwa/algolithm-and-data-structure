@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /Users/katsukiniwa/playground/abc-practice/c++
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"/Users/katsukiniwa/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/201.7223.86/CLion.app/Contents/bin/cmake/mac/bin/cmake" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	"/Users/katsukiniwa/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/201.7223.86/CLion.app/Contents/bin/cmake/mac/bin/cmake" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -124,6 +124,32 @@ first/fast:
 .PHONY : first/fast
 
 #=============================================================================
+# Target rules for targets named third
+
+# Build rule for target.
+third: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 third
+.PHONY : third
+
+# fast build rule for target.
+third/fast:
+	$(MAKE) -f CMakeFiles/third.dir/build.make CMakeFiles/third.dir/build
+.PHONY : third/fast
+
+#=============================================================================
+# Target rules for targets named second
+
+# Build rule for target.
+second: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 second
+.PHONY : second
+
+# fast build rule for target.
+second/fast:
+	$(MAKE) -f CMakeFiles/second.dir/build.make CMakeFiles/second.dir/build
+.PHONY : second/fast
+
+#=============================================================================
 # Target rules for targets named c__
 
 # Build rule for target.
@@ -163,6 +189,60 @@ first-ten-problems/first.cpp.s:
 	$(MAKE) -f CMakeFiles/first.dir/build.make CMakeFiles/first.dir/first-ten-problems/first.cpp.s
 .PHONY : first-ten-problems/first.cpp.s
 
+first-ten-problems/second.o: first-ten-problems/second.cpp.o
+
+.PHONY : first-ten-problems/second.o
+
+# target to build an object file
+first-ten-problems/second.cpp.o:
+	$(MAKE) -f CMakeFiles/second.dir/build.make CMakeFiles/second.dir/first-ten-problems/second.cpp.o
+.PHONY : first-ten-problems/second.cpp.o
+
+first-ten-problems/second.i: first-ten-problems/second.cpp.i
+
+.PHONY : first-ten-problems/second.i
+
+# target to preprocess a source file
+first-ten-problems/second.cpp.i:
+	$(MAKE) -f CMakeFiles/second.dir/build.make CMakeFiles/second.dir/first-ten-problems/second.cpp.i
+.PHONY : first-ten-problems/second.cpp.i
+
+first-ten-problems/second.s: first-ten-problems/second.cpp.s
+
+.PHONY : first-ten-problems/second.s
+
+# target to generate assembly for a file
+first-ten-problems/second.cpp.s:
+	$(MAKE) -f CMakeFiles/second.dir/build.make CMakeFiles/second.dir/first-ten-problems/second.cpp.s
+.PHONY : first-ten-problems/second.cpp.s
+
+first-ten-problems/third.o: first-ten-problems/third.cpp.o
+
+.PHONY : first-ten-problems/third.o
+
+# target to build an object file
+first-ten-problems/third.cpp.o:
+	$(MAKE) -f CMakeFiles/third.dir/build.make CMakeFiles/third.dir/first-ten-problems/third.cpp.o
+.PHONY : first-ten-problems/third.cpp.o
+
+first-ten-problems/third.i: first-ten-problems/third.cpp.i
+
+.PHONY : first-ten-problems/third.i
+
+# target to preprocess a source file
+first-ten-problems/third.cpp.i:
+	$(MAKE) -f CMakeFiles/third.dir/build.make CMakeFiles/third.dir/first-ten-problems/third.cpp.i
+.PHONY : first-ten-problems/third.cpp.i
+
+first-ten-problems/third.s: first-ten-problems/third.cpp.s
+
+.PHONY : first-ten-problems/third.s
+
+# target to generate assembly for a file
+first-ten-problems/third.cpp.s:
+	$(MAKE) -f CMakeFiles/third.dir/build.make CMakeFiles/third.dir/first-ten-problems/third.cpp.s
+.PHONY : first-ten-problems/third.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -196,13 +276,21 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
-	@echo "... edit_cache"
 	@echo "... first"
+	@echo "... edit_cache"
+	@echo "... third"
+	@echo "... rebuild_cache"
+	@echo "... second"
 	@echo "... c__"
 	@echo "... first-ten-problems/first.o"
 	@echo "... first-ten-problems/first.i"
 	@echo "... first-ten-problems/first.s"
+	@echo "... first-ten-problems/second.o"
+	@echo "... first-ten-problems/second.i"
+	@echo "... first-ten-problems/second.s"
+	@echo "... first-ten-problems/third.o"
+	@echo "... first-ten-problems/third.i"
+	@echo "... first-ten-problems/third.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -5,3 +5,5 @@ set(CMAKE_CXX_STANDARD 14)
 
 add_executable(c__ main.cpp)
 add_executable(first first-ten-problems/first.cpp)
+add_executable(second first-ten-problems/second.cpp)
+add_executable(third first-ten-problems/third.cpp)
