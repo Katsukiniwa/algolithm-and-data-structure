@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /Users/katsukiniwa/playground/abc-practice/c++
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"/Users/katsukiniwa/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/201.7223.86/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -77,6 +66,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	"/Users/katsukiniwa/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/201.7223.86/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,17 +111,43 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named first
+# Target rules for targets named fifth
 
 # Build rule for target.
-first: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 first
-.PHONY : first
+fifth: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 fifth
+.PHONY : fifth
 
 # fast build rule for target.
-first/fast:
-	$(MAKE) -f CMakeFiles/first.dir/build.make CMakeFiles/first.dir/build
-.PHONY : first/fast
+fifth/fast:
+	$(MAKE) -f CMakeFiles/fifth.dir/build.make CMakeFiles/fifth.dir/build
+.PHONY : fifth/fast
+
+#=============================================================================
+# Target rules for targets named c__
+
+# Build rule for target.
+c__: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 c__
+.PHONY : c__
+
+# fast build rule for target.
+c__/fast:
+	$(MAKE) -f CMakeFiles/c__.dir/build.make CMakeFiles/c__.dir/build
+.PHONY : c__/fast
+
+#=============================================================================
+# Target rules for targets named forth
+
+# Build rule for target.
+forth: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 forth
+.PHONY : forth
+
+# fast build rule for target.
+forth/fast:
+	$(MAKE) -f CMakeFiles/forth.dir/build.make CMakeFiles/forth.dir/build
+.PHONY : forth/fast
 
 #=============================================================================
 # Target rules for targets named third
@@ -150,17 +176,44 @@ second/fast:
 .PHONY : second/fast
 
 #=============================================================================
-# Target rules for targets named c__
+# Target rules for targets named first
 
 # Build rule for target.
-c__: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 c__
-.PHONY : c__
+first: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 first
+.PHONY : first
 
 # fast build rule for target.
-c__/fast:
-	$(MAKE) -f CMakeFiles/c__.dir/build.make CMakeFiles/c__.dir/build
-.PHONY : c__/fast
+first/fast:
+	$(MAKE) -f CMakeFiles/first.dir/build.make CMakeFiles/first.dir/build
+.PHONY : first/fast
+
+first-ten-problems/fifth.o: first-ten-problems/fifth.cpp.o
+
+.PHONY : first-ten-problems/fifth.o
+
+# target to build an object file
+first-ten-problems/fifth.cpp.o:
+	$(MAKE) -f CMakeFiles/fifth.dir/build.make CMakeFiles/fifth.dir/first-ten-problems/fifth.cpp.o
+.PHONY : first-ten-problems/fifth.cpp.o
+
+first-ten-problems/fifth.i: first-ten-problems/fifth.cpp.i
+
+.PHONY : first-ten-problems/fifth.i
+
+# target to preprocess a source file
+first-ten-problems/fifth.cpp.i:
+	$(MAKE) -f CMakeFiles/fifth.dir/build.make CMakeFiles/fifth.dir/first-ten-problems/fifth.cpp.i
+.PHONY : first-ten-problems/fifth.cpp.i
+
+first-ten-problems/fifth.s: first-ten-problems/fifth.cpp.s
+
+.PHONY : first-ten-problems/fifth.s
+
+# target to generate assembly for a file
+first-ten-problems/fifth.cpp.s:
+	$(MAKE) -f CMakeFiles/fifth.dir/build.make CMakeFiles/fifth.dir/first-ten-problems/fifth.cpp.s
+.PHONY : first-ten-problems/fifth.cpp.s
 
 first-ten-problems/first.o: first-ten-problems/first.cpp.o
 
@@ -188,6 +241,33 @@ first-ten-problems/first.s: first-ten-problems/first.cpp.s
 first-ten-problems/first.cpp.s:
 	$(MAKE) -f CMakeFiles/first.dir/build.make CMakeFiles/first.dir/first-ten-problems/first.cpp.s
 .PHONY : first-ten-problems/first.cpp.s
+
+first-ten-problems/forth.o: first-ten-problems/forth.cpp.o
+
+.PHONY : first-ten-problems/forth.o
+
+# target to build an object file
+first-ten-problems/forth.cpp.o:
+	$(MAKE) -f CMakeFiles/forth.dir/build.make CMakeFiles/forth.dir/first-ten-problems/forth.cpp.o
+.PHONY : first-ten-problems/forth.cpp.o
+
+first-ten-problems/forth.i: first-ten-problems/forth.cpp.i
+
+.PHONY : first-ten-problems/forth.i
+
+# target to preprocess a source file
+first-ten-problems/forth.cpp.i:
+	$(MAKE) -f CMakeFiles/forth.dir/build.make CMakeFiles/forth.dir/first-ten-problems/forth.cpp.i
+.PHONY : first-ten-problems/forth.cpp.i
+
+first-ten-problems/forth.s: first-ten-problems/forth.cpp.s
+
+.PHONY : first-ten-problems/forth.s
+
+# target to generate assembly for a file
+first-ten-problems/forth.cpp.s:
+	$(MAKE) -f CMakeFiles/forth.dir/build.make CMakeFiles/forth.dir/first-ten-problems/forth.cpp.s
+.PHONY : first-ten-problems/forth.cpp.s
 
 first-ten-problems/second.o: first-ten-problems/second.cpp.o
 
@@ -276,15 +356,23 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... first"
-	@echo "... edit_cache"
+	@echo "... fifth"
+	@echo "... c__"
+	@echo "... forth"
 	@echo "... third"
 	@echo "... rebuild_cache"
 	@echo "... second"
-	@echo "... c__"
+	@echo "... edit_cache"
+	@echo "... first"
+	@echo "... first-ten-problems/fifth.o"
+	@echo "... first-ten-problems/fifth.i"
+	@echo "... first-ten-problems/fifth.s"
 	@echo "... first-ten-problems/first.o"
 	@echo "... first-ten-problems/first.i"
 	@echo "... first-ten-problems/first.s"
+	@echo "... first-ten-problems/forth.o"
+	@echo "... first-ten-problems/forth.i"
+	@echo "... first-ten-problems/forth.s"
 	@echo "... first-ten-problems/second.o"
 	@echo "... first-ten-problems/second.i"
 	@echo "... first-ten-problems/second.s"
