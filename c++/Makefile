@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /Users/katsukiniwa/playground/abc-practice/c++
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"/Users/katsukiniwa/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/201.7223.86/CLion.app/Contents/bin/cmake/mac/bin/cmake" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	"/Users/katsukiniwa/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/201.7223.86/CLion.app/Contents/bin/cmake/mac/bin/cmake" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -109,6 +109,32 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named tenth
+
+# Build rule for target.
+tenth: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tenth
+.PHONY : tenth
+
+# fast build rule for target.
+tenth/fast:
+	$(MAKE) -f CMakeFiles/tenth.dir/build.make CMakeFiles/tenth.dir/build
+.PHONY : tenth/fast
+
+#=============================================================================
+# Target rules for targets named ninth
+
+# Build rule for target.
+ninth: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ninth
+.PHONY : ninth
+
+# fast build rule for target.
+ninth/fast:
+	$(MAKE) -f CMakeFiles/ninth.dir/build.make CMakeFiles/ninth.dir/build
+.PHONY : ninth/fast
 
 #=============================================================================
 # Target rules for targets named eighth
@@ -189,6 +215,19 @@ forth/fast:
 .PHONY : forth/fast
 
 #=============================================================================
+# Target rules for targets named first
+
+# Build rule for target.
+first: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 first
+.PHONY : first
+
+# fast build rule for target.
+first/fast:
+	$(MAKE) -f CMakeFiles/first.dir/build.make CMakeFiles/first.dir/build
+.PHONY : first/fast
+
+#=============================================================================
 # Target rules for targets named third
 
 # Build rule for target.
@@ -213,19 +252,6 @@ second: cmake_check_build_system
 second/fast:
 	$(MAKE) -f CMakeFiles/second.dir/build.make CMakeFiles/second.dir/build
 .PHONY : second/fast
-
-#=============================================================================
-# Target rules for targets named first
-
-# Build rule for target.
-first: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 first
-.PHONY : first
-
-# fast build rule for target.
-first/fast:
-	$(MAKE) -f CMakeFiles/first.dir/build.make CMakeFiles/first.dir/build
-.PHONY : first/fast
 
 first-ten-problems/eighth.o: first-ten-problems/eighth.cpp.o
 
@@ -335,6 +361,33 @@ first-ten-problems/forth.cpp.s:
 	$(MAKE) -f CMakeFiles/forth.dir/build.make CMakeFiles/forth.dir/first-ten-problems/forth.cpp.s
 .PHONY : first-ten-problems/forth.cpp.s
 
+first-ten-problems/ninth.o: first-ten-problems/ninth.cpp.o
+
+.PHONY : first-ten-problems/ninth.o
+
+# target to build an object file
+first-ten-problems/ninth.cpp.o:
+	$(MAKE) -f CMakeFiles/ninth.dir/build.make CMakeFiles/ninth.dir/first-ten-problems/ninth.cpp.o
+.PHONY : first-ten-problems/ninth.cpp.o
+
+first-ten-problems/ninth.i: first-ten-problems/ninth.cpp.i
+
+.PHONY : first-ten-problems/ninth.i
+
+# target to preprocess a source file
+first-ten-problems/ninth.cpp.i:
+	$(MAKE) -f CMakeFiles/ninth.dir/build.make CMakeFiles/ninth.dir/first-ten-problems/ninth.cpp.i
+.PHONY : first-ten-problems/ninth.cpp.i
+
+first-ten-problems/ninth.s: first-ten-problems/ninth.cpp.s
+
+.PHONY : first-ten-problems/ninth.s
+
+# target to generate assembly for a file
+first-ten-problems/ninth.cpp.s:
+	$(MAKE) -f CMakeFiles/ninth.dir/build.make CMakeFiles/ninth.dir/first-ten-problems/ninth.cpp.s
+.PHONY : first-ten-problems/ninth.cpp.s
+
 first-ten-problems/second.o: first-ten-problems/second.cpp.o
 
 .PHONY : first-ten-problems/second.o
@@ -416,6 +469,33 @@ first-ten-problems/sixth.cpp.s:
 	$(MAKE) -f CMakeFiles/sixth.dir/build.make CMakeFiles/sixth.dir/first-ten-problems/sixth.cpp.s
 .PHONY : first-ten-problems/sixth.cpp.s
 
+first-ten-problems/tenth.o: first-ten-problems/tenth.cpp.o
+
+.PHONY : first-ten-problems/tenth.o
+
+# target to build an object file
+first-ten-problems/tenth.cpp.o:
+	$(MAKE) -f CMakeFiles/tenth.dir/build.make CMakeFiles/tenth.dir/first-ten-problems/tenth.cpp.o
+.PHONY : first-ten-problems/tenth.cpp.o
+
+first-ten-problems/tenth.i: first-ten-problems/tenth.cpp.i
+
+.PHONY : first-ten-problems/tenth.i
+
+# target to preprocess a source file
+first-ten-problems/tenth.cpp.i:
+	$(MAKE) -f CMakeFiles/tenth.dir/build.make CMakeFiles/tenth.dir/first-ten-problems/tenth.cpp.i
+.PHONY : first-ten-problems/tenth.cpp.i
+
+first-ten-problems/tenth.s: first-ten-problems/tenth.cpp.s
+
+.PHONY : first-ten-problems/tenth.s
+
+# target to generate assembly for a file
+first-ten-problems/tenth.cpp.s:
+	$(MAKE) -f CMakeFiles/tenth.dir/build.make CMakeFiles/tenth.dir/first-ten-problems/tenth.cpp.s
+.PHONY : first-ten-problems/tenth.cpp.s
+
 first-ten-problems/third.o: first-ten-problems/third.cpp.o
 
 .PHONY : first-ten-problems/third.o
@@ -476,17 +556,19 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... edit_cache"
+	@echo "... rebuild_cache"
+	@echo "... tenth"
+	@echo "... ninth"
 	@echo "... eighth"
 	@echo "... seventh"
 	@echo "... sixth"
 	@echo "... fifth"
 	@echo "... c__"
 	@echo "... forth"
-	@echo "... third"
-	@echo "... rebuild_cache"
-	@echo "... second"
-	@echo "... edit_cache"
 	@echo "... first"
+	@echo "... third"
+	@echo "... second"
 	@echo "... first-ten-problems/eighth.o"
 	@echo "... first-ten-problems/eighth.i"
 	@echo "... first-ten-problems/eighth.s"
@@ -499,6 +581,9 @@ help:
 	@echo "... first-ten-problems/forth.o"
 	@echo "... first-ten-problems/forth.i"
 	@echo "... first-ten-problems/forth.s"
+	@echo "... first-ten-problems/ninth.o"
+	@echo "... first-ten-problems/ninth.i"
+	@echo "... first-ten-problems/ninth.s"
 	@echo "... first-ten-problems/second.o"
 	@echo "... first-ten-problems/second.i"
 	@echo "... first-ten-problems/second.s"
@@ -508,6 +593,9 @@ help:
 	@echo "... first-ten-problems/sixth.o"
 	@echo "... first-ten-problems/sixth.i"
 	@echo "... first-ten-problems/sixth.s"
+	@echo "... first-ten-problems/tenth.o"
+	@echo "... first-ten-problems/tenth.i"
+	@echo "... first-ten-problems/tenth.s"
 	@echo "... first-ten-problems/third.o"
 	@echo "... first-ten-problems/third.i"
 	@echo "... first-ten-problems/third.s"
