@@ -111,6 +111,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named duplex-printing
+
+# Build rule for target.
+duplex-printing: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 duplex-printing
+.PHONY : duplex-printing
+
+# fast build rule for target.
+duplex-printing/fast:
+	$(MAKE) -f CMakeFiles/duplex-printing.dir/build.make CMakeFiles/duplex-printing.dir/build
+.PHONY : duplex-printing/fast
+
+#=============================================================================
+# Target rules for targets named rgb-cards
+
+# Build rule for target.
+rgb-cards: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rgb-cards
+.PHONY : rgb-cards
+
+# fast build rule for target.
+rgb-cards/fast:
+	$(MAKE) -f CMakeFiles/rgb-cards.dir/build.make CMakeFiles/rgb-cards.dir/build
+.PHONY : rgb-cards/fast
+
+#=============================================================================
 # Target rules for targets named tenth
 
 # Build rule for target.
@@ -213,6 +239,19 @@ forth: cmake_check_build_system
 forth/fast:
 	$(MAKE) -f CMakeFiles/forth.dir/build.make CMakeFiles/forth.dir/build
 .PHONY : forth/fast
+
+#=============================================================================
+# Target rules for targets named infinite-coins
+
+# Build rule for target.
+infinite-coins: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 infinite-coins
+.PHONY : infinite-coins
+
+# fast build rule for target.
+infinite-coins/fast:
+	$(MAKE) -f CMakeFiles/infinite-coins.dir/build.make CMakeFiles/infinite-coins.dir/build
+.PHONY : infinite-coins/fast
 
 #=============================================================================
 # Target rules for targets named first
@@ -550,6 +589,87 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/c__.dir/build.make CMakeFiles/c__.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+related-problems/duplex-printing.o: related-problems/duplex-printing.cpp.o
+
+.PHONY : related-problems/duplex-printing.o
+
+# target to build an object file
+related-problems/duplex-printing.cpp.o:
+	$(MAKE) -f CMakeFiles/duplex-printing.dir/build.make CMakeFiles/duplex-printing.dir/related-problems/duplex-printing.cpp.o
+.PHONY : related-problems/duplex-printing.cpp.o
+
+related-problems/duplex-printing.i: related-problems/duplex-printing.cpp.i
+
+.PHONY : related-problems/duplex-printing.i
+
+# target to preprocess a source file
+related-problems/duplex-printing.cpp.i:
+	$(MAKE) -f CMakeFiles/duplex-printing.dir/build.make CMakeFiles/duplex-printing.dir/related-problems/duplex-printing.cpp.i
+.PHONY : related-problems/duplex-printing.cpp.i
+
+related-problems/duplex-printing.s: related-problems/duplex-printing.cpp.s
+
+.PHONY : related-problems/duplex-printing.s
+
+# target to generate assembly for a file
+related-problems/duplex-printing.cpp.s:
+	$(MAKE) -f CMakeFiles/duplex-printing.dir/build.make CMakeFiles/duplex-printing.dir/related-problems/duplex-printing.cpp.s
+.PHONY : related-problems/duplex-printing.cpp.s
+
+related-problems/infinite-coins.o: related-problems/infinite-coins.cpp.o
+
+.PHONY : related-problems/infinite-coins.o
+
+# target to build an object file
+related-problems/infinite-coins.cpp.o:
+	$(MAKE) -f CMakeFiles/infinite-coins.dir/build.make CMakeFiles/infinite-coins.dir/related-problems/infinite-coins.cpp.o
+.PHONY : related-problems/infinite-coins.cpp.o
+
+related-problems/infinite-coins.i: related-problems/infinite-coins.cpp.i
+
+.PHONY : related-problems/infinite-coins.i
+
+# target to preprocess a source file
+related-problems/infinite-coins.cpp.i:
+	$(MAKE) -f CMakeFiles/infinite-coins.dir/build.make CMakeFiles/infinite-coins.dir/related-problems/infinite-coins.cpp.i
+.PHONY : related-problems/infinite-coins.cpp.i
+
+related-problems/infinite-coins.s: related-problems/infinite-coins.cpp.s
+
+.PHONY : related-problems/infinite-coins.s
+
+# target to generate assembly for a file
+related-problems/infinite-coins.cpp.s:
+	$(MAKE) -f CMakeFiles/infinite-coins.dir/build.make CMakeFiles/infinite-coins.dir/related-problems/infinite-coins.cpp.s
+.PHONY : related-problems/infinite-coins.cpp.s
+
+related-problems/rgb-cards.o: related-problems/rgb-cards.cpp.o
+
+.PHONY : related-problems/rgb-cards.o
+
+# target to build an object file
+related-problems/rgb-cards.cpp.o:
+	$(MAKE) -f CMakeFiles/rgb-cards.dir/build.make CMakeFiles/rgb-cards.dir/related-problems/rgb-cards.cpp.o
+.PHONY : related-problems/rgb-cards.cpp.o
+
+related-problems/rgb-cards.i: related-problems/rgb-cards.cpp.i
+
+.PHONY : related-problems/rgb-cards.i
+
+# target to preprocess a source file
+related-problems/rgb-cards.cpp.i:
+	$(MAKE) -f CMakeFiles/rgb-cards.dir/build.make CMakeFiles/rgb-cards.dir/related-problems/rgb-cards.cpp.i
+.PHONY : related-problems/rgb-cards.cpp.i
+
+related-problems/rgb-cards.s: related-problems/rgb-cards.cpp.s
+
+.PHONY : related-problems/rgb-cards.s
+
+# target to generate assembly for a file
+related-problems/rgb-cards.cpp.s:
+	$(MAKE) -f CMakeFiles/rgb-cards.dir/build.make CMakeFiles/rgb-cards.dir/related-problems/rgb-cards.cpp.s
+.PHONY : related-problems/rgb-cards.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -557,7 +677,9 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... duplex-printing"
 	@echo "... rebuild_cache"
+	@echo "... rgb-cards"
 	@echo "... tenth"
 	@echo "... ninth"
 	@echo "... eighth"
@@ -566,6 +688,7 @@ help:
 	@echo "... fifth"
 	@echo "... c__"
 	@echo "... forth"
+	@echo "... infinite-coins"
 	@echo "... first"
 	@echo "... third"
 	@echo "... second"
@@ -602,6 +725,15 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... related-problems/duplex-printing.o"
+	@echo "... related-problems/duplex-printing.i"
+	@echo "... related-problems/duplex-printing.s"
+	@echo "... related-problems/infinite-coins.o"
+	@echo "... related-problems/infinite-coins.i"
+	@echo "... related-problems/infinite-coins.s"
+	@echo "... related-problems/rgb-cards.o"
+	@echo "... related-problems/rgb-cards.i"
+	@echo "... related-problems/rgb-cards.s"
 .PHONY : help
 
 
