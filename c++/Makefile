@@ -111,6 +111,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named bitter-alchemy
+
+# Build rule for target.
+bitter-alchemy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bitter-alchemy
+.PHONY : bitter-alchemy
+
+# fast build rule for target.
+bitter-alchemy/fast:
+	$(MAKE) -f CMakeFiles/bitter-alchemy.dir/build.make CMakeFiles/bitter-alchemy.dir/build
+.PHONY : bitter-alchemy/fast
+
+#=============================================================================
+# Target rules for targets named something-on-it
+
+# Build rule for target.
+something-on-it: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 something-on-it
+.PHONY : something-on-it
+
+# fast build rule for target.
+something-on-it/fast:
+	$(MAKE) -f CMakeFiles/something-on-it.dir/build.make CMakeFiles/something-on-it.dir/build
+.PHONY : something-on-it/fast
+
+#=============================================================================
 # Target rules for targets named duplex-printing
 
 # Build rule for target.
@@ -228,6 +254,19 @@ c__/fast:
 .PHONY : c__/fast
 
 #=============================================================================
+# Target rules for targets named two-anagrams
+
+# Build rule for target.
+two-anagrams: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 two-anagrams
+.PHONY : two-anagrams
+
+# fast build rule for target.
+two-anagrams/fast:
+	$(MAKE) -f CMakeFiles/two-anagrams.dir/build.make CMakeFiles/two-anagrams.dir/build
+.PHONY : two-anagrams/fast
+
+#=============================================================================
 # Target rules for targets named forth
 
 # Build rule for target.
@@ -239,6 +278,19 @@ forth: cmake_check_build_system
 forth/fast:
 	$(MAKE) -f CMakeFiles/forth.dir/build.make CMakeFiles/forth.dir/build
 .PHONY : forth/fast
+
+#=============================================================================
+# Target rules for targets named i18n
+
+# Build rule for target.
+i18n: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 i18n
+.PHONY : i18n
+
+# fast build rule for target.
+i18n/fast:
+	$(MAKE) -f CMakeFiles/i18n.dir/build.make CMakeFiles/i18n.dir/build
+.PHONY : i18n/fast
 
 #=============================================================================
 # Target rules for targets named infinite-coins
@@ -589,6 +641,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/c__.dir/build.make CMakeFiles/c__.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+related-problems/bitter-alchemy.o: related-problems/bitter-alchemy.cpp.o
+
+.PHONY : related-problems/bitter-alchemy.o
+
+# target to build an object file
+related-problems/bitter-alchemy.cpp.o:
+	$(MAKE) -f CMakeFiles/bitter-alchemy.dir/build.make CMakeFiles/bitter-alchemy.dir/related-problems/bitter-alchemy.cpp.o
+.PHONY : related-problems/bitter-alchemy.cpp.o
+
+related-problems/bitter-alchemy.i: related-problems/bitter-alchemy.cpp.i
+
+.PHONY : related-problems/bitter-alchemy.i
+
+# target to preprocess a source file
+related-problems/bitter-alchemy.cpp.i:
+	$(MAKE) -f CMakeFiles/bitter-alchemy.dir/build.make CMakeFiles/bitter-alchemy.dir/related-problems/bitter-alchemy.cpp.i
+.PHONY : related-problems/bitter-alchemy.cpp.i
+
+related-problems/bitter-alchemy.s: related-problems/bitter-alchemy.cpp.s
+
+.PHONY : related-problems/bitter-alchemy.s
+
+# target to generate assembly for a file
+related-problems/bitter-alchemy.cpp.s:
+	$(MAKE) -f CMakeFiles/bitter-alchemy.dir/build.make CMakeFiles/bitter-alchemy.dir/related-problems/bitter-alchemy.cpp.s
+.PHONY : related-problems/bitter-alchemy.cpp.s
+
 related-problems/duplex-printing.o: related-problems/duplex-printing.cpp.o
 
 .PHONY : related-problems/duplex-printing.o
@@ -615,6 +694,33 @@ related-problems/duplex-printing.s: related-problems/duplex-printing.cpp.s
 related-problems/duplex-printing.cpp.s:
 	$(MAKE) -f CMakeFiles/duplex-printing.dir/build.make CMakeFiles/duplex-printing.dir/related-problems/duplex-printing.cpp.s
 .PHONY : related-problems/duplex-printing.cpp.s
+
+related-problems/i18n.o: related-problems/i18n.cpp.o
+
+.PHONY : related-problems/i18n.o
+
+# target to build an object file
+related-problems/i18n.cpp.o:
+	$(MAKE) -f CMakeFiles/i18n.dir/build.make CMakeFiles/i18n.dir/related-problems/i18n.cpp.o
+.PHONY : related-problems/i18n.cpp.o
+
+related-problems/i18n.i: related-problems/i18n.cpp.i
+
+.PHONY : related-problems/i18n.i
+
+# target to preprocess a source file
+related-problems/i18n.cpp.i:
+	$(MAKE) -f CMakeFiles/i18n.dir/build.make CMakeFiles/i18n.dir/related-problems/i18n.cpp.i
+.PHONY : related-problems/i18n.cpp.i
+
+related-problems/i18n.s: related-problems/i18n.cpp.s
+
+.PHONY : related-problems/i18n.s
+
+# target to generate assembly for a file
+related-problems/i18n.cpp.s:
+	$(MAKE) -f CMakeFiles/i18n.dir/build.make CMakeFiles/i18n.dir/related-problems/i18n.cpp.s
+.PHONY : related-problems/i18n.cpp.s
 
 related-problems/infinite-coins.o: related-problems/infinite-coins.cpp.o
 
@@ -670,6 +776,60 @@ related-problems/rgb-cards.cpp.s:
 	$(MAKE) -f CMakeFiles/rgb-cards.dir/build.make CMakeFiles/rgb-cards.dir/related-problems/rgb-cards.cpp.s
 .PHONY : related-problems/rgb-cards.cpp.s
 
+related-problems/something-on-it.o: related-problems/something-on-it.cpp.o
+
+.PHONY : related-problems/something-on-it.o
+
+# target to build an object file
+related-problems/something-on-it.cpp.o:
+	$(MAKE) -f CMakeFiles/something-on-it.dir/build.make CMakeFiles/something-on-it.dir/related-problems/something-on-it.cpp.o
+.PHONY : related-problems/something-on-it.cpp.o
+
+related-problems/something-on-it.i: related-problems/something-on-it.cpp.i
+
+.PHONY : related-problems/something-on-it.i
+
+# target to preprocess a source file
+related-problems/something-on-it.cpp.i:
+	$(MAKE) -f CMakeFiles/something-on-it.dir/build.make CMakeFiles/something-on-it.dir/related-problems/something-on-it.cpp.i
+.PHONY : related-problems/something-on-it.cpp.i
+
+related-problems/something-on-it.s: related-problems/something-on-it.cpp.s
+
+.PHONY : related-problems/something-on-it.s
+
+# target to generate assembly for a file
+related-problems/something-on-it.cpp.s:
+	$(MAKE) -f CMakeFiles/something-on-it.dir/build.make CMakeFiles/something-on-it.dir/related-problems/something-on-it.cpp.s
+.PHONY : related-problems/something-on-it.cpp.s
+
+related-problems/two-anagrams.o: related-problems/two-anagrams.cpp.o
+
+.PHONY : related-problems/two-anagrams.o
+
+# target to build an object file
+related-problems/two-anagrams.cpp.o:
+	$(MAKE) -f CMakeFiles/two-anagrams.dir/build.make CMakeFiles/two-anagrams.dir/related-problems/two-anagrams.cpp.o
+.PHONY : related-problems/two-anagrams.cpp.o
+
+related-problems/two-anagrams.i: related-problems/two-anagrams.cpp.i
+
+.PHONY : related-problems/two-anagrams.i
+
+# target to preprocess a source file
+related-problems/two-anagrams.cpp.i:
+	$(MAKE) -f CMakeFiles/two-anagrams.dir/build.make CMakeFiles/two-anagrams.dir/related-problems/two-anagrams.cpp.i
+.PHONY : related-problems/two-anagrams.cpp.i
+
+related-problems/two-anagrams.s: related-problems/two-anagrams.cpp.s
+
+.PHONY : related-problems/two-anagrams.s
+
+# target to generate assembly for a file
+related-problems/two-anagrams.cpp.s:
+	$(MAKE) -f CMakeFiles/two-anagrams.dir/build.make CMakeFiles/two-anagrams.dir/related-problems/two-anagrams.cpp.s
+.PHONY : related-problems/two-anagrams.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -677,6 +837,8 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... bitter-alchemy"
+	@echo "... something-on-it"
 	@echo "... duplex-printing"
 	@echo "... rebuild_cache"
 	@echo "... rgb-cards"
@@ -687,7 +849,9 @@ help:
 	@echo "... sixth"
 	@echo "... fifth"
 	@echo "... c__"
+	@echo "... two-anagrams"
 	@echo "... forth"
+	@echo "... i18n"
 	@echo "... infinite-coins"
 	@echo "... first"
 	@echo "... third"
@@ -725,15 +889,27 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... related-problems/bitter-alchemy.o"
+	@echo "... related-problems/bitter-alchemy.i"
+	@echo "... related-problems/bitter-alchemy.s"
 	@echo "... related-problems/duplex-printing.o"
 	@echo "... related-problems/duplex-printing.i"
 	@echo "... related-problems/duplex-printing.s"
+	@echo "... related-problems/i18n.o"
+	@echo "... related-problems/i18n.i"
+	@echo "... related-problems/i18n.s"
 	@echo "... related-problems/infinite-coins.o"
 	@echo "... related-problems/infinite-coins.i"
 	@echo "... related-problems/infinite-coins.s"
 	@echo "... related-problems/rgb-cards.o"
 	@echo "... related-problems/rgb-cards.i"
 	@echo "... related-problems/rgb-cards.s"
+	@echo "... related-problems/something-on-it.o"
+	@echo "... related-problems/something-on-it.i"
+	@echo "... related-problems/something-on-it.s"
+	@echo "... related-problems/two-anagrams.o"
+	@echo "... related-problems/two-anagrams.i"
+	@echo "... related-problems/two-anagrams.s"
 .PHONY : help
 
 
