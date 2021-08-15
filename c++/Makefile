@@ -111,6 +111,45 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named exhaustive-search
+
+# Build rule for target.
+exhaustive-search: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 exhaustive-search
+.PHONY : exhaustive-search
+
+# fast build rule for target.
+exhaustive-search/fast:
+	$(MAKE) -f CMakeFiles/exhaustive-search.dir/build.make CMakeFiles/exhaustive-search.dir/build
+.PHONY : exhaustive-search/fast
+
+#=============================================================================
+# Target rules for targets named lucky-pin
+
+# Build rule for target.
+lucky-pin: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lucky-pin
+.PHONY : lucky-pin
+
+# fast build rule for target.
+lucky-pin/fast:
+	$(MAKE) -f CMakeFiles/lucky-pin.dir/build.make CMakeFiles/lucky-pin.dir/build
+.PHONY : lucky-pin/fast
+
+#=============================================================================
+# Target rules for targets named half-and-half
+
+# Build rule for target.
+half-and-half: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 half-and-half
+.PHONY : half-and-half
+
+# fast build rule for target.
+half-and-half/fast:
+	$(MAKE) -f CMakeFiles/half-and-half.dir/build.make CMakeFiles/half-and-half.dir/build
+.PHONY : half-and-half/fast
+
+#=============================================================================
 # Target rules for targets named atcoder
 
 # Build rule for target.
@@ -434,6 +473,19 @@ third: cmake_check_build_system
 third/fast:
 	$(MAKE) -f CMakeFiles/third.dir/build.make CMakeFiles/third.dir/build
 .PHONY : third/fast
+
+#=============================================================================
+# Target rules for targets named atcoder-market
+
+# Build rule for target.
+atcoder-market: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 atcoder-market
+.PHONY : atcoder-market
+
+# fast build rule for target.
+atcoder-market/fast:
+	$(MAKE) -f CMakeFiles/atcoder-market.dir/build.make CMakeFiles/atcoder-market.dir/build
+.PHONY : atcoder-market/fast
 
 #=============================================================================
 # Target rules for targets named second
@@ -772,6 +824,33 @@ one-hundred-problems/105.cpp.s:
 	$(MAKE) -f CMakeFiles/105.dir/build.make CMakeFiles/105.dir/one-hundred-problems/105.cpp.s
 .PHONY : one-hundred-problems/105.cpp.s
 
+one-hundred-problems/atcoder-market.o: one-hundred-problems/atcoder-market.cpp.o
+
+.PHONY : one-hundred-problems/atcoder-market.o
+
+# target to build an object file
+one-hundred-problems/atcoder-market.cpp.o:
+	$(MAKE) -f CMakeFiles/atcoder-market.dir/build.make CMakeFiles/atcoder-market.dir/one-hundred-problems/atcoder-market.cpp.o
+.PHONY : one-hundred-problems/atcoder-market.cpp.o
+
+one-hundred-problems/atcoder-market.i: one-hundred-problems/atcoder-market.cpp.i
+
+.PHONY : one-hundred-problems/atcoder-market.i
+
+# target to preprocess a source file
+one-hundred-problems/atcoder-market.cpp.i:
+	$(MAKE) -f CMakeFiles/atcoder-market.dir/build.make CMakeFiles/atcoder-market.dir/one-hundred-problems/atcoder-market.cpp.i
+.PHONY : one-hundred-problems/atcoder-market.cpp.i
+
+one-hundred-problems/atcoder-market.s: one-hundred-problems/atcoder-market.cpp.s
+
+.PHONY : one-hundred-problems/atcoder-market.s
+
+# target to generate assembly for a file
+one-hundred-problems/atcoder-market.cpp.s:
+	$(MAKE) -f CMakeFiles/atcoder-market.dir/build.make CMakeFiles/atcoder-market.dir/one-hundred-problems/atcoder-market.cpp.s
+.PHONY : one-hundred-problems/atcoder-market.cpp.s
+
 one-hundred-problems/atcoder.o: one-hundred-problems/atcoder.cpp.o
 
 .PHONY : one-hundred-problems/atcoder.o
@@ -798,6 +877,60 @@ one-hundred-problems/atcoder.s: one-hundred-problems/atcoder.cpp.s
 one-hundred-problems/atcoder.cpp.s:
 	$(MAKE) -f CMakeFiles/atcoder.dir/build.make CMakeFiles/atcoder.dir/one-hundred-problems/atcoder.cpp.s
 .PHONY : one-hundred-problems/atcoder.cpp.s
+
+one-hundred-problems/exhaustive-search.o: one-hundred-problems/exhaustive-search.cpp.o
+
+.PHONY : one-hundred-problems/exhaustive-search.o
+
+# target to build an object file
+one-hundred-problems/exhaustive-search.cpp.o:
+	$(MAKE) -f CMakeFiles/exhaustive-search.dir/build.make CMakeFiles/exhaustive-search.dir/one-hundred-problems/exhaustive-search.cpp.o
+.PHONY : one-hundred-problems/exhaustive-search.cpp.o
+
+one-hundred-problems/exhaustive-search.i: one-hundred-problems/exhaustive-search.cpp.i
+
+.PHONY : one-hundred-problems/exhaustive-search.i
+
+# target to preprocess a source file
+one-hundred-problems/exhaustive-search.cpp.i:
+	$(MAKE) -f CMakeFiles/exhaustive-search.dir/build.make CMakeFiles/exhaustive-search.dir/one-hundred-problems/exhaustive-search.cpp.i
+.PHONY : one-hundred-problems/exhaustive-search.cpp.i
+
+one-hundred-problems/exhaustive-search.s: one-hundred-problems/exhaustive-search.cpp.s
+
+.PHONY : one-hundred-problems/exhaustive-search.s
+
+# target to generate assembly for a file
+one-hundred-problems/exhaustive-search.cpp.s:
+	$(MAKE) -f CMakeFiles/exhaustive-search.dir/build.make CMakeFiles/exhaustive-search.dir/one-hundred-problems/exhaustive-search.cpp.s
+.PHONY : one-hundred-problems/exhaustive-search.cpp.s
+
+one-hundred-problems/half-and-half.o: one-hundred-problems/half-and-half.cpp.o
+
+.PHONY : one-hundred-problems/half-and-half.o
+
+# target to build an object file
+one-hundred-problems/half-and-half.cpp.o:
+	$(MAKE) -f CMakeFiles/half-and-half.dir/build.make CMakeFiles/half-and-half.dir/one-hundred-problems/half-and-half.cpp.o
+.PHONY : one-hundred-problems/half-and-half.cpp.o
+
+one-hundred-problems/half-and-half.i: one-hundred-problems/half-and-half.cpp.i
+
+.PHONY : one-hundred-problems/half-and-half.i
+
+# target to preprocess a source file
+one-hundred-problems/half-and-half.cpp.i:
+	$(MAKE) -f CMakeFiles/half-and-half.dir/build.make CMakeFiles/half-and-half.dir/one-hundred-problems/half-and-half.cpp.i
+.PHONY : one-hundred-problems/half-and-half.cpp.i
+
+one-hundred-problems/half-and-half.s: one-hundred-problems/half-and-half.cpp.s
+
+.PHONY : one-hundred-problems/half-and-half.s
+
+# target to generate assembly for a file
+one-hundred-problems/half-and-half.cpp.s:
+	$(MAKE) -f CMakeFiles/half-and-half.dir/build.make CMakeFiles/half-and-half.dir/one-hundred-problems/half-and-half.cpp.s
+.PHONY : one-hundred-problems/half-and-half.cpp.s
 
 one-hundred-problems/how-many-ways.o: one-hundred-problems/how-many-ways.cpp.o
 
@@ -852,6 +985,33 @@ one-hundred-problems/karaoke.s: one-hundred-problems/karaoke.cpp.s
 one-hundred-problems/karaoke.cpp.s:
 	$(MAKE) -f CMakeFiles/karaoke.dir/build.make CMakeFiles/karaoke.dir/one-hundred-problems/karaoke.cpp.s
 .PHONY : one-hundred-problems/karaoke.cpp.s
+
+one-hundred-problems/lucky-pin.o: one-hundred-problems/lucky-pin.cpp.o
+
+.PHONY : one-hundred-problems/lucky-pin.o
+
+# target to build an object file
+one-hundred-problems/lucky-pin.cpp.o:
+	$(MAKE) -f CMakeFiles/lucky-pin.dir/build.make CMakeFiles/lucky-pin.dir/one-hundred-problems/lucky-pin.cpp.o
+.PHONY : one-hundred-problems/lucky-pin.cpp.o
+
+one-hundred-problems/lucky-pin.i: one-hundred-problems/lucky-pin.cpp.i
+
+.PHONY : one-hundred-problems/lucky-pin.i
+
+# target to preprocess a source file
+one-hundred-problems/lucky-pin.cpp.i:
+	$(MAKE) -f CMakeFiles/lucky-pin.dir/build.make CMakeFiles/lucky-pin.dir/one-hundred-problems/lucky-pin.cpp.i
+.PHONY : one-hundred-problems/lucky-pin.cpp.i
+
+one-hundred-problems/lucky-pin.s: one-hundred-problems/lucky-pin.cpp.s
+
+.PHONY : one-hundred-problems/lucky-pin.s
+
+# target to generate assembly for a file
+one-hundred-problems/lucky-pin.cpp.s:
+	$(MAKE) -f CMakeFiles/lucky-pin.dir/build.make CMakeFiles/lucky-pin.dir/one-hundred-problems/lucky-pin.cpp.s
+.PHONY : one-hundred-problems/lucky-pin.cpp.s
 
 related-problems/bitter-alchemy.o: related-problems/bitter-alchemy.cpp.o
 
@@ -1156,7 +1316,10 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... exhaustive-search"
+	@echo "... lucky-pin"
 	@echo "... edit_cache"
+	@echo "... half-and-half"
 	@echo "... atcoder"
 	@echo "... 105"
 	@echo "... cakes-and-donuts"
@@ -1183,6 +1346,7 @@ help:
 	@echo "... infinite-coins"
 	@echo "... first"
 	@echo "... third"
+	@echo "... atcoder-market"
 	@echo "... second"
 	@echo "... first-ten-problems/eighth.o"
 	@echo "... first-ten-problems/eighth.i"
@@ -1220,15 +1384,27 @@ help:
 	@echo "... one-hundred-problems/105.o"
 	@echo "... one-hundred-problems/105.i"
 	@echo "... one-hundred-problems/105.s"
+	@echo "... one-hundred-problems/atcoder-market.o"
+	@echo "... one-hundred-problems/atcoder-market.i"
+	@echo "... one-hundred-problems/atcoder-market.s"
 	@echo "... one-hundred-problems/atcoder.o"
 	@echo "... one-hundred-problems/atcoder.i"
 	@echo "... one-hundred-problems/atcoder.s"
+	@echo "... one-hundred-problems/exhaustive-search.o"
+	@echo "... one-hundred-problems/exhaustive-search.i"
+	@echo "... one-hundred-problems/exhaustive-search.s"
+	@echo "... one-hundred-problems/half-and-half.o"
+	@echo "... one-hundred-problems/half-and-half.i"
+	@echo "... one-hundred-problems/half-and-half.s"
 	@echo "... one-hundred-problems/how-many-ways.o"
 	@echo "... one-hundred-problems/how-many-ways.i"
 	@echo "... one-hundred-problems/how-many-ways.s"
 	@echo "... one-hundred-problems/karaoke.o"
 	@echo "... one-hundred-problems/karaoke.i"
 	@echo "... one-hundred-problems/karaoke.s"
+	@echo "... one-hundred-problems/lucky-pin.o"
+	@echo "... one-hundred-problems/lucky-pin.i"
+	@echo "... one-hundred-problems/lucky-pin.s"
 	@echo "... related-problems/bitter-alchemy.o"
 	@echo "... related-problems/bitter-alchemy.i"
 	@echo "... related-problems/bitter-alchemy.s"
