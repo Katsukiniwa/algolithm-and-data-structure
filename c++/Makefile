@@ -124,6 +124,19 @@ exhaustive-search/fast:
 .PHONY : exhaustive-search/fast
 
 #=============================================================================
+# Target rules for targets named switches
+
+# Build rule for target.
+switches: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 switches
+.PHONY : switches
+
+# fast build rule for target.
+switches/fast:
+	$(MAKE) -f CMakeFiles/switches.dir/build.make CMakeFiles/switches.dir/build
+.PHONY : switches/fast
+
+#=============================================================================
 # Target rules for targets named lucky-pin
 
 # Build rule for target.
@@ -1013,6 +1026,33 @@ one-hundred-problems/lucky-pin.cpp.s:
 	$(MAKE) -f CMakeFiles/lucky-pin.dir/build.make CMakeFiles/lucky-pin.dir/one-hundred-problems/lucky-pin.cpp.s
 .PHONY : one-hundred-problems/lucky-pin.cpp.s
 
+one-hundred-problems/switches.o: one-hundred-problems/switches.cpp.o
+
+.PHONY : one-hundred-problems/switches.o
+
+# target to build an object file
+one-hundred-problems/switches.cpp.o:
+	$(MAKE) -f CMakeFiles/switches.dir/build.make CMakeFiles/switches.dir/one-hundred-problems/switches.cpp.o
+.PHONY : one-hundred-problems/switches.cpp.o
+
+one-hundred-problems/switches.i: one-hundred-problems/switches.cpp.i
+
+.PHONY : one-hundred-problems/switches.i
+
+# target to preprocess a source file
+one-hundred-problems/switches.cpp.i:
+	$(MAKE) -f CMakeFiles/switches.dir/build.make CMakeFiles/switches.dir/one-hundred-problems/switches.cpp.i
+.PHONY : one-hundred-problems/switches.cpp.i
+
+one-hundred-problems/switches.s: one-hundred-problems/switches.cpp.s
+
+.PHONY : one-hundred-problems/switches.s
+
+# target to generate assembly for a file
+one-hundred-problems/switches.cpp.s:
+	$(MAKE) -f CMakeFiles/switches.dir/build.make CMakeFiles/switches.dir/one-hundred-problems/switches.cpp.s
+.PHONY : one-hundred-problems/switches.cpp.s
+
 related-problems/bitter-alchemy.o: related-problems/bitter-alchemy.cpp.o
 
 .PHONY : related-problems/bitter-alchemy.o
@@ -1317,6 +1357,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... exhaustive-search"
+	@echo "... switches"
 	@echo "... lucky-pin"
 	@echo "... edit_cache"
 	@echo "... half-and-half"
@@ -1405,6 +1446,9 @@ help:
 	@echo "... one-hundred-problems/lucky-pin.o"
 	@echo "... one-hundred-problems/lucky-pin.i"
 	@echo "... one-hundred-problems/lucky-pin.s"
+	@echo "... one-hundred-problems/switches.o"
+	@echo "... one-hundred-problems/switches.i"
+	@echo "... one-hundred-problems/switches.s"
 	@echo "... related-problems/bitter-alchemy.o"
 	@echo "... related-problems/bitter-alchemy.i"
 	@echo "... related-problems/bitter-alchemy.s"
