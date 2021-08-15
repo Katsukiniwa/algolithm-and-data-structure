@@ -111,6 +111,45 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named cakes-and-donuts
+
+# Build rule for target.
+cakes-and-donuts: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cakes-and-donuts
+.PHONY : cakes-and-donuts
+
+# fast build rule for target.
+cakes-and-donuts/fast:
+	$(MAKE) -f CMakeFiles/cakes-and-donuts.dir/build.make CMakeFiles/cakes-and-donuts.dir/build
+.PHONY : cakes-and-donuts/fast
+
+#=============================================================================
+# Target rules for targets named karaoke
+
+# Build rule for target.
+karaoke: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 karaoke
+.PHONY : karaoke
+
+# fast build rule for target.
+karaoke/fast:
+	$(MAKE) -f CMakeFiles/karaoke.dir/build.make CMakeFiles/karaoke.dir/build
+.PHONY : karaoke/fast
+
+#=============================================================================
+# Target rules for targets named making-triangle
+
+# Build rule for target.
+making-triangle: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 making-triangle
+.PHONY : making-triangle
+
+# fast build rule for target.
+making-triangle/fast:
+	$(MAKE) -f CMakeFiles/making-triangle.dir/build.make CMakeFiles/making-triangle.dir/build
+.PHONY : making-triangle/fast
+
+#=============================================================================
 # Target rules for targets named bitter-alchemy
 
 # Build rule for target.
@@ -122,6 +161,32 @@ bitter-alchemy: cmake_check_build_system
 bitter-alchemy/fast:
 	$(MAKE) -f CMakeFiles/bitter-alchemy.dir/build.make CMakeFiles/bitter-alchemy.dir/build
 .PHONY : bitter-alchemy/fast
+
+#=============================================================================
+# Target rules for targets named i18n
+
+# Build rule for target.
+i18n: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 i18n
+.PHONY : i18n
+
+# fast build rule for target.
+i18n/fast:
+	$(MAKE) -f CMakeFiles/i18n.dir/build.make CMakeFiles/i18n.dir/build
+.PHONY : i18n/fast
+
+#=============================================================================
+# Target rules for targets named forth
+
+# Build rule for target.
+forth: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 forth
+.PHONY : forth
+
+# fast build rule for target.
+forth/fast:
+	$(MAKE) -f CMakeFiles/forth.dir/build.make CMakeFiles/forth.dir/build
+.PHONY : forth/fast
 
 #=============================================================================
 # Target rules for targets named something-on-it
@@ -202,6 +267,19 @@ eighth/fast:
 .PHONY : eighth/fast
 
 #=============================================================================
+# Target rules for targets named maximum-difference
+
+# Build rule for target.
+maximum-difference: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 maximum-difference
+.PHONY : maximum-difference
+
+# fast build rule for target.
+maximum-difference/fast:
+	$(MAKE) -f CMakeFiles/maximum-difference.dir/build.make CMakeFiles/maximum-difference.dir/build
+.PHONY : maximum-difference/fast
+
+#=============================================================================
 # Target rules for targets named seventh
 
 # Build rule for target.
@@ -254,6 +332,19 @@ c__/fast:
 .PHONY : c__/fast
 
 #=============================================================================
+# Target rules for targets named break-number
+
+# Build rule for target.
+break-number: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 break-number
+.PHONY : break-number
+
+# fast build rule for target.
+break-number/fast:
+	$(MAKE) -f CMakeFiles/break-number.dir/build.make CMakeFiles/break-number.dir/build
+.PHONY : break-number/fast
+
+#=============================================================================
 # Target rules for targets named two-anagrams
 
 # Build rule for target.
@@ -265,32 +356,6 @@ two-anagrams: cmake_check_build_system
 two-anagrams/fast:
 	$(MAKE) -f CMakeFiles/two-anagrams.dir/build.make CMakeFiles/two-anagrams.dir/build
 .PHONY : two-anagrams/fast
-
-#=============================================================================
-# Target rules for targets named forth
-
-# Build rule for target.
-forth: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 forth
-.PHONY : forth
-
-# fast build rule for target.
-forth/fast:
-	$(MAKE) -f CMakeFiles/forth.dir/build.make CMakeFiles/forth.dir/build
-.PHONY : forth/fast
-
-#=============================================================================
-# Target rules for targets named i18n
-
-# Build rule for target.
-i18n: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 i18n
-.PHONY : i18n
-
-# fast build rule for target.
-i18n/fast:
-	$(MAKE) -f CMakeFiles/i18n.dir/build.make CMakeFiles/i18n.dir/build
-.PHONY : i18n/fast
 
 #=============================================================================
 # Target rules for targets named infinite-coins
@@ -641,6 +706,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/c__.dir/build.make CMakeFiles/c__.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+one-hundred-problems/karaoke.o: one-hundred-problems/karaoke.cpp.o
+
+.PHONY : one-hundred-problems/karaoke.o
+
+# target to build an object file
+one-hundred-problems/karaoke.cpp.o:
+	$(MAKE) -f CMakeFiles/karaoke.dir/build.make CMakeFiles/karaoke.dir/one-hundred-problems/karaoke.cpp.o
+.PHONY : one-hundred-problems/karaoke.cpp.o
+
+one-hundred-problems/karaoke.i: one-hundred-problems/karaoke.cpp.i
+
+.PHONY : one-hundred-problems/karaoke.i
+
+# target to preprocess a source file
+one-hundred-problems/karaoke.cpp.i:
+	$(MAKE) -f CMakeFiles/karaoke.dir/build.make CMakeFiles/karaoke.dir/one-hundred-problems/karaoke.cpp.i
+.PHONY : one-hundred-problems/karaoke.cpp.i
+
+one-hundred-problems/karaoke.s: one-hundred-problems/karaoke.cpp.s
+
+.PHONY : one-hundred-problems/karaoke.s
+
+# target to generate assembly for a file
+one-hundred-problems/karaoke.cpp.s:
+	$(MAKE) -f CMakeFiles/karaoke.dir/build.make CMakeFiles/karaoke.dir/one-hundred-problems/karaoke.cpp.s
+.PHONY : one-hundred-problems/karaoke.cpp.s
+
 related-problems/bitter-alchemy.o: related-problems/bitter-alchemy.cpp.o
 
 .PHONY : related-problems/bitter-alchemy.o
@@ -667,6 +759,60 @@ related-problems/bitter-alchemy.s: related-problems/bitter-alchemy.cpp.s
 related-problems/bitter-alchemy.cpp.s:
 	$(MAKE) -f CMakeFiles/bitter-alchemy.dir/build.make CMakeFiles/bitter-alchemy.dir/related-problems/bitter-alchemy.cpp.s
 .PHONY : related-problems/bitter-alchemy.cpp.s
+
+related-problems/break-number.o: related-problems/break-number.cpp.o
+
+.PHONY : related-problems/break-number.o
+
+# target to build an object file
+related-problems/break-number.cpp.o:
+	$(MAKE) -f CMakeFiles/break-number.dir/build.make CMakeFiles/break-number.dir/related-problems/break-number.cpp.o
+.PHONY : related-problems/break-number.cpp.o
+
+related-problems/break-number.i: related-problems/break-number.cpp.i
+
+.PHONY : related-problems/break-number.i
+
+# target to preprocess a source file
+related-problems/break-number.cpp.i:
+	$(MAKE) -f CMakeFiles/break-number.dir/build.make CMakeFiles/break-number.dir/related-problems/break-number.cpp.i
+.PHONY : related-problems/break-number.cpp.i
+
+related-problems/break-number.s: related-problems/break-number.cpp.s
+
+.PHONY : related-problems/break-number.s
+
+# target to generate assembly for a file
+related-problems/break-number.cpp.s:
+	$(MAKE) -f CMakeFiles/break-number.dir/build.make CMakeFiles/break-number.dir/related-problems/break-number.cpp.s
+.PHONY : related-problems/break-number.cpp.s
+
+related-problems/cakes-and-donuts.o: related-problems/cakes-and-donuts.cpp.o
+
+.PHONY : related-problems/cakes-and-donuts.o
+
+# target to build an object file
+related-problems/cakes-and-donuts.cpp.o:
+	$(MAKE) -f CMakeFiles/cakes-and-donuts.dir/build.make CMakeFiles/cakes-and-donuts.dir/related-problems/cakes-and-donuts.cpp.o
+.PHONY : related-problems/cakes-and-donuts.cpp.o
+
+related-problems/cakes-and-donuts.i: related-problems/cakes-and-donuts.cpp.i
+
+.PHONY : related-problems/cakes-and-donuts.i
+
+# target to preprocess a source file
+related-problems/cakes-and-donuts.cpp.i:
+	$(MAKE) -f CMakeFiles/cakes-and-donuts.dir/build.make CMakeFiles/cakes-and-donuts.dir/related-problems/cakes-and-donuts.cpp.i
+.PHONY : related-problems/cakes-and-donuts.cpp.i
+
+related-problems/cakes-and-donuts.s: related-problems/cakes-and-donuts.cpp.s
+
+.PHONY : related-problems/cakes-and-donuts.s
+
+# target to generate assembly for a file
+related-problems/cakes-and-donuts.cpp.s:
+	$(MAKE) -f CMakeFiles/cakes-and-donuts.dir/build.make CMakeFiles/cakes-and-donuts.dir/related-problems/cakes-and-donuts.cpp.s
+.PHONY : related-problems/cakes-and-donuts.cpp.s
 
 related-problems/duplex-printing.o: related-problems/duplex-printing.cpp.o
 
@@ -748,6 +894,60 @@ related-problems/infinite-coins.s: related-problems/infinite-coins.cpp.s
 related-problems/infinite-coins.cpp.s:
 	$(MAKE) -f CMakeFiles/infinite-coins.dir/build.make CMakeFiles/infinite-coins.dir/related-problems/infinite-coins.cpp.s
 .PHONY : related-problems/infinite-coins.cpp.s
+
+related-problems/making-triangle.o: related-problems/making-triangle.cpp.o
+
+.PHONY : related-problems/making-triangle.o
+
+# target to build an object file
+related-problems/making-triangle.cpp.o:
+	$(MAKE) -f CMakeFiles/making-triangle.dir/build.make CMakeFiles/making-triangle.dir/related-problems/making-triangle.cpp.o
+.PHONY : related-problems/making-triangle.cpp.o
+
+related-problems/making-triangle.i: related-problems/making-triangle.cpp.i
+
+.PHONY : related-problems/making-triangle.i
+
+# target to preprocess a source file
+related-problems/making-triangle.cpp.i:
+	$(MAKE) -f CMakeFiles/making-triangle.dir/build.make CMakeFiles/making-triangle.dir/related-problems/making-triangle.cpp.i
+.PHONY : related-problems/making-triangle.cpp.i
+
+related-problems/making-triangle.s: related-problems/making-triangle.cpp.s
+
+.PHONY : related-problems/making-triangle.s
+
+# target to generate assembly for a file
+related-problems/making-triangle.cpp.s:
+	$(MAKE) -f CMakeFiles/making-triangle.dir/build.make CMakeFiles/making-triangle.dir/related-problems/making-triangle.cpp.s
+.PHONY : related-problems/making-triangle.cpp.s
+
+related-problems/maximum-difference.o: related-problems/maximum-difference.cpp.o
+
+.PHONY : related-problems/maximum-difference.o
+
+# target to build an object file
+related-problems/maximum-difference.cpp.o:
+	$(MAKE) -f CMakeFiles/maximum-difference.dir/build.make CMakeFiles/maximum-difference.dir/related-problems/maximum-difference.cpp.o
+.PHONY : related-problems/maximum-difference.cpp.o
+
+related-problems/maximum-difference.i: related-problems/maximum-difference.cpp.i
+
+.PHONY : related-problems/maximum-difference.i
+
+# target to preprocess a source file
+related-problems/maximum-difference.cpp.i:
+	$(MAKE) -f CMakeFiles/maximum-difference.dir/build.make CMakeFiles/maximum-difference.dir/related-problems/maximum-difference.cpp.i
+.PHONY : related-problems/maximum-difference.cpp.i
+
+related-problems/maximum-difference.s: related-problems/maximum-difference.cpp.s
+
+.PHONY : related-problems/maximum-difference.s
+
+# target to generate assembly for a file
+related-problems/maximum-difference.cpp.s:
+	$(MAKE) -f CMakeFiles/maximum-difference.dir/build.make CMakeFiles/maximum-difference.dir/related-problems/maximum-difference.cpp.s
+.PHONY : related-problems/maximum-difference.cpp.s
 
 related-problems/rgb-cards.o: related-problems/rgb-cards.cpp.o
 
@@ -837,21 +1037,26 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... cakes-and-donuts"
+	@echo "... karaoke"
+	@echo "... making-triangle"
 	@echo "... bitter-alchemy"
+	@echo "... rebuild_cache"
+	@echo "... i18n"
+	@echo "... forth"
 	@echo "... something-on-it"
 	@echo "... duplex-printing"
-	@echo "... rebuild_cache"
 	@echo "... rgb-cards"
 	@echo "... tenth"
 	@echo "... ninth"
 	@echo "... eighth"
+	@echo "... maximum-difference"
 	@echo "... seventh"
 	@echo "... sixth"
 	@echo "... fifth"
 	@echo "... c__"
+	@echo "... break-number"
 	@echo "... two-anagrams"
-	@echo "... forth"
-	@echo "... i18n"
 	@echo "... infinite-coins"
 	@echo "... first"
 	@echo "... third"
@@ -889,9 +1094,18 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... one-hundred-problems/karaoke.o"
+	@echo "... one-hundred-problems/karaoke.i"
+	@echo "... one-hundred-problems/karaoke.s"
 	@echo "... related-problems/bitter-alchemy.o"
 	@echo "... related-problems/bitter-alchemy.i"
 	@echo "... related-problems/bitter-alchemy.s"
+	@echo "... related-problems/break-number.o"
+	@echo "... related-problems/break-number.i"
+	@echo "... related-problems/break-number.s"
+	@echo "... related-problems/cakes-and-donuts.o"
+	@echo "... related-problems/cakes-and-donuts.i"
+	@echo "... related-problems/cakes-and-donuts.s"
 	@echo "... related-problems/duplex-printing.o"
 	@echo "... related-problems/duplex-printing.i"
 	@echo "... related-problems/duplex-printing.s"
@@ -901,6 +1115,12 @@ help:
 	@echo "... related-problems/infinite-coins.o"
 	@echo "... related-problems/infinite-coins.i"
 	@echo "... related-problems/infinite-coins.s"
+	@echo "... related-problems/making-triangle.o"
+	@echo "... related-problems/making-triangle.i"
+	@echo "... related-problems/making-triangle.s"
+	@echo "... related-problems/maximum-difference.o"
+	@echo "... related-problems/maximum-difference.i"
+	@echo "... related-problems/maximum-difference.s"
 	@echo "... related-problems/rgb-cards.o"
 	@echo "... related-problems/rgb-cards.i"
 	@echo "... related-problems/rgb-cards.s"
