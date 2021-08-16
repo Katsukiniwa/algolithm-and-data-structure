@@ -24,6 +24,7 @@ int main() {
 
   // @link https://qiita.com/drken/items/7c6ff2aa4d8fce1c9361#6-bit-%E5%85%A8%E6%8E%A2%E7%B4%A2
   // {0, 1, ..., N-1} の部分集合の全探索
+  // Nはスイッチの個数
   for (int bit = 0; bit < (1 << N); bit++) {
     // 点灯している電球の数
     int tmp = 0;
@@ -33,6 +34,8 @@ int main() {
       // k[i]は電球に繋がっているスイッチの個数
       for (int j = 0; j < k[i]; j++) {
         // s[i][j] - 1 が bit に入るかどうか
+        // bitにs[i][j] - 1番目のフラグが立っているかどうか
+        // 電球には1からMの番号がついているので-1する？
         if (bit & (1 << (s[i][j] - 1))) {
           cnt++;
         }

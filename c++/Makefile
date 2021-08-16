@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named habatsu
+
+# Build rule for target.
+habatsu: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 habatsu
+.PHONY : habatsu
+
+# fast build rule for target.
+habatsu/fast:
+	$(MAKE) -f CMakeFiles/habatsu.dir/build.make CMakeFiles/habatsu.dir/build
+.PHONY : habatsu/fast
+
+#=============================================================================
 # Target rules for targets named exhaustive-search
 
 # Build rule for target.
@@ -410,6 +423,19 @@ fifth/fast:
 .PHONY : fifth/fast
 
 #=============================================================================
+# Target rules for targets named test001
+
+# Build rule for target.
+test001: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test001
+.PHONY : test001
+
+# fast build rule for target.
+test001/fast:
+	$(MAKE) -f CMakeFiles/test001.dir/build.make CMakeFiles/test001.dir/build
+.PHONY : test001/fast
+
+#=============================================================================
 # Target rules for targets named c__
 
 # Build rule for target.
@@ -434,6 +460,19 @@ break-number: cmake_check_build_system
 break-number/fast:
 	$(MAKE) -f CMakeFiles/break-number.dir/build.make CMakeFiles/break-number.dir/build
 .PHONY : break-number/fast
+
+#=============================================================================
+# Target rules for targets named how-many-ways-practice
+
+# Build rule for target.
+how-many-ways-practice: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 how-many-ways-practice
+.PHONY : how-many-ways-practice
+
+# fast build rule for target.
+how-many-ways-practice/fast:
+	$(MAKE) -f CMakeFiles/how-many-ways-practice.dir/build.make CMakeFiles/how-many-ways-practice.dir/build
+.PHONY : how-many-ways-practice/fast
 
 #=============================================================================
 # Target rules for targets named two-anagrams
@@ -810,6 +849,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/c__.dir/build.make CMakeFiles/c__.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+one-hundred-problems-practice/how-many-ways-practice.o: one-hundred-problems-practice/how-many-ways-practice.cpp.o
+
+.PHONY : one-hundred-problems-practice/how-many-ways-practice.o
+
+# target to build an object file
+one-hundred-problems-practice/how-many-ways-practice.cpp.o:
+	$(MAKE) -f CMakeFiles/how-many-ways-practice.dir/build.make CMakeFiles/how-many-ways-practice.dir/one-hundred-problems-practice/how-many-ways-practice.cpp.o
+.PHONY : one-hundred-problems-practice/how-many-ways-practice.cpp.o
+
+one-hundred-problems-practice/how-many-ways-practice.i: one-hundred-problems-practice/how-many-ways-practice.cpp.i
+
+.PHONY : one-hundred-problems-practice/how-many-ways-practice.i
+
+# target to preprocess a source file
+one-hundred-problems-practice/how-many-ways-practice.cpp.i:
+	$(MAKE) -f CMakeFiles/how-many-ways-practice.dir/build.make CMakeFiles/how-many-ways-practice.dir/one-hundred-problems-practice/how-many-ways-practice.cpp.i
+.PHONY : one-hundred-problems-practice/how-many-ways-practice.cpp.i
+
+one-hundred-problems-practice/how-many-ways-practice.s: one-hundred-problems-practice/how-many-ways-practice.cpp.s
+
+.PHONY : one-hundred-problems-practice/how-many-ways-practice.s
+
+# target to generate assembly for a file
+one-hundred-problems-practice/how-many-ways-practice.cpp.s:
+	$(MAKE) -f CMakeFiles/how-many-ways-practice.dir/build.make CMakeFiles/how-many-ways-practice.dir/one-hundred-problems-practice/how-many-ways-practice.cpp.s
+.PHONY : one-hundred-problems-practice/how-many-ways-practice.cpp.s
+
 one-hundred-problems/105.o: one-hundred-problems/105.cpp.o
 
 .PHONY : one-hundred-problems/105.o
@@ -917,6 +983,33 @@ one-hundred-problems/exhaustive-search.s: one-hundred-problems/exhaustive-search
 one-hundred-problems/exhaustive-search.cpp.s:
 	$(MAKE) -f CMakeFiles/exhaustive-search.dir/build.make CMakeFiles/exhaustive-search.dir/one-hundred-problems/exhaustive-search.cpp.s
 .PHONY : one-hundred-problems/exhaustive-search.cpp.s
+
+one-hundred-problems/habatsu.o: one-hundred-problems/habatsu.cpp.o
+
+.PHONY : one-hundred-problems/habatsu.o
+
+# target to build an object file
+one-hundred-problems/habatsu.cpp.o:
+	$(MAKE) -f CMakeFiles/habatsu.dir/build.make CMakeFiles/habatsu.dir/one-hundred-problems/habatsu.cpp.o
+.PHONY : one-hundred-problems/habatsu.cpp.o
+
+one-hundred-problems/habatsu.i: one-hundred-problems/habatsu.cpp.i
+
+.PHONY : one-hundred-problems/habatsu.i
+
+# target to preprocess a source file
+one-hundred-problems/habatsu.cpp.i:
+	$(MAKE) -f CMakeFiles/habatsu.dir/build.make CMakeFiles/habatsu.dir/one-hundred-problems/habatsu.cpp.i
+.PHONY : one-hundred-problems/habatsu.cpp.i
+
+one-hundred-problems/habatsu.s: one-hundred-problems/habatsu.cpp.s
+
+.PHONY : one-hundred-problems/habatsu.s
+
+# target to generate assembly for a file
+one-hundred-problems/habatsu.cpp.s:
+	$(MAKE) -f CMakeFiles/habatsu.dir/build.make CMakeFiles/habatsu.dir/one-hundred-problems/habatsu.cpp.s
+.PHONY : one-hundred-problems/habatsu.cpp.s
 
 one-hundred-problems/half-and-half.o: one-hundred-problems/half-and-half.cpp.o
 
@@ -1052,6 +1145,33 @@ one-hundred-problems/switches.s: one-hundred-problems/switches.cpp.s
 one-hundred-problems/switches.cpp.s:
 	$(MAKE) -f CMakeFiles/switches.dir/build.make CMakeFiles/switches.dir/one-hundred-problems/switches.cpp.s
 .PHONY : one-hundred-problems/switches.cpp.s
+
+practice-bit/test001.o: practice-bit/test001.cpp.o
+
+.PHONY : practice-bit/test001.o
+
+# target to build an object file
+practice-bit/test001.cpp.o:
+	$(MAKE) -f CMakeFiles/test001.dir/build.make CMakeFiles/test001.dir/practice-bit/test001.cpp.o
+.PHONY : practice-bit/test001.cpp.o
+
+practice-bit/test001.i: practice-bit/test001.cpp.i
+
+.PHONY : practice-bit/test001.i
+
+# target to preprocess a source file
+practice-bit/test001.cpp.i:
+	$(MAKE) -f CMakeFiles/test001.dir/build.make CMakeFiles/test001.dir/practice-bit/test001.cpp.i
+.PHONY : practice-bit/test001.cpp.i
+
+practice-bit/test001.s: practice-bit/test001.cpp.s
+
+.PHONY : practice-bit/test001.s
+
+# target to generate assembly for a file
+practice-bit/test001.cpp.s:
+	$(MAKE) -f CMakeFiles/test001.dir/build.make CMakeFiles/test001.dir/practice-bit/test001.cpp.s
+.PHONY : practice-bit/test001.cpp.s
 
 related-problems/bitter-alchemy.o: related-problems/bitter-alchemy.cpp.o
 
@@ -1356,6 +1476,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... habatsu"
 	@echo "... exhaustive-search"
 	@echo "... switches"
 	@echo "... lucky-pin"
@@ -1381,8 +1502,10 @@ help:
 	@echo "... seventh"
 	@echo "... sixth"
 	@echo "... fifth"
+	@echo "... test001"
 	@echo "... c__"
 	@echo "... break-number"
+	@echo "... how-many-ways-practice"
 	@echo "... two-anagrams"
 	@echo "... infinite-coins"
 	@echo "... first"
@@ -1422,6 +1545,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... one-hundred-problems-practice/how-many-ways-practice.o"
+	@echo "... one-hundred-problems-practice/how-many-ways-practice.i"
+	@echo "... one-hundred-problems-practice/how-many-ways-practice.s"
 	@echo "... one-hundred-problems/105.o"
 	@echo "... one-hundred-problems/105.i"
 	@echo "... one-hundred-problems/105.s"
@@ -1434,6 +1560,9 @@ help:
 	@echo "... one-hundred-problems/exhaustive-search.o"
 	@echo "... one-hundred-problems/exhaustive-search.i"
 	@echo "... one-hundred-problems/exhaustive-search.s"
+	@echo "... one-hundred-problems/habatsu.o"
+	@echo "... one-hundred-problems/habatsu.i"
+	@echo "... one-hundred-problems/habatsu.s"
 	@echo "... one-hundred-problems/half-and-half.o"
 	@echo "... one-hundred-problems/half-and-half.i"
 	@echo "... one-hundred-problems/half-and-half.s"
@@ -1449,6 +1578,9 @@ help:
 	@echo "... one-hundred-problems/switches.o"
 	@echo "... one-hundred-problems/switches.i"
 	@echo "... one-hundred-problems/switches.s"
+	@echo "... practice-bit/test001.o"
+	@echo "... practice-bit/test001.i"
+	@echo "... practice-bit/test001.s"
 	@echo "... related-problems/bitter-alchemy.o"
 	@echo "... related-problems/bitter-alchemy.i"
 	@echo "... related-problems/bitter-alchemy.s"
