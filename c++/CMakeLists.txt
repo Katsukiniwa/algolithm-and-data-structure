@@ -36,5 +36,3 @@ add_executable(exhaustive-search one-hundred-problems/exhaustive-search.cpp)
 add_executable(switches one-hundred-problems/switches.cpp)
 add_executable(habatsu one-hundred-problems/habatsu.cpp)
 add_executable(test001 practice-bit/test001.cpp)
-
-add_executable(how-many-ways-practice one-hundred-problems-practice/how-many-ways-practice.cpp)

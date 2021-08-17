@@ -25,6 +25,7 @@ int main() {
   // @link https://qiita.com/drken/items/7c6ff2aa4d8fce1c9361#6-bit-%E5%85%A8%E6%8E%A2%E7%B4%A2
   // {0, 1, ..., N-1} の部分集合の全探索
   // Nはスイッチの個数
+  // sは1~Nのうちのどれか
   for (int bit = 0; bit < (1 << N); bit++) {
     // 点灯している電球の数
     int tmp = 0;
