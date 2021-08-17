@@ -462,6 +462,19 @@ break-number/fast:
 .PHONY : break-number/fast
 
 #=============================================================================
+# Target rules for targets named how-many-ways-practice
+
+# Build rule for target.
+how-many-ways-practice: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 how-many-ways-practice
+.PHONY : how-many-ways-practice
+
+# fast build rule for target.
+how-many-ways-practice/fast:
+	$(MAKE) -f CMakeFiles/how-many-ways-practice.dir/build.make CMakeFiles/how-many-ways-practice.dir/build
+.PHONY : how-many-ways-practice/fast
+
+#=============================================================================
 # Target rules for targets named two-anagrams
 
 # Build rule for target.
@@ -835,6 +848,33 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) -f CMakeFiles/c__.dir/build.make CMakeFiles/c__.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+one-hundred-problems-practice/how-many-ways-practice.o: one-hundred-problems-practice/how-many-ways-practice.cpp.o
+
+.PHONY : one-hundred-problems-practice/how-many-ways-practice.o
+
+# target to build an object file
+one-hundred-problems-practice/how-many-ways-practice.cpp.o:
+	$(MAKE) -f CMakeFiles/how-many-ways-practice.dir/build.make CMakeFiles/how-many-ways-practice.dir/one-hundred-problems-practice/how-many-ways-practice.cpp.o
+.PHONY : one-hundred-problems-practice/how-many-ways-practice.cpp.o
+
+one-hundred-problems-practice/how-many-ways-practice.i: one-hundred-problems-practice/how-many-ways-practice.cpp.i
+
+.PHONY : one-hundred-problems-practice/how-many-ways-practice.i
+
+# target to preprocess a source file
+one-hundred-problems-practice/how-many-ways-practice.cpp.i:
+	$(MAKE) -f CMakeFiles/how-many-ways-practice.dir/build.make CMakeFiles/how-many-ways-practice.dir/one-hundred-problems-practice/how-many-ways-practice.cpp.i
+.PHONY : one-hundred-problems-practice/how-many-ways-practice.cpp.i
+
+one-hundred-problems-practice/how-many-ways-practice.s: one-hundred-problems-practice/how-many-ways-practice.cpp.s
+
+.PHONY : one-hundred-problems-practice/how-many-ways-practice.s
+
+# target to generate assembly for a file
+one-hundred-problems-practice/how-many-ways-practice.cpp.s:
+	$(MAKE) -f CMakeFiles/how-many-ways-practice.dir/build.make CMakeFiles/how-many-ways-practice.dir/one-hundred-problems-practice/how-many-ways-practice.cpp.s
+.PHONY : one-hundred-problems-practice/how-many-ways-practice.cpp.s
 
 one-hundred-problems/105.o: one-hundred-problems/105.cpp.o
 
@@ -1465,6 +1505,7 @@ help:
 	@echo "... test001"
 	@echo "... c__"
 	@echo "... break-number"
+	@echo "... how-many-ways-practice"
 	@echo "... two-anagrams"
 	@echo "... infinite-coins"
 	@echo "... first"
@@ -1504,6 +1545,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... one-hundred-problems-practice/how-many-ways-practice.o"
+	@echo "... one-hundred-problems-practice/how-many-ways-practice.i"
+	@echo "... one-hundred-problems-practice/how-many-ways-practice.s"
 	@echo "... one-hundred-problems/105.o"
 	@echo "... one-hundred-problems/105.i"
 	@echo "... one-hundred-problems/105.s"
