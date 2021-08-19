@@ -38,3 +38,5 @@ add_executable(habatsu one-hundred-problems/habatsu.cpp)
 add_executable(test001 practice-bit/test001.cpp)
 
 add_executable(how-many-ways-practice one-hundred-problems-practice/how-many-ways-practice.cpp)
+add_executable(105-practice one-hundred-problems-practice/105-practice.cpp)
+add_executable(atcoder-practice one-hundred-problems-practice/atcoder-practice.cpp)

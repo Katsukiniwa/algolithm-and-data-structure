@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named 105-practice
+
+# Build rule for target.
+105-practice: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 105-practice
+.PHONY : 105-practice
+
+# fast build rule for target.
+105-practice/fast:
+	$(MAKE) -f CMakeFiles/105-practice.dir/build.make CMakeFiles/105-practice.dir/build
+.PHONY : 105-practice/fast
+
+#=============================================================================
 # Target rules for targets named habatsu
 
 # Build rule for target.
@@ -330,6 +343,19 @@ rgb-cards: cmake_check_build_system
 rgb-cards/fast:
 	$(MAKE) -f CMakeFiles/rgb-cards.dir/build.make CMakeFiles/rgb-cards.dir/build
 .PHONY : rgb-cards/fast
+
+#=============================================================================
+# Target rules for targets named atcoder-practice
+
+# Build rule for target.
+atcoder-practice: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 atcoder-practice
+.PHONY : atcoder-practice
+
+# fast build rule for target.
+atcoder-practice/fast:
+	$(MAKE) -f CMakeFiles/atcoder-practice.dir/build.make CMakeFiles/atcoder-practice.dir/build
+.PHONY : atcoder-practice/fast
 
 #=============================================================================
 # Target rules for targets named tenth
@@ -848,6 +874,60 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) -f CMakeFiles/c__.dir/build.make CMakeFiles/c__.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+one-hundred-problems-practice/105-practice.o: one-hundred-problems-practice/105-practice.cpp.o
+
+.PHONY : one-hundred-problems-practice/105-practice.o
+
+# target to build an object file
+one-hundred-problems-practice/105-practice.cpp.o:
+	$(MAKE) -f CMakeFiles/105-practice.dir/build.make CMakeFiles/105-practice.dir/one-hundred-problems-practice/105-practice.cpp.o
+.PHONY : one-hundred-problems-practice/105-practice.cpp.o
+
+one-hundred-problems-practice/105-practice.i: one-hundred-problems-practice/105-practice.cpp.i
+
+.PHONY : one-hundred-problems-practice/105-practice.i
+
+# target to preprocess a source file
+one-hundred-problems-practice/105-practice.cpp.i:
+	$(MAKE) -f CMakeFiles/105-practice.dir/build.make CMakeFiles/105-practice.dir/one-hundred-problems-practice/105-practice.cpp.i
+.PHONY : one-hundred-problems-practice/105-practice.cpp.i
+
+one-hundred-problems-practice/105-practice.s: one-hundred-problems-practice/105-practice.cpp.s
+
+.PHONY : one-hundred-problems-practice/105-practice.s
+
+# target to generate assembly for a file
+one-hundred-problems-practice/105-practice.cpp.s:
+	$(MAKE) -f CMakeFiles/105-practice.dir/build.make CMakeFiles/105-practice.dir/one-hundred-problems-practice/105-practice.cpp.s
+.PHONY : one-hundred-problems-practice/105-practice.cpp.s
+
+one-hundred-problems-practice/atcoder-practice.o: one-hundred-problems-practice/atcoder-practice.cpp.o
+
+.PHONY : one-hundred-problems-practice/atcoder-practice.o
+
+# target to build an object file
+one-hundred-problems-practice/atcoder-practice.cpp.o:
+	$(MAKE) -f CMakeFiles/atcoder-practice.dir/build.make CMakeFiles/atcoder-practice.dir/one-hundred-problems-practice/atcoder-practice.cpp.o
+.PHONY : one-hundred-problems-practice/atcoder-practice.cpp.o
+
+one-hundred-problems-practice/atcoder-practice.i: one-hundred-problems-practice/atcoder-practice.cpp.i
+
+.PHONY : one-hundred-problems-practice/atcoder-practice.i
+
+# target to preprocess a source file
+one-hundred-problems-practice/atcoder-practice.cpp.i:
+	$(MAKE) -f CMakeFiles/atcoder-practice.dir/build.make CMakeFiles/atcoder-practice.dir/one-hundred-problems-practice/atcoder-practice.cpp.i
+.PHONY : one-hundred-problems-practice/atcoder-practice.cpp.i
+
+one-hundred-problems-practice/atcoder-practice.s: one-hundred-problems-practice/atcoder-practice.cpp.s
+
+.PHONY : one-hundred-problems-practice/atcoder-practice.s
+
+# target to generate assembly for a file
+one-hundred-problems-practice/atcoder-practice.cpp.s:
+	$(MAKE) -f CMakeFiles/atcoder-practice.dir/build.make CMakeFiles/atcoder-practice.dir/one-hundred-problems-practice/atcoder-practice.cpp.s
+.PHONY : one-hundred-problems-practice/atcoder-practice.cpp.s
 
 one-hundred-problems-practice/how-many-ways-practice.o: one-hundred-problems-practice/how-many-ways-practice.cpp.o
 
@@ -1476,6 +1556,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... 105-practice"
 	@echo "... habatsu"
 	@echo "... exhaustive-search"
 	@echo "... switches"
@@ -1495,6 +1576,7 @@ help:
 	@echo "... something-on-it"
 	@echo "... duplex-printing"
 	@echo "... rgb-cards"
+	@echo "... atcoder-practice"
 	@echo "... tenth"
 	@echo "... ninth"
 	@echo "... eighth"
@@ -1545,6 +1627,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... one-hundred-problems-practice/105-practice.o"
+	@echo "... one-hundred-problems-practice/105-practice.i"
+	@echo "... one-hundred-problems-practice/105-practice.s"
+	@echo "... one-hundred-problems-practice/atcoder-practice.o"
+	@echo "... one-hundred-problems-practice/atcoder-practice.i"
+	@echo "... one-hundred-problems-practice/atcoder-practice.s"
 	@echo "... one-hundred-problems-practice/how-many-ways-practice.o"
 	@echo "... one-hundred-problems-practice/how-many-ways-practice.i"
 	@echo "... one-hundred-problems-practice/how-many-ways-practice.s"
