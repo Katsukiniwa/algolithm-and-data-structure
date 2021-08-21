@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named oldest-remains
+
+# Build rule for target.
+oldest-remains: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 oldest-remains
+.PHONY : oldest-remains
+
+# fast build rule for target.
+oldest-remains/fast:
+	$(MAKE) -f CMakeFiles/oldest-remains.dir/build.make CMakeFiles/oldest-remains.dir/build
+.PHONY : oldest-remains/fast
+
+#=============================================================================
 # Target rules for targets named half-and-half-practice
 
 # Build rule for target.
@@ -395,6 +408,19 @@ ninth: cmake_check_build_system
 ninth/fast:
 	$(MAKE) -f CMakeFiles/ninth.dir/build.make CMakeFiles/ninth.dir/build
 .PHONY : ninth/fast
+
+#=============================================================================
+# Target rules for targets named atcoder-market-practice
+
+# Build rule for target.
+atcoder-market-practice: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 atcoder-market-practice
+.PHONY : atcoder-market-practice
+
+# fast build rule for target.
+atcoder-market-practice/fast:
+	$(MAKE) -f CMakeFiles/atcoder-market-practice.dir/build.make CMakeFiles/atcoder-market-practice.dir/build
+.PHONY : atcoder-market-practice/fast
 
 #=============================================================================
 # Target rules for targets named eighth
@@ -928,6 +954,33 @@ one-hundred-problems-practice/105-practice.cpp.s:
 	$(MAKE) -f CMakeFiles/105-practice.dir/build.make CMakeFiles/105-practice.dir/one-hundred-problems-practice/105-practice.cpp.s
 .PHONY : one-hundred-problems-practice/105-practice.cpp.s
 
+one-hundred-problems-practice/atcoder-market-practice.o: one-hundred-problems-practice/atcoder-market-practice.cpp.o
+
+.PHONY : one-hundred-problems-practice/atcoder-market-practice.o
+
+# target to build an object file
+one-hundred-problems-practice/atcoder-market-practice.cpp.o:
+	$(MAKE) -f CMakeFiles/atcoder-market-practice.dir/build.make CMakeFiles/atcoder-market-practice.dir/one-hundred-problems-practice/atcoder-market-practice.cpp.o
+.PHONY : one-hundred-problems-practice/atcoder-market-practice.cpp.o
+
+one-hundred-problems-practice/atcoder-market-practice.i: one-hundred-problems-practice/atcoder-market-practice.cpp.i
+
+.PHONY : one-hundred-problems-practice/atcoder-market-practice.i
+
+# target to preprocess a source file
+one-hundred-problems-practice/atcoder-market-practice.cpp.i:
+	$(MAKE) -f CMakeFiles/atcoder-market-practice.dir/build.make CMakeFiles/atcoder-market-practice.dir/one-hundred-problems-practice/atcoder-market-practice.cpp.i
+.PHONY : one-hundred-problems-practice/atcoder-market-practice.cpp.i
+
+one-hundred-problems-practice/atcoder-market-practice.s: one-hundred-problems-practice/atcoder-market-practice.cpp.s
+
+.PHONY : one-hundred-problems-practice/atcoder-market-practice.s
+
+# target to generate assembly for a file
+one-hundred-problems-practice/atcoder-market-practice.cpp.s:
+	$(MAKE) -f CMakeFiles/atcoder-market-practice.dir/build.make CMakeFiles/atcoder-market-practice.dir/one-hundred-problems-practice/atcoder-market-practice.cpp.s
+.PHONY : one-hundred-problems-practice/atcoder-market-practice.cpp.s
+
 one-hundred-problems-practice/atcoder-practice.o: one-hundred-problems-practice/atcoder-practice.cpp.o
 
 .PHONY : one-hundred-problems-practice/atcoder-practice.o
@@ -1278,6 +1331,33 @@ one-hundred-problems/lucky-pin.s: one-hundred-problems/lucky-pin.cpp.s
 one-hundred-problems/lucky-pin.cpp.s:
 	$(MAKE) -f CMakeFiles/lucky-pin.dir/build.make CMakeFiles/lucky-pin.dir/one-hundred-problems/lucky-pin.cpp.s
 .PHONY : one-hundred-problems/lucky-pin.cpp.s
+
+one-hundred-problems/oldest-remains.o: one-hundred-problems/oldest-remains.cpp.o
+
+.PHONY : one-hundred-problems/oldest-remains.o
+
+# target to build an object file
+one-hundred-problems/oldest-remains.cpp.o:
+	$(MAKE) -f CMakeFiles/oldest-remains.dir/build.make CMakeFiles/oldest-remains.dir/one-hundred-problems/oldest-remains.cpp.o
+.PHONY : one-hundred-problems/oldest-remains.cpp.o
+
+one-hundred-problems/oldest-remains.i: one-hundred-problems/oldest-remains.cpp.i
+
+.PHONY : one-hundred-problems/oldest-remains.i
+
+# target to preprocess a source file
+one-hundred-problems/oldest-remains.cpp.i:
+	$(MAKE) -f CMakeFiles/oldest-remains.dir/build.make CMakeFiles/oldest-remains.dir/one-hundred-problems/oldest-remains.cpp.i
+.PHONY : one-hundred-problems/oldest-remains.cpp.i
+
+one-hundred-problems/oldest-remains.s: one-hundred-problems/oldest-remains.cpp.s
+
+.PHONY : one-hundred-problems/oldest-remains.s
+
+# target to generate assembly for a file
+one-hundred-problems/oldest-remains.cpp.s:
+	$(MAKE) -f CMakeFiles/oldest-remains.dir/build.make CMakeFiles/oldest-remains.dir/one-hundred-problems/oldest-remains.cpp.s
+.PHONY : one-hundred-problems/oldest-remains.cpp.s
 
 one-hundred-problems/switches.o: one-hundred-problems/switches.cpp.o
 
@@ -1636,6 +1716,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... oldest-remains"
 	@echo "... half-and-half-practice"
 	@echo "... 105-practice"
 	@echo "... habatsu"
@@ -1660,6 +1741,7 @@ help:
 	@echo "... atcoder-practice"
 	@echo "... tenth"
 	@echo "... ninth"
+	@echo "... atcoder-market-practice"
 	@echo "... eighth"
 	@echo "... maximum-difference"
 	@echo "... seventh"
@@ -1712,6 +1794,9 @@ help:
 	@echo "... one-hundred-problems-practice/105-practice.o"
 	@echo "... one-hundred-problems-practice/105-practice.i"
 	@echo "... one-hundred-problems-practice/105-practice.s"
+	@echo "... one-hundred-problems-practice/atcoder-market-practice.o"
+	@echo "... one-hundred-problems-practice/atcoder-market-practice.i"
+	@echo "... one-hundred-problems-practice/atcoder-market-practice.s"
 	@echo "... one-hundred-problems-practice/atcoder-practice.o"
 	@echo "... one-hundred-problems-practice/atcoder-practice.i"
 	@echo "... one-hundred-problems-practice/atcoder-practice.s"
@@ -1751,6 +1836,9 @@ help:
 	@echo "... one-hundred-problems/lucky-pin.o"
 	@echo "... one-hundred-problems/lucky-pin.i"
 	@echo "... one-hundred-problems/lucky-pin.s"
+	@echo "... one-hundred-problems/oldest-remains.o"
+	@echo "... one-hundred-problems/oldest-remains.i"
+	@echo "... one-hundred-problems/oldest-remains.s"
 	@echo "... one-hundred-problems/switches.o"
 	@echo "... one-hundred-problems/switches.i"
 	@echo "... one-hundred-problems/switches.s"
