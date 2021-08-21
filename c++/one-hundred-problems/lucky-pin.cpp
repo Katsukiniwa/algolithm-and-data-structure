@@ -1,63 +1,30 @@
 #include <iostream>
-#include <algorithm>
-#include <list>
-#include <vector>
-
 using namespace std;
-
-bool searchNumber(const int search[3], const int numList[], int N) {
-  int index = 0;
-  for (int num = 0; num < N; num++) {
-    if (search[index] == numList[num]) {
-      ++index;
-      if (index == 3) return true;
-    }
-  }
-  return false;
-}
+typedef long long ll;
+#define rep(i, n) for (int i = 0; i < n; i++)
 
 int main() {
-
-  int N;
-  scanf("%d", &N);
-  int numList[30001];
-  char S[30001];
-  scanf("%s", S);
-  for (int i = 0; i < N; i++) {
-    numList[i] = (int) (S[i] - '0');
-  }
-  int count = 0;
-  for (int i = 0; i < 10; i++) {
-    for (int j = 0; j < 10; j++) {
-      for (int k = 0; k < 10; k++) {
-        int search[] = {i, j, k};
-        if (searchNumber(search, numList, N)) ++count;
+  int n;
+  string s;
+  cin >> n >> s;
+  int ans = 0;
+  // 000~999は存在しえる暗証番号
+  rep(i, 1000) {
+    string t;
+    int x = i;
+    rep(j, 3) {
+      t += '0' + x % 10;
+      x /= 10;
+    }
+    cout << t;
+    int ti = 0;
+    rep(j, n) {
+      if (s[j] == t[ti]) {
+        ti++;
+        if (ti == 3) break;
       }
     }
+    if (ti == 3) ans++;
   }
-
-  printf("%d\n", count);
-
-
-  return 0;
+  cout << ans << endl;
 }
-
-//int main() {
-//  long long n=0;
-//  string s;
-//  cin >> n >> s;
-//  vector<int> v;
-//  for (int i = 2; i < n; ++i) {
-//    for (int j = 1; j < i; ++j) {
-//      for (int k = 0; k < j; ++k) {
-//        int a = s[k] - '0';
-//        int b = s[j] - '0';
-//        int c = s[i] - '0';
-//        v.push_back(100*a+10*b+c);
-//      }
-//    }
-//  }
-//  std::sort(v.begin(), v.end());
-//  v.erase(std::unique(v.begin(), v.end()), v.end());
-//  cout << v.size();
-//}
