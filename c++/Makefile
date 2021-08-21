@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named half-and-half-practice
+
+# Build rule for target.
+half-and-half-practice: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 half-and-half-practice
+.PHONY : half-and-half-practice
+
+# fast build rule for target.
+half-and-half-practice/fast:
+	$(MAKE) -f CMakeFiles/half-and-half-practice.dir/build.make CMakeFiles/half-and-half-practice.dir/build
+.PHONY : half-and-half-practice/fast
+
+#=============================================================================
 # Target rules for targets named 105-practice
 
 # Build rule for target.
@@ -527,6 +540,19 @@ infinite-coins/fast:
 .PHONY : infinite-coins/fast
 
 #=============================================================================
+# Target rules for targets named karaoke-practice
+
+# Build rule for target.
+karaoke-practice: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 karaoke-practice
+.PHONY : karaoke-practice
+
+# fast build rule for target.
+karaoke-practice/fast:
+	$(MAKE) -f CMakeFiles/karaoke-practice.dir/build.make CMakeFiles/karaoke-practice.dir/build
+.PHONY : karaoke-practice/fast
+
+#=============================================================================
 # Target rules for targets named first
 
 # Build rule for target.
@@ -929,6 +955,33 @@ one-hundred-problems-practice/atcoder-practice.cpp.s:
 	$(MAKE) -f CMakeFiles/atcoder-practice.dir/build.make CMakeFiles/atcoder-practice.dir/one-hundred-problems-practice/atcoder-practice.cpp.s
 .PHONY : one-hundred-problems-practice/atcoder-practice.cpp.s
 
+one-hundred-problems-practice/half-and-half-practice.o: one-hundred-problems-practice/half-and-half-practice.cpp.o
+
+.PHONY : one-hundred-problems-practice/half-and-half-practice.o
+
+# target to build an object file
+one-hundred-problems-practice/half-and-half-practice.cpp.o:
+	$(MAKE) -f CMakeFiles/half-and-half-practice.dir/build.make CMakeFiles/half-and-half-practice.dir/one-hundred-problems-practice/half-and-half-practice.cpp.o
+.PHONY : one-hundred-problems-practice/half-and-half-practice.cpp.o
+
+one-hundred-problems-practice/half-and-half-practice.i: one-hundred-problems-practice/half-and-half-practice.cpp.i
+
+.PHONY : one-hundred-problems-practice/half-and-half-practice.i
+
+# target to preprocess a source file
+one-hundred-problems-practice/half-and-half-practice.cpp.i:
+	$(MAKE) -f CMakeFiles/half-and-half-practice.dir/build.make CMakeFiles/half-and-half-practice.dir/one-hundred-problems-practice/half-and-half-practice.cpp.i
+.PHONY : one-hundred-problems-practice/half-and-half-practice.cpp.i
+
+one-hundred-problems-practice/half-and-half-practice.s: one-hundred-problems-practice/half-and-half-practice.cpp.s
+
+.PHONY : one-hundred-problems-practice/half-and-half-practice.s
+
+# target to generate assembly for a file
+one-hundred-problems-practice/half-and-half-practice.cpp.s:
+	$(MAKE) -f CMakeFiles/half-and-half-practice.dir/build.make CMakeFiles/half-and-half-practice.dir/one-hundred-problems-practice/half-and-half-practice.cpp.s
+.PHONY : one-hundred-problems-practice/half-and-half-practice.cpp.s
+
 one-hundred-problems-practice/how-many-ways-practice.o: one-hundred-problems-practice/how-many-ways-practice.cpp.o
 
 .PHONY : one-hundred-problems-practice/how-many-ways-practice.o
@@ -955,6 +1008,33 @@ one-hundred-problems-practice/how-many-ways-practice.s: one-hundred-problems-pra
 one-hundred-problems-practice/how-many-ways-practice.cpp.s:
 	$(MAKE) -f CMakeFiles/how-many-ways-practice.dir/build.make CMakeFiles/how-many-ways-practice.dir/one-hundred-problems-practice/how-many-ways-practice.cpp.s
 .PHONY : one-hundred-problems-practice/how-many-ways-practice.cpp.s
+
+one-hundred-problems-practice/karaoke-practice.o: one-hundred-problems-practice/karaoke-practice.cpp.o
+
+.PHONY : one-hundred-problems-practice/karaoke-practice.o
+
+# target to build an object file
+one-hundred-problems-practice/karaoke-practice.cpp.o:
+	$(MAKE) -f CMakeFiles/karaoke-practice.dir/build.make CMakeFiles/karaoke-practice.dir/one-hundred-problems-practice/karaoke-practice.cpp.o
+.PHONY : one-hundred-problems-practice/karaoke-practice.cpp.o
+
+one-hundred-problems-practice/karaoke-practice.i: one-hundred-problems-practice/karaoke-practice.cpp.i
+
+.PHONY : one-hundred-problems-practice/karaoke-practice.i
+
+# target to preprocess a source file
+one-hundred-problems-practice/karaoke-practice.cpp.i:
+	$(MAKE) -f CMakeFiles/karaoke-practice.dir/build.make CMakeFiles/karaoke-practice.dir/one-hundred-problems-practice/karaoke-practice.cpp.i
+.PHONY : one-hundred-problems-practice/karaoke-practice.cpp.i
+
+one-hundred-problems-practice/karaoke-practice.s: one-hundred-problems-practice/karaoke-practice.cpp.s
+
+.PHONY : one-hundred-problems-practice/karaoke-practice.s
+
+# target to generate assembly for a file
+one-hundred-problems-practice/karaoke-practice.cpp.s:
+	$(MAKE) -f CMakeFiles/karaoke-practice.dir/build.make CMakeFiles/karaoke-practice.dir/one-hundred-problems-practice/karaoke-practice.cpp.s
+.PHONY : one-hundred-problems-practice/karaoke-practice.cpp.s
 
 one-hundred-problems/105.o: one-hundred-problems/105.cpp.o
 
@@ -1556,6 +1636,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... half-and-half-practice"
 	@echo "... 105-practice"
 	@echo "... habatsu"
 	@echo "... exhaustive-search"
@@ -1590,6 +1671,7 @@ help:
 	@echo "... how-many-ways-practice"
 	@echo "... two-anagrams"
 	@echo "... infinite-coins"
+	@echo "... karaoke-practice"
 	@echo "... first"
 	@echo "... third"
 	@echo "... atcoder-market"
@@ -1633,9 +1715,15 @@ help:
 	@echo "... one-hundred-problems-practice/atcoder-practice.o"
 	@echo "... one-hundred-problems-practice/atcoder-practice.i"
 	@echo "... one-hundred-problems-practice/atcoder-practice.s"
+	@echo "... one-hundred-problems-practice/half-and-half-practice.o"
+	@echo "... one-hundred-problems-practice/half-and-half-practice.i"
+	@echo "... one-hundred-problems-practice/half-and-half-practice.s"
 	@echo "... one-hundred-problems-practice/how-many-ways-practice.o"
 	@echo "... one-hundred-problems-practice/how-many-ways-practice.i"
 	@echo "... one-hundred-problems-practice/how-many-ways-practice.s"
+	@echo "... one-hundred-problems-practice/karaoke-practice.o"
+	@echo "... one-hundred-problems-practice/karaoke-practice.i"
+	@echo "... one-hundred-problems-practice/karaoke-practice.s"
 	@echo "... one-hundred-problems/105.o"
 	@echo "... one-hundred-problems/105.i"
 	@echo "... one-hundred-problems/105.s"
