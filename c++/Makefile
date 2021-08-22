@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named test003
+
+# Build rule for target.
+test003: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test003
+.PHONY : test003
+
+# fast build rule for target.
+test003/fast:
+	$(MAKE) -f CMakeFiles/test003.dir/build.make CMakeFiles/test003.dir/build
+.PHONY : test003/fast
+
+#=============================================================================
 # Target rules for targets named oldest-remains
 
 # Build rule for target.
@@ -267,6 +280,19 @@ karaoke/fast:
 .PHONY : karaoke/fast
 
 #=============================================================================
+# Target rules for targets named switches-practice
+
+# Build rule for target.
+switches-practice: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 switches-practice
+.PHONY : switches-practice
+
+# fast build rule for target.
+switches-practice/fast:
+	$(MAKE) -f CMakeFiles/switches-practice.dir/build.make CMakeFiles/switches-practice.dir/build
+.PHONY : switches-practice/fast
+
+#=============================================================================
 # Target rules for targets named how-many-ways
 
 # Build rule for target.
@@ -369,6 +395,19 @@ rgb-cards: cmake_check_build_system
 rgb-cards/fast:
 	$(MAKE) -f CMakeFiles/rgb-cards.dir/build.make CMakeFiles/rgb-cards.dir/build
 .PHONY : rgb-cards/fast
+
+#=============================================================================
+# Target rules for targets named test002
+
+# Build rule for target.
+test002: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test002
+.PHONY : test002
+
+# fast build rule for target.
+test002/fast:
+	$(MAKE) -f CMakeFiles/test002.dir/build.make CMakeFiles/test002.dir/build
+.PHONY : test002/fast
 
 #=============================================================================
 # Target rules for targets named atcoder-practice
@@ -551,6 +590,19 @@ infinite-coins: cmake_check_build_system
 infinite-coins/fast:
 	$(MAKE) -f CMakeFiles/infinite-coins.dir/build.make CMakeFiles/infinite-coins.dir/build
 .PHONY : infinite-coins/fast
+
+#=============================================================================
+# Target rules for targets named test000
+
+# Build rule for target.
+test000: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test000
+.PHONY : test000
+
+# fast build rule for target.
+test000/fast:
+	$(MAKE) -f CMakeFiles/test000.dir/build.make CMakeFiles/test000.dir/build
+.PHONY : test000/fast
 
 #=============================================================================
 # Target rules for targets named karaoke-practice
@@ -1049,6 +1101,33 @@ one-hundred-problems-practice/karaoke-practice.cpp.s:
 	$(MAKE) -f CMakeFiles/karaoke-practice.dir/build.make CMakeFiles/karaoke-practice.dir/one-hundred-problems-practice/karaoke-practice.cpp.s
 .PHONY : one-hundred-problems-practice/karaoke-practice.cpp.s
 
+one-hundred-problems-practice/switches-practice.o: one-hundred-problems-practice/switches-practice.cpp.o
+
+.PHONY : one-hundred-problems-practice/switches-practice.o
+
+# target to build an object file
+one-hundred-problems-practice/switches-practice.cpp.o:
+	$(MAKE) -f CMakeFiles/switches-practice.dir/build.make CMakeFiles/switches-practice.dir/one-hundred-problems-practice/switches-practice.cpp.o
+.PHONY : one-hundred-problems-practice/switches-practice.cpp.o
+
+one-hundred-problems-practice/switches-practice.i: one-hundred-problems-practice/switches-practice.cpp.i
+
+.PHONY : one-hundred-problems-practice/switches-practice.i
+
+# target to preprocess a source file
+one-hundred-problems-practice/switches-practice.cpp.i:
+	$(MAKE) -f CMakeFiles/switches-practice.dir/build.make CMakeFiles/switches-practice.dir/one-hundred-problems-practice/switches-practice.cpp.i
+.PHONY : one-hundred-problems-practice/switches-practice.cpp.i
+
+one-hundred-problems-practice/switches-practice.s: one-hundred-problems-practice/switches-practice.cpp.s
+
+.PHONY : one-hundred-problems-practice/switches-practice.s
+
+# target to generate assembly for a file
+one-hundred-problems-practice/switches-practice.cpp.s:
+	$(MAKE) -f CMakeFiles/switches-practice.dir/build.make CMakeFiles/switches-practice.dir/one-hundred-problems-practice/switches-practice.cpp.s
+.PHONY : one-hundred-problems-practice/switches-practice.cpp.s
+
 one-hundred-problems/105.o: one-hundred-problems/105.cpp.o
 
 .PHONY : one-hundred-problems/105.o
@@ -1346,6 +1425,33 @@ one-hundred-problems/switches.cpp.s:
 	$(MAKE) -f CMakeFiles/switches.dir/build.make CMakeFiles/switches.dir/one-hundred-problems/switches.cpp.s
 .PHONY : one-hundred-problems/switches.cpp.s
 
+practice-bit/test000.o: practice-bit/test000.cpp.o
+
+.PHONY : practice-bit/test000.o
+
+# target to build an object file
+practice-bit/test000.cpp.o:
+	$(MAKE) -f CMakeFiles/test000.dir/build.make CMakeFiles/test000.dir/practice-bit/test000.cpp.o
+.PHONY : practice-bit/test000.cpp.o
+
+practice-bit/test000.i: practice-bit/test000.cpp.i
+
+.PHONY : practice-bit/test000.i
+
+# target to preprocess a source file
+practice-bit/test000.cpp.i:
+	$(MAKE) -f CMakeFiles/test000.dir/build.make CMakeFiles/test000.dir/practice-bit/test000.cpp.i
+.PHONY : practice-bit/test000.cpp.i
+
+practice-bit/test000.s: practice-bit/test000.cpp.s
+
+.PHONY : practice-bit/test000.s
+
+# target to generate assembly for a file
+practice-bit/test000.cpp.s:
+	$(MAKE) -f CMakeFiles/test000.dir/build.make CMakeFiles/test000.dir/practice-bit/test000.cpp.s
+.PHONY : practice-bit/test000.cpp.s
+
 practice-bit/test001.o: practice-bit/test001.cpp.o
 
 .PHONY : practice-bit/test001.o
@@ -1372,6 +1478,60 @@ practice-bit/test001.s: practice-bit/test001.cpp.s
 practice-bit/test001.cpp.s:
 	$(MAKE) -f CMakeFiles/test001.dir/build.make CMakeFiles/test001.dir/practice-bit/test001.cpp.s
 .PHONY : practice-bit/test001.cpp.s
+
+practice-bit/test002.o: practice-bit/test002.cpp.o
+
+.PHONY : practice-bit/test002.o
+
+# target to build an object file
+practice-bit/test002.cpp.o:
+	$(MAKE) -f CMakeFiles/test002.dir/build.make CMakeFiles/test002.dir/practice-bit/test002.cpp.o
+.PHONY : practice-bit/test002.cpp.o
+
+practice-bit/test002.i: practice-bit/test002.cpp.i
+
+.PHONY : practice-bit/test002.i
+
+# target to preprocess a source file
+practice-bit/test002.cpp.i:
+	$(MAKE) -f CMakeFiles/test002.dir/build.make CMakeFiles/test002.dir/practice-bit/test002.cpp.i
+.PHONY : practice-bit/test002.cpp.i
+
+practice-bit/test002.s: practice-bit/test002.cpp.s
+
+.PHONY : practice-bit/test002.s
+
+# target to generate assembly for a file
+practice-bit/test002.cpp.s:
+	$(MAKE) -f CMakeFiles/test002.dir/build.make CMakeFiles/test002.dir/practice-bit/test002.cpp.s
+.PHONY : practice-bit/test002.cpp.s
+
+practice-bit/test003.o: practice-bit/test003.cpp.o
+
+.PHONY : practice-bit/test003.o
+
+# target to build an object file
+practice-bit/test003.cpp.o:
+	$(MAKE) -f CMakeFiles/test003.dir/build.make CMakeFiles/test003.dir/practice-bit/test003.cpp.o
+.PHONY : practice-bit/test003.cpp.o
+
+practice-bit/test003.i: practice-bit/test003.cpp.i
+
+.PHONY : practice-bit/test003.i
+
+# target to preprocess a source file
+practice-bit/test003.cpp.i:
+	$(MAKE) -f CMakeFiles/test003.dir/build.make CMakeFiles/test003.dir/practice-bit/test003.cpp.i
+.PHONY : practice-bit/test003.cpp.i
+
+practice-bit/test003.s: practice-bit/test003.cpp.s
+
+.PHONY : practice-bit/test003.s
+
+# target to generate assembly for a file
+practice-bit/test003.cpp.s:
+	$(MAKE) -f CMakeFiles/test003.dir/build.make CMakeFiles/test003.dir/practice-bit/test003.cpp.s
+.PHONY : practice-bit/test003.cpp.s
 
 related-problems/bitter-alchemy.o: related-problems/bitter-alchemy.cpp.o
 
@@ -1676,6 +1836,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... test003"
 	@echo "... oldest-remains"
 	@echo "... half-and-half-practice"
 	@echo "... 105-practice"
@@ -1689,6 +1850,7 @@ help:
 	@echo "... 105"
 	@echo "... cakes-and-donuts"
 	@echo "... karaoke"
+	@echo "... switches-practice"
 	@echo "... how-many-ways"
 	@echo "... making-triangle"
 	@echo "... bitter-alchemy"
@@ -1698,6 +1860,7 @@ help:
 	@echo "... something-on-it"
 	@echo "... duplex-printing"
 	@echo "... rgb-cards"
+	@echo "... test002"
 	@echo "... atcoder-practice"
 	@echo "... tenth"
 	@echo "... ninth"
@@ -1712,6 +1875,7 @@ help:
 	@echo "... how-many-ways-practice"
 	@echo "... two-anagrams"
 	@echo "... infinite-coins"
+	@echo "... test000"
 	@echo "... karaoke-practice"
 	@echo "... first"
 	@echo "... third"
@@ -1765,6 +1929,9 @@ help:
 	@echo "... one-hundred-problems-practice/karaoke-practice.o"
 	@echo "... one-hundred-problems-practice/karaoke-practice.i"
 	@echo "... one-hundred-problems-practice/karaoke-practice.s"
+	@echo "... one-hundred-problems-practice/switches-practice.o"
+	@echo "... one-hundred-problems-practice/switches-practice.i"
+	@echo "... one-hundred-problems-practice/switches-practice.s"
 	@echo "... one-hundred-problems/105.o"
 	@echo "... one-hundred-problems/105.i"
 	@echo "... one-hundred-problems/105.s"
@@ -1798,9 +1965,18 @@ help:
 	@echo "... one-hundred-problems/switches.o"
 	@echo "... one-hundred-problems/switches.i"
 	@echo "... one-hundred-problems/switches.s"
+	@echo "... practice-bit/test000.o"
+	@echo "... practice-bit/test000.i"
+	@echo "... practice-bit/test000.s"
 	@echo "... practice-bit/test001.o"
 	@echo "... practice-bit/test001.i"
 	@echo "... practice-bit/test001.s"
+	@echo "... practice-bit/test002.o"
+	@echo "... practice-bit/test002.i"
+	@echo "... practice-bit/test002.s"
+	@echo "... practice-bit/test003.o"
+	@echo "... practice-bit/test003.i"
+	@echo "... practice-bit/test003.s"
 	@echo "... related-problems/bitter-alchemy.o"
 	@echo "... related-problems/bitter-alchemy.i"
 	@echo "... related-problems/bitter-alchemy.s"

@@ -44,3 +44,7 @@ add_executable(atcoder-practice one-hundred-problems-practice/atcoder-practice.c
 add_executable(karaoke-practice one-hundred-problems-practice/karaoke-practice.cpp)
 add_executable(half-and-half-practice one-hundred-problems-practice/half-and-half-practice.cpp)
 add_executable(oldest-remains one-hundred-problems/oldest-remains.cpp)
+add_executable(test002 practice-bit/test002.cpp)
+add_executable(test000 practice-bit/test000.cpp)
+add_executable(test003 practice-bit/test003.cpp)
+add_executable(switches-practice one-hundred-problems-practice/switches-practice.cpp)
