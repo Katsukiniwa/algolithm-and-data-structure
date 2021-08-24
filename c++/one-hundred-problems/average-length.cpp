@@ -40,8 +40,21 @@ int main() {
     // 12
     // 32
     // 21
+
+    // 1
+    // 1.41421
+    // 1
+    // 1.41421
+    // 1
+    // 1
+    // 1.41421
+    // 1
+    // 1
+    // 1
+    // 1.41421
+    // 1
     for (int i = 0; i < n - 1; i++) {
-      cout << v.at(i) << v.at(i + 1) << endl;
+      cout << dist(v.at(i), v.at(i + 1)) << endl;
       sum += dist(v.at(i), v.at(i + 1));
     }
   } while (next_permutation(v.begin(), v.end()));
