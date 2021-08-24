@@ -280,6 +280,19 @@ karaoke/fast:
 .PHONY : karaoke/fast
 
 #=============================================================================
+# Target rules for targets named average-length
+
+# Build rule for target.
+average-length: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 average-length
+.PHONY : average-length
+
+# fast build rule for target.
+average-length/fast:
+	$(MAKE) -f CMakeFiles/average-length.dir/build.make CMakeFiles/average-length.dir/build
+.PHONY : average-length/fast
+
+#=============================================================================
 # Target rules for targets named switches-practice
 
 # Build rule for target.
@@ -499,6 +512,19 @@ sixth: cmake_check_build_system
 sixth/fast:
 	$(MAKE) -f CMakeFiles/sixth.dir/build.make CMakeFiles/sixth.dir/build
 .PHONY : sixth/fast
+
+#=============================================================================
+# Target rules for targets named average-length-practice
+
+# Build rule for target.
+average-length-practice: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 average-length-practice
+.PHONY : average-length-practice
+
+# fast build rule for target.
+average-length-practice/fast:
+	$(MAKE) -f CMakeFiles/average-length-practice.dir/build.make CMakeFiles/average-length-practice.dir/build
+.PHONY : average-length-practice/fast
 
 #=============================================================================
 # Target rules for targets named fifth
@@ -1020,6 +1046,33 @@ one-hundred-problems-practice/atcoder-practice.cpp.s:
 	$(MAKE) -f CMakeFiles/atcoder-practice.dir/build.make CMakeFiles/atcoder-practice.dir/one-hundred-problems-practice/atcoder-practice.cpp.s
 .PHONY : one-hundred-problems-practice/atcoder-practice.cpp.s
 
+one-hundred-problems-practice/average-length-practice.o: one-hundred-problems-practice/average-length-practice.cpp.o
+
+.PHONY : one-hundred-problems-practice/average-length-practice.o
+
+# target to build an object file
+one-hundred-problems-practice/average-length-practice.cpp.o:
+	$(MAKE) -f CMakeFiles/average-length-practice.dir/build.make CMakeFiles/average-length-practice.dir/one-hundred-problems-practice/average-length-practice.cpp.o
+.PHONY : one-hundred-problems-practice/average-length-practice.cpp.o
+
+one-hundred-problems-practice/average-length-practice.i: one-hundred-problems-practice/average-length-practice.cpp.i
+
+.PHONY : one-hundred-problems-practice/average-length-practice.i
+
+# target to preprocess a source file
+one-hundred-problems-practice/average-length-practice.cpp.i:
+	$(MAKE) -f CMakeFiles/average-length-practice.dir/build.make CMakeFiles/average-length-practice.dir/one-hundred-problems-practice/average-length-practice.cpp.i
+.PHONY : one-hundred-problems-practice/average-length-practice.cpp.i
+
+one-hundred-problems-practice/average-length-practice.s: one-hundred-problems-practice/average-length-practice.cpp.s
+
+.PHONY : one-hundred-problems-practice/average-length-practice.s
+
+# target to generate assembly for a file
+one-hundred-problems-practice/average-length-practice.cpp.s:
+	$(MAKE) -f CMakeFiles/average-length-practice.dir/build.make CMakeFiles/average-length-practice.dir/one-hundred-problems-practice/average-length-practice.cpp.s
+.PHONY : one-hundred-problems-practice/average-length-practice.cpp.s
+
 one-hundred-problems-practice/half-and-half-practice.o: one-hundred-problems-practice/half-and-half-practice.cpp.o
 
 .PHONY : one-hundred-problems-practice/half-and-half-practice.o
@@ -1208,6 +1261,33 @@ one-hundred-problems/atcoder.s: one-hundred-problems/atcoder.cpp.s
 one-hundred-problems/atcoder.cpp.s:
 	$(MAKE) -f CMakeFiles/atcoder.dir/build.make CMakeFiles/atcoder.dir/one-hundred-problems/atcoder.cpp.s
 .PHONY : one-hundred-problems/atcoder.cpp.s
+
+one-hundred-problems/average-length.o: one-hundred-problems/average-length.cpp.o
+
+.PHONY : one-hundred-problems/average-length.o
+
+# target to build an object file
+one-hundred-problems/average-length.cpp.o:
+	$(MAKE) -f CMakeFiles/average-length.dir/build.make CMakeFiles/average-length.dir/one-hundred-problems/average-length.cpp.o
+.PHONY : one-hundred-problems/average-length.cpp.o
+
+one-hundred-problems/average-length.i: one-hundred-problems/average-length.cpp.i
+
+.PHONY : one-hundred-problems/average-length.i
+
+# target to preprocess a source file
+one-hundred-problems/average-length.cpp.i:
+	$(MAKE) -f CMakeFiles/average-length.dir/build.make CMakeFiles/average-length.dir/one-hundred-problems/average-length.cpp.i
+.PHONY : one-hundred-problems/average-length.cpp.i
+
+one-hundred-problems/average-length.s: one-hundred-problems/average-length.cpp.s
+
+.PHONY : one-hundred-problems/average-length.s
+
+# target to generate assembly for a file
+one-hundred-problems/average-length.cpp.s:
+	$(MAKE) -f CMakeFiles/average-length.dir/build.make CMakeFiles/average-length.dir/one-hundred-problems/average-length.cpp.s
+.PHONY : one-hundred-problems/average-length.cpp.s
 
 one-hundred-problems/exhaustive-search.o: one-hundred-problems/exhaustive-search.cpp.o
 
@@ -1850,6 +1930,7 @@ help:
 	@echo "... 105"
 	@echo "... cakes-and-donuts"
 	@echo "... karaoke"
+	@echo "... average-length"
 	@echo "... switches-practice"
 	@echo "... how-many-ways"
 	@echo "... making-triangle"
@@ -1868,6 +1949,7 @@ help:
 	@echo "... maximum-difference"
 	@echo "... seventh"
 	@echo "... sixth"
+	@echo "... average-length-practice"
 	@echo "... fifth"
 	@echo "... test001"
 	@echo "... c__"
@@ -1920,6 +2002,9 @@ help:
 	@echo "... one-hundred-problems-practice/atcoder-practice.o"
 	@echo "... one-hundred-problems-practice/atcoder-practice.i"
 	@echo "... one-hundred-problems-practice/atcoder-practice.s"
+	@echo "... one-hundred-problems-practice/average-length-practice.o"
+	@echo "... one-hundred-problems-practice/average-length-practice.i"
+	@echo "... one-hundred-problems-practice/average-length-practice.s"
 	@echo "... one-hundred-problems-practice/half-and-half-practice.o"
 	@echo "... one-hundred-problems-practice/half-and-half-practice.i"
 	@echo "... one-hundred-problems-practice/half-and-half-practice.s"
@@ -1941,6 +2026,9 @@ help:
 	@echo "... one-hundred-problems/atcoder.o"
 	@echo "... one-hundred-problems/atcoder.i"
 	@echo "... one-hundred-problems/atcoder.s"
+	@echo "... one-hundred-problems/average-length.o"
+	@echo "... one-hundred-problems/average-length.i"
+	@echo "... one-hundred-problems/average-length.s"
 	@echo "... one-hundred-problems/exhaustive-search.o"
 	@echo "... one-hundred-problems/exhaustive-search.i"
 	@echo "... one-hundred-problems/exhaustive-search.s"
