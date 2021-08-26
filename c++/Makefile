@@ -670,19 +670,6 @@ karaoke-practice/fast:
 .PHONY : karaoke-practice/fast
 
 #=============================================================================
-# Target rules for targets named counter-order-practice
-
-# Build rule for target.
-counter-order-practice: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 counter-order-practice
-.PHONY : counter-order-practice
-
-# fast build rule for target.
-counter-order-practice/fast:
-	$(MAKE) -f CMakeFiles/counter-order-practice.dir/build.make CMakeFiles/counter-order-practice.dir/build
-.PHONY : counter-order-practice/fast
-
-#=============================================================================
 # Target rules for targets named third
 
 # Build rule for target.
@@ -1098,33 +1085,6 @@ one-hundred-problems-practice/average-length-practice.s: one-hundred-problems-pr
 one-hundred-problems-practice/average-length-practice.cpp.s:
 	$(MAKE) -f CMakeFiles/average-length-practice.dir/build.make CMakeFiles/average-length-practice.dir/one-hundred-problems-practice/average-length-practice.cpp.s
 .PHONY : one-hundred-problems-practice/average-length-practice.cpp.s
-
-one-hundred-problems-practice/counter-order-practice.o: one-hundred-problems-practice/counter-order-practice.cpp.o
-
-.PHONY : one-hundred-problems-practice/counter-order-practice.o
-
-# target to build an object file
-one-hundred-problems-practice/counter-order-practice.cpp.o:
-	$(MAKE) -f CMakeFiles/counter-order-practice.dir/build.make CMakeFiles/counter-order-practice.dir/one-hundred-problems-practice/counter-order-practice.cpp.o
-.PHONY : one-hundred-problems-practice/counter-order-practice.cpp.o
-
-one-hundred-problems-practice/counter-order-practice.i: one-hundred-problems-practice/counter-order-practice.cpp.i
-
-.PHONY : one-hundred-problems-practice/counter-order-practice.i
-
-# target to preprocess a source file
-one-hundred-problems-practice/counter-order-practice.cpp.i:
-	$(MAKE) -f CMakeFiles/counter-order-practice.dir/build.make CMakeFiles/counter-order-practice.dir/one-hundred-problems-practice/counter-order-practice.cpp.i
-.PHONY : one-hundred-problems-practice/counter-order-practice.cpp.i
-
-one-hundred-problems-practice/counter-order-practice.s: one-hundred-problems-practice/counter-order-practice.cpp.s
-
-.PHONY : one-hundred-problems-practice/counter-order-practice.s
-
-# target to generate assembly for a file
-one-hundred-problems-practice/counter-order-practice.cpp.s:
-	$(MAKE) -f CMakeFiles/counter-order-practice.dir/build.make CMakeFiles/counter-order-practice.dir/one-hundred-problems-practice/counter-order-practice.cpp.s
-.PHONY : one-hundred-problems-practice/counter-order-practice.cpp.s
 
 one-hundred-problems-practice/half-and-half-practice.o: one-hundred-problems-practice/half-and-half-practice.cpp.o
 
@@ -1996,7 +1956,6 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
 	@echo "... counter-order"
 	@echo "... test003"
 	@echo "... oldest-remains"
@@ -2009,6 +1968,7 @@ help:
 	@echo "... switches-practice"
 	@echo "... switches"
 	@echo "... lucky-pin"
+	@echo "... edit_cache"
 	@echo "... half-and-half"
 	@echo "... atcoder"
 	@echo "... 105"
@@ -2041,7 +2001,6 @@ help:
 	@echo "... test000"
 	@echo "... rebuild_cache"
 	@echo "... karaoke-practice"
-	@echo "... counter-order-practice"
 	@echo "... third"
 	@echo "... atcoder-market"
 	@echo "... second"
@@ -2087,9 +2046,6 @@ help:
 	@echo "... one-hundred-problems-practice/average-length-practice.o"
 	@echo "... one-hundred-problems-practice/average-length-practice.i"
 	@echo "... one-hundred-problems-practice/average-length-practice.s"
-	@echo "... one-hundred-problems-practice/counter-order-practice.o"
-	@echo "... one-hundred-problems-practice/counter-order-practice.i"
-	@echo "... one-hundred-problems-practice/counter-order-practice.s"
 	@echo "... one-hundred-problems-practice/half-and-half-practice.o"
 	@echo "... one-hundred-problems-practice/half-and-half-practice.i"
 	@echo "... one-hundred-problems-practice/half-and-half-practice.s"
