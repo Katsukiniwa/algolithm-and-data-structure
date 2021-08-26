@@ -17,6 +17,58 @@
 					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/katsukiniwa/playground/abc-practice/c++"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="counter-order">
+				<Option output="/Users/katsukiniwa/playground/abc-practice/c++/counter-order" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/katsukiniwa/playground/abc-practice/c++"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 counter-order"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="counter-order/fast">
+				<Option output="/Users/katsukiniwa/playground/abc-practice/c++/counter-order" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/katsukiniwa/playground/abc-practice/c++"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 counter-order/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="test003">
 				<Option output="/Users/katsukiniwa/playground/abc-practice/c++/test003" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/katsukiniwa/playground/abc-practice/c++"/>
@@ -143,6 +195,48 @@
 					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="c__">
+				<Option output="/Users/katsukiniwa/playground/abc-practice/c++/c__" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/katsukiniwa/playground/abc-practice/c++"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 c__"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="c__/fast">
+				<Option output="/Users/katsukiniwa/playground/abc-practice/c++/c__" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/katsukiniwa/playground/abc-practice/c++"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 c__/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="105-practice">
 				<Option output="/Users/katsukiniwa/playground/abc-practice/c++/105-practice" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/katsukiniwa/playground/abc-practice/c++"/>
@@ -227,6 +321,48 @@
 					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="ninth">
+				<Option output="/Users/katsukiniwa/playground/abc-practice/c++/ninth" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/katsukiniwa/playground/abc-practice/c++"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 ninth"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ninth/fast">
+				<Option output="/Users/katsukiniwa/playground/abc-practice/c++/ninth" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/katsukiniwa/playground/abc-practice/c++"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 ninth/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="exhaustive-search">
 				<Option output="/Users/katsukiniwa/playground/abc-practice/c++/exhaustive-search" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/katsukiniwa/playground/abc-practice/c++"/>
@@ -264,6 +400,48 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 exhaustive-search/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="switches-practice">
+				<Option output="/Users/katsukiniwa/playground/abc-practice/c++/switches-practice" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/katsukiniwa/playground/abc-practice/c++"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 switches-practice"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="switches-practice/fast">
+				<Option output="/Users/katsukiniwa/playground/abc-practice/c++/switches-practice" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/katsukiniwa/playground/abc-practice/c++"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 switches-practice/fast"/>
 					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
@@ -348,16 +526,6 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 lucky-pin/fast"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/Users/katsukiniwa/playground/abc-practice/c++"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 edit_cache"/>
 					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
@@ -573,6 +741,48 @@
 					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="two-anagrams">
+				<Option output="/Users/katsukiniwa/playground/abc-practice/c++/two-anagrams" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/katsukiniwa/playground/abc-practice/c++"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 two-anagrams"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="two-anagrams/fast">
+				<Option output="/Users/katsukiniwa/playground/abc-practice/c++/two-anagrams" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/katsukiniwa/playground/abc-practice/c++"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 two-anagrams/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="average-length">
 				<Option output="/Users/katsukiniwa/playground/abc-practice/c++/average-length" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/katsukiniwa/playground/abc-practice/c++"/>
@@ -610,48 +820,6 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 average-length/fast"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="switches-practice">
-				<Option output="/Users/katsukiniwa/playground/abc-practice/c++/switches-practice" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/katsukiniwa/playground/abc-practice/c++"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 switches-practice"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="switches-practice/fast">
-				<Option output="/Users/katsukiniwa/playground/abc-practice/c++/switches-practice" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/katsukiniwa/playground/abc-practice/c++"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 switches-practice/fast"/>
 					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
@@ -778,16 +946,6 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 bitter-alchemy/fast"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/Users/katsukiniwa/playground/abc-practice/c++"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
 					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
@@ -1129,48 +1287,6 @@
 					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="ninth">
-				<Option output="/Users/katsukiniwa/playground/abc-practice/c++/ninth" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/katsukiniwa/playground/abc-practice/c++"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 ninth"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="ninth/fast">
-				<Option output="/Users/katsukiniwa/playground/abc-practice/c++/ninth" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/katsukiniwa/playground/abc-practice/c++"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 ninth/fast"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="eighth">
 				<Option output="/Users/katsukiniwa/playground/abc-practice/c++/eighth" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/katsukiniwa/playground/abc-practice/c++"/>
@@ -1250,6 +1366,48 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 maximum-difference/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="first">
+				<Option output="/Users/katsukiniwa/playground/abc-practice/c++/first" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/katsukiniwa/playground/abc-practice/c++"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 first"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="first/fast">
+				<Option output="/Users/katsukiniwa/playground/abc-practice/c++/first" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/katsukiniwa/playground/abc-practice/c++"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 first/fast"/>
 					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
@@ -1465,48 +1623,6 @@
 					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="c__">
-				<Option output="/Users/katsukiniwa/playground/abc-practice/c++/c__" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/katsukiniwa/playground/abc-practice/c++"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 c__"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="c__/fast">
-				<Option output="/Users/katsukiniwa/playground/abc-practice/c++/c__" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/katsukiniwa/playground/abc-practice/c++"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 c__/fast"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="break-number">
 				<Option output="/Users/katsukiniwa/playground/abc-practice/c++/break-number" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/katsukiniwa/playground/abc-practice/c++"/>
@@ -1586,48 +1702,6 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 how-many-ways-practice/fast"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="two-anagrams">
-				<Option output="/Users/katsukiniwa/playground/abc-practice/c++/two-anagrams" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/katsukiniwa/playground/abc-practice/c++"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 two-anagrams"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="two-anagrams/fast">
-				<Option output="/Users/katsukiniwa/playground/abc-practice/c++/two-anagrams" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/katsukiniwa/playground/abc-practice/c++"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 two-anagrams/fast"/>
 					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
@@ -1717,6 +1791,16 @@
 					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/katsukiniwa/playground/abc-practice/c++"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="karaoke-practice">
 				<Option output="/Users/katsukiniwa/playground/abc-practice/c++/karaoke-practice" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/katsukiniwa/playground/abc-practice/c++"/>
@@ -1759,8 +1843,8 @@
 					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="first">
-				<Option output="/Users/katsukiniwa/playground/abc-practice/c++/first" prefix_auto="0" extension_auto="0"/>
+			<Target title="counter-order-practice">
+				<Option output="/Users/katsukiniwa/playground/abc-practice/c++/counter-order-practice" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/katsukiniwa/playground/abc-practice/c++"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -1774,14 +1858,14 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 first"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 counter-order-practice"/>
 					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="first/fast">
-				<Option output="/Users/katsukiniwa/playground/abc-practice/c++/first" prefix_auto="0" extension_auto="0"/>
+			<Target title="counter-order-practice/fast">
+				<Option output="/Users/katsukiniwa/playground/abc-practice/c++/counter-order-practice" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/katsukiniwa/playground/abc-practice/c++"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -1795,7 +1879,7 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 first/fast"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 counter-order-practice/fast"/>
 					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/katsukiniwa/playground/abc-practice/c++/Makefile&quot;  VERBOSE=1 clean"/>
@@ -1970,6 +2054,9 @@
 		<Unit filename="/Users/katsukiniwa/playground/abc-practice/c++/one-hundred-problems-practice/average-length-practice.cpp">
 			<Option target="average-length-practice"/>
 		</Unit>
+		<Unit filename="/Users/katsukiniwa/playground/abc-practice/c++/one-hundred-problems-practice/counter-order-practice.cpp">
+			<Option target="counter-order-practice"/>
+		</Unit>
 		<Unit filename="/Users/katsukiniwa/playground/abc-practice/c++/one-hundred-problems-practice/half-and-half-practice.cpp">
 			<Option target="half-and-half-practice"/>
 		</Unit>
@@ -1993,6 +2080,9 @@
 		</Unit>
 		<Unit filename="/Users/katsukiniwa/playground/abc-practice/c++/one-hundred-problems/average-length.cpp">
 			<Option target="average-length"/>
+		</Unit>
+		<Unit filename="/Users/katsukiniwa/playground/abc-practice/c++/one-hundred-problems/counter-order.cpp">
+			<Option target="counter-order"/>
 		</Unit>
 		<Unit filename="/Users/katsukiniwa/playground/abc-practice/c++/one-hundred-problems/exhaustive-search.cpp">
 			<Option target="exhaustive-search"/>

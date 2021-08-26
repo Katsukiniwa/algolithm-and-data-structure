@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named counter-order
+
+# Build rule for target.
+counter-order: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 counter-order
+.PHONY : counter-order
+
+# fast build rule for target.
+counter-order/fast:
+	$(MAKE) -f CMakeFiles/counter-order.dir/build.make CMakeFiles/counter-order.dir/build
+.PHONY : counter-order/fast
+
+#=============================================================================
 # Target rules for targets named test003
 
 # Build rule for target.
@@ -150,6 +163,19 @@ half-and-half-practice/fast:
 .PHONY : half-and-half-practice/fast
 
 #=============================================================================
+# Target rules for targets named c__
+
+# Build rule for target.
+c__: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 c__
+.PHONY : c__
+
+# fast build rule for target.
+c__/fast:
+	$(MAKE) -f CMakeFiles/c__.dir/build.make CMakeFiles/c__.dir/build
+.PHONY : c__/fast
+
+#=============================================================================
 # Target rules for targets named 105-practice
 
 # Build rule for target.
@@ -176,6 +202,19 @@ habatsu/fast:
 .PHONY : habatsu/fast
 
 #=============================================================================
+# Target rules for targets named ninth
+
+# Build rule for target.
+ninth: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ninth
+.PHONY : ninth
+
+# fast build rule for target.
+ninth/fast:
+	$(MAKE) -f CMakeFiles/ninth.dir/build.make CMakeFiles/ninth.dir/build
+.PHONY : ninth/fast
+
+#=============================================================================
 # Target rules for targets named exhaustive-search
 
 # Build rule for target.
@@ -187,6 +226,19 @@ exhaustive-search: cmake_check_build_system
 exhaustive-search/fast:
 	$(MAKE) -f CMakeFiles/exhaustive-search.dir/build.make CMakeFiles/exhaustive-search.dir/build
 .PHONY : exhaustive-search/fast
+
+#=============================================================================
+# Target rules for targets named switches-practice
+
+# Build rule for target.
+switches-practice: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 switches-practice
+.PHONY : switches-practice
+
+# fast build rule for target.
+switches-practice/fast:
+	$(MAKE) -f CMakeFiles/switches-practice.dir/build.make CMakeFiles/switches-practice.dir/build
+.PHONY : switches-practice/fast
 
 #=============================================================================
 # Target rules for targets named switches
@@ -280,6 +332,19 @@ karaoke/fast:
 .PHONY : karaoke/fast
 
 #=============================================================================
+# Target rules for targets named two-anagrams
+
+# Build rule for target.
+two-anagrams: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 two-anagrams
+.PHONY : two-anagrams
+
+# fast build rule for target.
+two-anagrams/fast:
+	$(MAKE) -f CMakeFiles/two-anagrams.dir/build.make CMakeFiles/two-anagrams.dir/build
+.PHONY : two-anagrams/fast
+
+#=============================================================================
 # Target rules for targets named average-length
 
 # Build rule for target.
@@ -291,19 +356,6 @@ average-length: cmake_check_build_system
 average-length/fast:
 	$(MAKE) -f CMakeFiles/average-length.dir/build.make CMakeFiles/average-length.dir/build
 .PHONY : average-length/fast
-
-#=============================================================================
-# Target rules for targets named switches-practice
-
-# Build rule for target.
-switches-practice: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 switches-practice
-.PHONY : switches-practice
-
-# fast build rule for target.
-switches-practice/fast:
-	$(MAKE) -f CMakeFiles/switches-practice.dir/build.make CMakeFiles/switches-practice.dir/build
-.PHONY : switches-practice/fast
 
 #=============================================================================
 # Target rules for targets named how-many-ways
@@ -449,19 +501,6 @@ tenth/fast:
 .PHONY : tenth/fast
 
 #=============================================================================
-# Target rules for targets named ninth
-
-# Build rule for target.
-ninth: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ninth
-.PHONY : ninth
-
-# fast build rule for target.
-ninth/fast:
-	$(MAKE) -f CMakeFiles/ninth.dir/build.make CMakeFiles/ninth.dir/build
-.PHONY : ninth/fast
-
-#=============================================================================
 # Target rules for targets named eighth
 
 # Build rule for target.
@@ -486,6 +525,19 @@ maximum-difference: cmake_check_build_system
 maximum-difference/fast:
 	$(MAKE) -f CMakeFiles/maximum-difference.dir/build.make CMakeFiles/maximum-difference.dir/build
 .PHONY : maximum-difference/fast
+
+#=============================================================================
+# Target rules for targets named first
+
+# Build rule for target.
+first: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 first
+.PHONY : first
+
+# fast build rule for target.
+first/fast:
+	$(MAKE) -f CMakeFiles/first.dir/build.make CMakeFiles/first.dir/build
+.PHONY : first/fast
 
 #=============================================================================
 # Target rules for targets named seventh
@@ -553,19 +605,6 @@ test001/fast:
 .PHONY : test001/fast
 
 #=============================================================================
-# Target rules for targets named c__
-
-# Build rule for target.
-c__: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 c__
-.PHONY : c__
-
-# fast build rule for target.
-c__/fast:
-	$(MAKE) -f CMakeFiles/c__.dir/build.make CMakeFiles/c__.dir/build
-.PHONY : c__/fast
-
-#=============================================================================
 # Target rules for targets named break-number
 
 # Build rule for target.
@@ -590,19 +629,6 @@ how-many-ways-practice: cmake_check_build_system
 how-many-ways-practice/fast:
 	$(MAKE) -f CMakeFiles/how-many-ways-practice.dir/build.make CMakeFiles/how-many-ways-practice.dir/build
 .PHONY : how-many-ways-practice/fast
-
-#=============================================================================
-# Target rules for targets named two-anagrams
-
-# Build rule for target.
-two-anagrams: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 two-anagrams
-.PHONY : two-anagrams
-
-# fast build rule for target.
-two-anagrams/fast:
-	$(MAKE) -f CMakeFiles/two-anagrams.dir/build.make CMakeFiles/two-anagrams.dir/build
-.PHONY : two-anagrams/fast
 
 #=============================================================================
 # Target rules for targets named infinite-coins
@@ -644,17 +670,17 @@ karaoke-practice/fast:
 .PHONY : karaoke-practice/fast
 
 #=============================================================================
-# Target rules for targets named first
+# Target rules for targets named counter-order-practice
 
 # Build rule for target.
-first: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 first
-.PHONY : first
+counter-order-practice: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 counter-order-practice
+.PHONY : counter-order-practice
 
 # fast build rule for target.
-first/fast:
-	$(MAKE) -f CMakeFiles/first.dir/build.make CMakeFiles/first.dir/build
-.PHONY : first/fast
+counter-order-practice/fast:
+	$(MAKE) -f CMakeFiles/counter-order-practice.dir/build.make CMakeFiles/counter-order-practice.dir/build
+.PHONY : counter-order-practice/fast
 
 #=============================================================================
 # Target rules for targets named third
@@ -1073,6 +1099,33 @@ one-hundred-problems-practice/average-length-practice.cpp.s:
 	$(MAKE) -f CMakeFiles/average-length-practice.dir/build.make CMakeFiles/average-length-practice.dir/one-hundred-problems-practice/average-length-practice.cpp.s
 .PHONY : one-hundred-problems-practice/average-length-practice.cpp.s
 
+one-hundred-problems-practice/counter-order-practice.o: one-hundred-problems-practice/counter-order-practice.cpp.o
+
+.PHONY : one-hundred-problems-practice/counter-order-practice.o
+
+# target to build an object file
+one-hundred-problems-practice/counter-order-practice.cpp.o:
+	$(MAKE) -f CMakeFiles/counter-order-practice.dir/build.make CMakeFiles/counter-order-practice.dir/one-hundred-problems-practice/counter-order-practice.cpp.o
+.PHONY : one-hundred-problems-practice/counter-order-practice.cpp.o
+
+one-hundred-problems-practice/counter-order-practice.i: one-hundred-problems-practice/counter-order-practice.cpp.i
+
+.PHONY : one-hundred-problems-practice/counter-order-practice.i
+
+# target to preprocess a source file
+one-hundred-problems-practice/counter-order-practice.cpp.i:
+	$(MAKE) -f CMakeFiles/counter-order-practice.dir/build.make CMakeFiles/counter-order-practice.dir/one-hundred-problems-practice/counter-order-practice.cpp.i
+.PHONY : one-hundred-problems-practice/counter-order-practice.cpp.i
+
+one-hundred-problems-practice/counter-order-practice.s: one-hundred-problems-practice/counter-order-practice.cpp.s
+
+.PHONY : one-hundred-problems-practice/counter-order-practice.s
+
+# target to generate assembly for a file
+one-hundred-problems-practice/counter-order-practice.cpp.s:
+	$(MAKE) -f CMakeFiles/counter-order-practice.dir/build.make CMakeFiles/counter-order-practice.dir/one-hundred-problems-practice/counter-order-practice.cpp.s
+.PHONY : one-hundred-problems-practice/counter-order-practice.cpp.s
+
 one-hundred-problems-practice/half-and-half-practice.o: one-hundred-problems-practice/half-and-half-practice.cpp.o
 
 .PHONY : one-hundred-problems-practice/half-and-half-practice.o
@@ -1288,6 +1341,33 @@ one-hundred-problems/average-length.s: one-hundred-problems/average-length.cpp.s
 one-hundred-problems/average-length.cpp.s:
 	$(MAKE) -f CMakeFiles/average-length.dir/build.make CMakeFiles/average-length.dir/one-hundred-problems/average-length.cpp.s
 .PHONY : one-hundred-problems/average-length.cpp.s
+
+one-hundred-problems/counter-order.o: one-hundred-problems/counter-order.cpp.o
+
+.PHONY : one-hundred-problems/counter-order.o
+
+# target to build an object file
+one-hundred-problems/counter-order.cpp.o:
+	$(MAKE) -f CMakeFiles/counter-order.dir/build.make CMakeFiles/counter-order.dir/one-hundred-problems/counter-order.cpp.o
+.PHONY : one-hundred-problems/counter-order.cpp.o
+
+one-hundred-problems/counter-order.i: one-hundred-problems/counter-order.cpp.i
+
+.PHONY : one-hundred-problems/counter-order.i
+
+# target to preprocess a source file
+one-hundred-problems/counter-order.cpp.i:
+	$(MAKE) -f CMakeFiles/counter-order.dir/build.make CMakeFiles/counter-order.dir/one-hundred-problems/counter-order.cpp.i
+.PHONY : one-hundred-problems/counter-order.cpp.i
+
+one-hundred-problems/counter-order.s: one-hundred-problems/counter-order.cpp.s
+
+.PHONY : one-hundred-problems/counter-order.s
+
+# target to generate assembly for a file
+one-hundred-problems/counter-order.cpp.s:
+	$(MAKE) -f CMakeFiles/counter-order.dir/build.make CMakeFiles/counter-order.dir/one-hundred-problems/counter-order.cpp.s
+.PHONY : one-hundred-problems/counter-order.cpp.s
 
 one-hundred-problems/exhaustive-search.o: one-hundred-problems/exhaustive-search.cpp.o
 
@@ -1916,26 +1996,29 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... edit_cache"
+	@echo "... counter-order"
 	@echo "... test003"
 	@echo "... oldest-remains"
 	@echo "... half-and-half-practice"
+	@echo "... c__"
 	@echo "... 105-practice"
 	@echo "... habatsu"
+	@echo "... ninth"
 	@echo "... exhaustive-search"
+	@echo "... switches-practice"
 	@echo "... switches"
 	@echo "... lucky-pin"
-	@echo "... edit_cache"
 	@echo "... half-and-half"
 	@echo "... atcoder"
 	@echo "... 105"
 	@echo "... cakes-and-donuts"
 	@echo "... karaoke"
+	@echo "... two-anagrams"
 	@echo "... average-length"
-	@echo "... switches-practice"
 	@echo "... how-many-ways"
 	@echo "... making-triangle"
 	@echo "... bitter-alchemy"
-	@echo "... rebuild_cache"
 	@echo "... i18n"
 	@echo "... forth"
 	@echo "... something-on-it"
@@ -1944,22 +2027,21 @@ help:
 	@echo "... test002"
 	@echo "... atcoder-practice"
 	@echo "... tenth"
-	@echo "... ninth"
 	@echo "... eighth"
 	@echo "... maximum-difference"
+	@echo "... first"
 	@echo "... seventh"
 	@echo "... sixth"
 	@echo "... average-length-practice"
 	@echo "... fifth"
 	@echo "... test001"
-	@echo "... c__"
 	@echo "... break-number"
 	@echo "... how-many-ways-practice"
-	@echo "... two-anagrams"
 	@echo "... infinite-coins"
 	@echo "... test000"
+	@echo "... rebuild_cache"
 	@echo "... karaoke-practice"
-	@echo "... first"
+	@echo "... counter-order-practice"
 	@echo "... third"
 	@echo "... atcoder-market"
 	@echo "... second"
@@ -2005,6 +2087,9 @@ help:
 	@echo "... one-hundred-problems-practice/average-length-practice.o"
 	@echo "... one-hundred-problems-practice/average-length-practice.i"
 	@echo "... one-hundred-problems-practice/average-length-practice.s"
+	@echo "... one-hundred-problems-practice/counter-order-practice.o"
+	@echo "... one-hundred-problems-practice/counter-order-practice.i"
+	@echo "... one-hundred-problems-practice/counter-order-practice.s"
 	@echo "... one-hundred-problems-practice/half-and-half-practice.o"
 	@echo "... one-hundred-problems-practice/half-and-half-practice.i"
 	@echo "... one-hundred-problems-practice/half-and-half-practice.s"
@@ -2029,6 +2114,9 @@ help:
 	@echo "... one-hundred-problems/average-length.o"
 	@echo "... one-hundred-problems/average-length.i"
 	@echo "... one-hundred-problems/average-length.s"
+	@echo "... one-hundred-problems/counter-order.o"
+	@echo "... one-hundred-problems/counter-order.i"
+	@echo "... one-hundred-problems/counter-order.s"
 	@echo "... one-hundred-problems/exhaustive-search.o"
 	@echo "... one-hundred-problems/exhaustive-search.i"
 	@echo "... one-hundred-problems/exhaustive-search.s"
