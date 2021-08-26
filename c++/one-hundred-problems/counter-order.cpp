@@ -19,12 +19,9 @@ int main() {
 
   o = p, i = 0, sort(o.begin(), o.end());
   do {
-    cout << o << endl;
     if (o == p) p_cnt = i;
     if (o == q) q_cnt = i;
     ++i;
   } while (next_permutation(o.begin(), o.end()));
-
   cout << abs(p_cnt - q_cnt) << endl;
-  return 0;
 }
