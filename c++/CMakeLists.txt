@@ -51,3 +51,5 @@ add_executable(switches-practice one-hundred-problems-practice/switches-practice
 add_executable(average-length one-hundred-problems/average-length.cpp)
 add_executable(average-length-practice one-hundred-problems-practice/average-length-practice.cpp)
 add_executable(counter-order one-hundred-problems/counter-order.cpp)
+
+add_executable(binary-search one-hundred-problems/snuke-festival.cpp)

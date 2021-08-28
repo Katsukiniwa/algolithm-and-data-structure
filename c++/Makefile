@@ -189,6 +189,19 @@ c__/fast:
 .PHONY : 105-practice/fast
 
 #=============================================================================
+# Target rules for targets named binary-search
+
+# Build rule for target.
+binary-search: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 binary-search
+.PHONY : binary-search
+
+# fast build rule for target.
+binary-search/fast:
+	$(MAKE) -f CMakeFiles/binary-search.dir/build.make CMakeFiles/binary-search.dir/build
+.PHONY : binary-search/fast
+
+#=============================================================================
 # Target rules for targets named habatsu
 
 # Build rule for target.
@@ -1518,6 +1531,33 @@ one-hundred-problems/oldest-remains.cpp.s:
 	$(MAKE) -f CMakeFiles/oldest-remains.dir/build.make CMakeFiles/oldest-remains.dir/one-hundred-problems/oldest-remains.cpp.s
 .PHONY : one-hundred-problems/oldest-remains.cpp.s
 
+one-hundred-problems/snuke-festival.o: one-hundred-problems/snuke-festival.cpp.o
+
+.PHONY : one-hundred-problems/snuke-festival.o
+
+# target to build an object file
+one-hundred-problems/snuke-festival.cpp.o:
+	$(MAKE) -f CMakeFiles/binary-search.dir/build.make CMakeFiles/binary-search.dir/one-hundred-problems/snuke-festival.cpp.o
+.PHONY : one-hundred-problems/snuke-festival.cpp.o
+
+one-hundred-problems/snuke-festival.i: one-hundred-problems/snuke-festival.cpp.i
+
+.PHONY : one-hundred-problems/snuke-festival.i
+
+# target to preprocess a source file
+one-hundred-problems/snuke-festival.cpp.i:
+	$(MAKE) -f CMakeFiles/binary-search.dir/build.make CMakeFiles/binary-search.dir/one-hundred-problems/snuke-festival.cpp.i
+.PHONY : one-hundred-problems/snuke-festival.cpp.i
+
+one-hundred-problems/snuke-festival.s: one-hundred-problems/snuke-festival.cpp.s
+
+.PHONY : one-hundred-problems/snuke-festival.s
+
+# target to generate assembly for a file
+one-hundred-problems/snuke-festival.cpp.s:
+	$(MAKE) -f CMakeFiles/binary-search.dir/build.make CMakeFiles/binary-search.dir/one-hundred-problems/snuke-festival.cpp.s
+.PHONY : one-hundred-problems/snuke-festival.cpp.s
+
 one-hundred-problems/switches.o: one-hundred-problems/switches.cpp.o
 
 .PHONY : one-hundred-problems/switches.o
@@ -1956,19 +1996,20 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... edit_cache"
 	@echo "... counter-order"
 	@echo "... test003"
 	@echo "... oldest-remains"
 	@echo "... half-and-half-practice"
 	@echo "... c__"
 	@echo "... 105-practice"
+	@echo "... binary-search"
 	@echo "... habatsu"
 	@echo "... ninth"
 	@echo "... exhaustive-search"
 	@echo "... switches-practice"
 	@echo "... switches"
 	@echo "... lucky-pin"
-	@echo "... edit_cache"
 	@echo "... half-and-half"
 	@echo "... atcoder"
 	@echo "... 105"
@@ -2094,6 +2135,9 @@ help:
 	@echo "... one-hundred-problems/oldest-remains.o"
 	@echo "... one-hundred-problems/oldest-remains.i"
 	@echo "... one-hundred-problems/oldest-remains.s"
+	@echo "... one-hundred-problems/snuke-festival.o"
+	@echo "... one-hundred-problems/snuke-festival.i"
+	@echo "... one-hundred-problems/snuke-festival.s"
 	@echo "... one-hundred-problems/switches.o"
 	@echo "... one-hundred-problems/switches.i"
 	@echo "... one-hundred-problems/switches.s"
