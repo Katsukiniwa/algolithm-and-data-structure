@@ -111,97 +111,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named counter-order
-
-# Build rule for target.
-counter-order: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 counter-order
-.PHONY : counter-order
-
-# fast build rule for target.
-counter-order/fast:
-	$(MAKE) -f CMakeFiles/counter-order.dir/build.make CMakeFiles/counter-order.dir/build
-.PHONY : counter-order/fast
-
-#=============================================================================
-# Target rules for targets named test003
-
-# Build rule for target.
-test003: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test003
-.PHONY : test003
-
-# fast build rule for target.
-test003/fast:
-	$(MAKE) -f CMakeFiles/test003.dir/build.make CMakeFiles/test003.dir/build
-.PHONY : test003/fast
-
-#=============================================================================
-# Target rules for targets named oldest-remains
-
-# Build rule for target.
-oldest-remains: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 oldest-remains
-.PHONY : oldest-remains
-
-# fast build rule for target.
-oldest-remains/fast:
-	$(MAKE) -f CMakeFiles/oldest-remains.dir/build.make CMakeFiles/oldest-remains.dir/build
-.PHONY : oldest-remains/fast
-
-#=============================================================================
-# Target rules for targets named half-and-half-practice
-
-# Build rule for target.
-half-and-half-practice: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 half-and-half-practice
-.PHONY : half-and-half-practice
-
-# fast build rule for target.
-half-and-half-practice/fast:
-	$(MAKE) -f CMakeFiles/half-and-half-practice.dir/build.make CMakeFiles/half-and-half-practice.dir/build
-.PHONY : half-and-half-practice/fast
-
-#=============================================================================
-# Target rules for targets named c__
-
-# Build rule for target.
-c__: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 c__
-.PHONY : c__
-
-# fast build rule for target.
-c__/fast:
-	$(MAKE) -f CMakeFiles/c__.dir/build.make CMakeFiles/c__.dir/build
-.PHONY : c__/fast
-
-#=============================================================================
-# Target rules for targets named 105-practice
-
-# Build rule for target.
-105-practice: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 105-practice
-.PHONY : 105-practice
-
-# fast build rule for target.
-105-practice/fast:
-	$(MAKE) -f CMakeFiles/105-practice.dir/build.make CMakeFiles/105-practice.dir/build
-.PHONY : 105-practice/fast
-
-#=============================================================================
-# Target rules for targets named binary-search
-
-# Build rule for target.
-binary-search: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 binary-search
-.PHONY : binary-search
-
-# fast build rule for target.
-binary-search/fast:
-	$(MAKE) -f CMakeFiles/binary-search.dir/build.make CMakeFiles/binary-search.dir/build
-.PHONY : binary-search/fast
-
-#=============================================================================
 # Target rules for targets named habatsu
 
 # Build rule for target.
@@ -215,19 +124,6 @@ habatsu/fast:
 .PHONY : habatsu/fast
 
 #=============================================================================
-# Target rules for targets named ninth
-
-# Build rule for target.
-ninth: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ninth
-.PHONY : ninth
-
-# fast build rule for target.
-ninth/fast:
-	$(MAKE) -f CMakeFiles/ninth.dir/build.make CMakeFiles/ninth.dir/build
-.PHONY : ninth/fast
-
-#=============================================================================
 # Target rules for targets named exhaustive-search
 
 # Build rule for target.
@@ -239,32 +135,6 @@ exhaustive-search: cmake_check_build_system
 exhaustive-search/fast:
 	$(MAKE) -f CMakeFiles/exhaustive-search.dir/build.make CMakeFiles/exhaustive-search.dir/build
 .PHONY : exhaustive-search/fast
-
-#=============================================================================
-# Target rules for targets named switches-practice
-
-# Build rule for target.
-switches-practice: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 switches-practice
-.PHONY : switches-practice
-
-# fast build rule for target.
-switches-practice/fast:
-	$(MAKE) -f CMakeFiles/switches-practice.dir/build.make CMakeFiles/switches-practice.dir/build
-.PHONY : switches-practice/fast
-
-#=============================================================================
-# Target rules for targets named switches
-
-# Build rule for target.
-switches: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 switches
-.PHONY : switches
-
-# fast build rule for target.
-switches/fast:
-	$(MAKE) -f CMakeFiles/switches.dir/build.make CMakeFiles/switches.dir/build
-.PHONY : switches/fast
 
 #=============================================================================
 # Target rules for targets named lucky-pin
@@ -306,19 +176,6 @@ atcoder/fast:
 .PHONY : atcoder/fast
 
 #=============================================================================
-# Target rules for targets named 105
-
-# Build rule for target.
-105: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 105
-.PHONY : 105
-
-# fast build rule for target.
-105/fast:
-	$(MAKE) -f CMakeFiles/105.dir/build.make CMakeFiles/105.dir/build
-.PHONY : 105/fast
-
-#=============================================================================
 # Target rules for targets named cakes-and-donuts
 
 # Build rule for target.
@@ -343,45 +200,6 @@ karaoke: cmake_check_build_system
 karaoke/fast:
 	$(MAKE) -f CMakeFiles/karaoke.dir/build.make CMakeFiles/karaoke.dir/build
 .PHONY : karaoke/fast
-
-#=============================================================================
-# Target rules for targets named two-anagrams
-
-# Build rule for target.
-two-anagrams: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 two-anagrams
-.PHONY : two-anagrams
-
-# fast build rule for target.
-two-anagrams/fast:
-	$(MAKE) -f CMakeFiles/two-anagrams.dir/build.make CMakeFiles/two-anagrams.dir/build
-.PHONY : two-anagrams/fast
-
-#=============================================================================
-# Target rules for targets named average-length
-
-# Build rule for target.
-average-length: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 average-length
-.PHONY : average-length
-
-# fast build rule for target.
-average-length/fast:
-	$(MAKE) -f CMakeFiles/average-length.dir/build.make CMakeFiles/average-length.dir/build
-.PHONY : average-length/fast
-
-#=============================================================================
-# Target rules for targets named how-many-ways
-
-# Build rule for target.
-how-many-ways: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 how-many-ways
-.PHONY : how-many-ways
-
-# fast build rule for target.
-how-many-ways/fast:
-	$(MAKE) -f CMakeFiles/how-many-ways.dir/build.make CMakeFiles/how-many-ways.dir/build
-.PHONY : how-many-ways/fast
 
 #=============================================================================
 # Target rules for targets named making-triangle
@@ -488,19 +306,6 @@ test002/fast:
 .PHONY : test002/fast
 
 #=============================================================================
-# Target rules for targets named atcoder-practice
-
-# Build rule for target.
-atcoder-practice: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 atcoder-practice
-.PHONY : atcoder-practice
-
-# fast build rule for target.
-atcoder-practice/fast:
-	$(MAKE) -f CMakeFiles/atcoder-practice.dir/build.make CMakeFiles/atcoder-practice.dir/build
-.PHONY : atcoder-practice/fast
-
-#=============================================================================
 # Target rules for targets named tenth
 
 # Build rule for target.
@@ -512,6 +317,19 @@ tenth: cmake_check_build_system
 tenth/fast:
 	$(MAKE) -f CMakeFiles/tenth.dir/build.make CMakeFiles/tenth.dir/build
 .PHONY : tenth/fast
+
+#=============================================================================
+# Target rules for targets named ninth
+
+# Build rule for target.
+ninth: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ninth
+.PHONY : ninth
+
+# fast build rule for target.
+ninth/fast:
+	$(MAKE) -f CMakeFiles/ninth.dir/build.make CMakeFiles/ninth.dir/build
+.PHONY : ninth/fast
 
 #=============================================================================
 # Target rules for targets named eighth
@@ -540,19 +358,6 @@ maximum-difference/fast:
 .PHONY : maximum-difference/fast
 
 #=============================================================================
-# Target rules for targets named first
-
-# Build rule for target.
-first: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 first
-.PHONY : first
-
-# fast build rule for target.
-first/fast:
-	$(MAKE) -f CMakeFiles/first.dir/build.make CMakeFiles/first.dir/build
-.PHONY : first/fast
-
-#=============================================================================
 # Target rules for targets named seventh
 
 # Build rule for target.
@@ -579,19 +384,6 @@ sixth/fast:
 .PHONY : sixth/fast
 
 #=============================================================================
-# Target rules for targets named average-length-practice
-
-# Build rule for target.
-average-length-practice: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 average-length-practice
-.PHONY : average-length-practice
-
-# fast build rule for target.
-average-length-practice/fast:
-	$(MAKE) -f CMakeFiles/average-length-practice.dir/build.make CMakeFiles/average-length-practice.dir/build
-.PHONY : average-length-practice/fast
-
-#=============================================================================
 # Target rules for targets named fifth
 
 # Build rule for target.
@@ -605,17 +397,17 @@ fifth/fast:
 .PHONY : fifth/fast
 
 #=============================================================================
-# Target rules for targets named test001
+# Target rules for targets named c__
 
 # Build rule for target.
-test001: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test001
-.PHONY : test001
+c__: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 c__
+.PHONY : c__
 
 # fast build rule for target.
-test001/fast:
-	$(MAKE) -f CMakeFiles/test001.dir/build.make CMakeFiles/test001.dir/build
-.PHONY : test001/fast
+c__/fast:
+	$(MAKE) -f CMakeFiles/c__.dir/build.make CMakeFiles/c__.dir/build
+.PHONY : c__/fast
 
 #=============================================================================
 # Target rules for targets named break-number
@@ -631,17 +423,30 @@ break-number/fast:
 .PHONY : break-number/fast
 
 #=============================================================================
-# Target rules for targets named how-many-ways-practice
+# Target rules for targets named insertion-sort
 
 # Build rule for target.
-how-many-ways-practice: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 how-many-ways-practice
-.PHONY : how-many-ways-practice
+insertion-sort: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 insertion-sort
+.PHONY : insertion-sort
 
 # fast build rule for target.
-how-many-ways-practice/fast:
-	$(MAKE) -f CMakeFiles/how-many-ways-practice.dir/build.make CMakeFiles/how-many-ways-practice.dir/build
-.PHONY : how-many-ways-practice/fast
+insertion-sort/fast:
+	$(MAKE) -f CMakeFiles/insertion-sort.dir/build.make CMakeFiles/insertion-sort.dir/build
+.PHONY : insertion-sort/fast
+
+#=============================================================================
+# Target rules for targets named two-anagrams
+
+# Build rule for target.
+two-anagrams: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 two-anagrams
+.PHONY : two-anagrams
+
+# fast build rule for target.
+two-anagrams/fast:
+	$(MAKE) -f CMakeFiles/two-anagrams.dir/build.make CMakeFiles/two-anagrams.dir/build
+.PHONY : two-anagrams/fast
 
 #=============================================================================
 # Target rules for targets named infinite-coins
@@ -657,30 +462,17 @@ infinite-coins/fast:
 .PHONY : infinite-coins/fast
 
 #=============================================================================
-# Target rules for targets named test000
+# Target rules for targets named first
 
 # Build rule for target.
-test000: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test000
-.PHONY : test000
+first: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 first
+.PHONY : first
 
 # fast build rule for target.
-test000/fast:
-	$(MAKE) -f CMakeFiles/test000.dir/build.make CMakeFiles/test000.dir/build
-.PHONY : test000/fast
-
-#=============================================================================
-# Target rules for targets named karaoke-practice
-
-# Build rule for target.
-karaoke-practice: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 karaoke-practice
-.PHONY : karaoke-practice
-
-# fast build rule for target.
-karaoke-practice/fast:
-	$(MAKE) -f CMakeFiles/karaoke-practice.dir/build.make CMakeFiles/karaoke-practice.dir/build
-.PHONY : karaoke-practice/fast
+first/fast:
+	$(MAKE) -f CMakeFiles/first.dir/build.make CMakeFiles/first.dir/build
+.PHONY : first/fast
 
 #=============================================================================
 # Target rules for targets named third
@@ -720,6 +512,33 @@ second: cmake_check_build_system
 second/fast:
 	$(MAKE) -f CMakeFiles/second.dir/build.make CMakeFiles/second.dir/build
 .PHONY : second/fast
+
+algolithm-and-data-structure/insertion-sort.o: algolithm-and-data-structure/insertion-sort.cpp.o
+
+.PHONY : algolithm-and-data-structure/insertion-sort.o
+
+# target to build an object file
+algolithm-and-data-structure/insertion-sort.cpp.o:
+	$(MAKE) -f CMakeFiles/insertion-sort.dir/build.make CMakeFiles/insertion-sort.dir/algolithm-and-data-structure/insertion-sort.cpp.o
+.PHONY : algolithm-and-data-structure/insertion-sort.cpp.o
+
+algolithm-and-data-structure/insertion-sort.i: algolithm-and-data-structure/insertion-sort.cpp.i
+
+.PHONY : algolithm-and-data-structure/insertion-sort.i
+
+# target to preprocess a source file
+algolithm-and-data-structure/insertion-sort.cpp.i:
+	$(MAKE) -f CMakeFiles/insertion-sort.dir/build.make CMakeFiles/insertion-sort.dir/algolithm-and-data-structure/insertion-sort.cpp.i
+.PHONY : algolithm-and-data-structure/insertion-sort.cpp.i
+
+algolithm-and-data-structure/insertion-sort.s: algolithm-and-data-structure/insertion-sort.cpp.s
+
+.PHONY : algolithm-and-data-structure/insertion-sort.s
+
+# target to generate assembly for a file
+algolithm-and-data-structure/insertion-sort.cpp.s:
+	$(MAKE) -f CMakeFiles/insertion-sort.dir/build.make CMakeFiles/insertion-sort.dir/algolithm-and-data-structure/insertion-sort.cpp.s
+.PHONY : algolithm-and-data-structure/insertion-sort.cpp.s
 
 first-ten-problems/eighth.o: first-ten-problems/eighth.cpp.o
 
@@ -1018,222 +837,6 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/c__.dir/build.make CMakeFiles/c__.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-one-hundred-problems-practice/105-practice.o: one-hundred-problems-practice/105-practice.cpp.o
-
-.PHONY : one-hundred-problems-practice/105-practice.o
-
-# target to build an object file
-one-hundred-problems-practice/105-practice.cpp.o:
-	$(MAKE) -f CMakeFiles/105-practice.dir/build.make CMakeFiles/105-practice.dir/one-hundred-problems-practice/105-practice.cpp.o
-.PHONY : one-hundred-problems-practice/105-practice.cpp.o
-
-one-hundred-problems-practice/105-practice.i: one-hundred-problems-practice/105-practice.cpp.i
-
-.PHONY : one-hundred-problems-practice/105-practice.i
-
-# target to preprocess a source file
-one-hundred-problems-practice/105-practice.cpp.i:
-	$(MAKE) -f CMakeFiles/105-practice.dir/build.make CMakeFiles/105-practice.dir/one-hundred-problems-practice/105-practice.cpp.i
-.PHONY : one-hundred-problems-practice/105-practice.cpp.i
-
-one-hundred-problems-practice/105-practice.s: one-hundred-problems-practice/105-practice.cpp.s
-
-.PHONY : one-hundred-problems-practice/105-practice.s
-
-# target to generate assembly for a file
-one-hundred-problems-practice/105-practice.cpp.s:
-	$(MAKE) -f CMakeFiles/105-practice.dir/build.make CMakeFiles/105-practice.dir/one-hundred-problems-practice/105-practice.cpp.s
-.PHONY : one-hundred-problems-practice/105-practice.cpp.s
-
-one-hundred-problems-practice/atcoder-practice.o: one-hundred-problems-practice/atcoder-practice.cpp.o
-
-.PHONY : one-hundred-problems-practice/atcoder-practice.o
-
-# target to build an object file
-one-hundred-problems-practice/atcoder-practice.cpp.o:
-	$(MAKE) -f CMakeFiles/atcoder-practice.dir/build.make CMakeFiles/atcoder-practice.dir/one-hundred-problems-practice/atcoder-practice.cpp.o
-.PHONY : one-hundred-problems-practice/atcoder-practice.cpp.o
-
-one-hundred-problems-practice/atcoder-practice.i: one-hundred-problems-practice/atcoder-practice.cpp.i
-
-.PHONY : one-hundred-problems-practice/atcoder-practice.i
-
-# target to preprocess a source file
-one-hundred-problems-practice/atcoder-practice.cpp.i:
-	$(MAKE) -f CMakeFiles/atcoder-practice.dir/build.make CMakeFiles/atcoder-practice.dir/one-hundred-problems-practice/atcoder-practice.cpp.i
-.PHONY : one-hundred-problems-practice/atcoder-practice.cpp.i
-
-one-hundred-problems-practice/atcoder-practice.s: one-hundred-problems-practice/atcoder-practice.cpp.s
-
-.PHONY : one-hundred-problems-practice/atcoder-practice.s
-
-# target to generate assembly for a file
-one-hundred-problems-practice/atcoder-practice.cpp.s:
-	$(MAKE) -f CMakeFiles/atcoder-practice.dir/build.make CMakeFiles/atcoder-practice.dir/one-hundred-problems-practice/atcoder-practice.cpp.s
-.PHONY : one-hundred-problems-practice/atcoder-practice.cpp.s
-
-one-hundred-problems-practice/average-length-practice.o: one-hundred-problems-practice/average-length-practice.cpp.o
-
-.PHONY : one-hundred-problems-practice/average-length-practice.o
-
-# target to build an object file
-one-hundred-problems-practice/average-length-practice.cpp.o:
-	$(MAKE) -f CMakeFiles/average-length-practice.dir/build.make CMakeFiles/average-length-practice.dir/one-hundred-problems-practice/average-length-practice.cpp.o
-.PHONY : one-hundred-problems-practice/average-length-practice.cpp.o
-
-one-hundred-problems-practice/average-length-practice.i: one-hundred-problems-practice/average-length-practice.cpp.i
-
-.PHONY : one-hundred-problems-practice/average-length-practice.i
-
-# target to preprocess a source file
-one-hundred-problems-practice/average-length-practice.cpp.i:
-	$(MAKE) -f CMakeFiles/average-length-practice.dir/build.make CMakeFiles/average-length-practice.dir/one-hundred-problems-practice/average-length-practice.cpp.i
-.PHONY : one-hundred-problems-practice/average-length-practice.cpp.i
-
-one-hundred-problems-practice/average-length-practice.s: one-hundred-problems-practice/average-length-practice.cpp.s
-
-.PHONY : one-hundred-problems-practice/average-length-practice.s
-
-# target to generate assembly for a file
-one-hundred-problems-practice/average-length-practice.cpp.s:
-	$(MAKE) -f CMakeFiles/average-length-practice.dir/build.make CMakeFiles/average-length-practice.dir/one-hundred-problems-practice/average-length-practice.cpp.s
-.PHONY : one-hundred-problems-practice/average-length-practice.cpp.s
-
-one-hundred-problems-practice/half-and-half-practice.o: one-hundred-problems-practice/half-and-half-practice.cpp.o
-
-.PHONY : one-hundred-problems-practice/half-and-half-practice.o
-
-# target to build an object file
-one-hundred-problems-practice/half-and-half-practice.cpp.o:
-	$(MAKE) -f CMakeFiles/half-and-half-practice.dir/build.make CMakeFiles/half-and-half-practice.dir/one-hundred-problems-practice/half-and-half-practice.cpp.o
-.PHONY : one-hundred-problems-practice/half-and-half-practice.cpp.o
-
-one-hundred-problems-practice/half-and-half-practice.i: one-hundred-problems-practice/half-and-half-practice.cpp.i
-
-.PHONY : one-hundred-problems-practice/half-and-half-practice.i
-
-# target to preprocess a source file
-one-hundred-problems-practice/half-and-half-practice.cpp.i:
-	$(MAKE) -f CMakeFiles/half-and-half-practice.dir/build.make CMakeFiles/half-and-half-practice.dir/one-hundred-problems-practice/half-and-half-practice.cpp.i
-.PHONY : one-hundred-problems-practice/half-and-half-practice.cpp.i
-
-one-hundred-problems-practice/half-and-half-practice.s: one-hundred-problems-practice/half-and-half-practice.cpp.s
-
-.PHONY : one-hundred-problems-practice/half-and-half-practice.s
-
-# target to generate assembly for a file
-one-hundred-problems-practice/half-and-half-practice.cpp.s:
-	$(MAKE) -f CMakeFiles/half-and-half-practice.dir/build.make CMakeFiles/half-and-half-practice.dir/one-hundred-problems-practice/half-and-half-practice.cpp.s
-.PHONY : one-hundred-problems-practice/half-and-half-practice.cpp.s
-
-one-hundred-problems-practice/how-many-ways-practice.o: one-hundred-problems-practice/how-many-ways-practice.cpp.o
-
-.PHONY : one-hundred-problems-practice/how-many-ways-practice.o
-
-# target to build an object file
-one-hundred-problems-practice/how-many-ways-practice.cpp.o:
-	$(MAKE) -f CMakeFiles/how-many-ways-practice.dir/build.make CMakeFiles/how-many-ways-practice.dir/one-hundred-problems-practice/how-many-ways-practice.cpp.o
-.PHONY : one-hundred-problems-practice/how-many-ways-practice.cpp.o
-
-one-hundred-problems-practice/how-many-ways-practice.i: one-hundred-problems-practice/how-many-ways-practice.cpp.i
-
-.PHONY : one-hundred-problems-practice/how-many-ways-practice.i
-
-# target to preprocess a source file
-one-hundred-problems-practice/how-many-ways-practice.cpp.i:
-	$(MAKE) -f CMakeFiles/how-many-ways-practice.dir/build.make CMakeFiles/how-many-ways-practice.dir/one-hundred-problems-practice/how-many-ways-practice.cpp.i
-.PHONY : one-hundred-problems-practice/how-many-ways-practice.cpp.i
-
-one-hundred-problems-practice/how-many-ways-practice.s: one-hundred-problems-practice/how-many-ways-practice.cpp.s
-
-.PHONY : one-hundred-problems-practice/how-many-ways-practice.s
-
-# target to generate assembly for a file
-one-hundred-problems-practice/how-many-ways-practice.cpp.s:
-	$(MAKE) -f CMakeFiles/how-many-ways-practice.dir/build.make CMakeFiles/how-many-ways-practice.dir/one-hundred-problems-practice/how-many-ways-practice.cpp.s
-.PHONY : one-hundred-problems-practice/how-many-ways-practice.cpp.s
-
-one-hundred-problems-practice/karaoke-practice.o: one-hundred-problems-practice/karaoke-practice.cpp.o
-
-.PHONY : one-hundred-problems-practice/karaoke-practice.o
-
-# target to build an object file
-one-hundred-problems-practice/karaoke-practice.cpp.o:
-	$(MAKE) -f CMakeFiles/karaoke-practice.dir/build.make CMakeFiles/karaoke-practice.dir/one-hundred-problems-practice/karaoke-practice.cpp.o
-.PHONY : one-hundred-problems-practice/karaoke-practice.cpp.o
-
-one-hundred-problems-practice/karaoke-practice.i: one-hundred-problems-practice/karaoke-practice.cpp.i
-
-.PHONY : one-hundred-problems-practice/karaoke-practice.i
-
-# target to preprocess a source file
-one-hundred-problems-practice/karaoke-practice.cpp.i:
-	$(MAKE) -f CMakeFiles/karaoke-practice.dir/build.make CMakeFiles/karaoke-practice.dir/one-hundred-problems-practice/karaoke-practice.cpp.i
-.PHONY : one-hundred-problems-practice/karaoke-practice.cpp.i
-
-one-hundred-problems-practice/karaoke-practice.s: one-hundred-problems-practice/karaoke-practice.cpp.s
-
-.PHONY : one-hundred-problems-practice/karaoke-practice.s
-
-# target to generate assembly for a file
-one-hundred-problems-practice/karaoke-practice.cpp.s:
-	$(MAKE) -f CMakeFiles/karaoke-practice.dir/build.make CMakeFiles/karaoke-practice.dir/one-hundred-problems-practice/karaoke-practice.cpp.s
-.PHONY : one-hundred-problems-practice/karaoke-practice.cpp.s
-
-one-hundred-problems-practice/switches-practice.o: one-hundred-problems-practice/switches-practice.cpp.o
-
-.PHONY : one-hundred-problems-practice/switches-practice.o
-
-# target to build an object file
-one-hundred-problems-practice/switches-practice.cpp.o:
-	$(MAKE) -f CMakeFiles/switches-practice.dir/build.make CMakeFiles/switches-practice.dir/one-hundred-problems-practice/switches-practice.cpp.o
-.PHONY : one-hundred-problems-practice/switches-practice.cpp.o
-
-one-hundred-problems-practice/switches-practice.i: one-hundred-problems-practice/switches-practice.cpp.i
-
-.PHONY : one-hundred-problems-practice/switches-practice.i
-
-# target to preprocess a source file
-one-hundred-problems-practice/switches-practice.cpp.i:
-	$(MAKE) -f CMakeFiles/switches-practice.dir/build.make CMakeFiles/switches-practice.dir/one-hundred-problems-practice/switches-practice.cpp.i
-.PHONY : one-hundred-problems-practice/switches-practice.cpp.i
-
-one-hundred-problems-practice/switches-practice.s: one-hundred-problems-practice/switches-practice.cpp.s
-
-.PHONY : one-hundred-problems-practice/switches-practice.s
-
-# target to generate assembly for a file
-one-hundred-problems-practice/switches-practice.cpp.s:
-	$(MAKE) -f CMakeFiles/switches-practice.dir/build.make CMakeFiles/switches-practice.dir/one-hundred-problems-practice/switches-practice.cpp.s
-.PHONY : one-hundred-problems-practice/switches-practice.cpp.s
-
-one-hundred-problems/105.o: one-hundred-problems/105.cpp.o
-
-.PHONY : one-hundred-problems/105.o
-
-# target to build an object file
-one-hundred-problems/105.cpp.o:
-	$(MAKE) -f CMakeFiles/105.dir/build.make CMakeFiles/105.dir/one-hundred-problems/105.cpp.o
-.PHONY : one-hundred-problems/105.cpp.o
-
-one-hundred-problems/105.i: one-hundred-problems/105.cpp.i
-
-.PHONY : one-hundred-problems/105.i
-
-# target to preprocess a source file
-one-hundred-problems/105.cpp.i:
-	$(MAKE) -f CMakeFiles/105.dir/build.make CMakeFiles/105.dir/one-hundred-problems/105.cpp.i
-.PHONY : one-hundred-problems/105.cpp.i
-
-one-hundred-problems/105.s: one-hundred-problems/105.cpp.s
-
-.PHONY : one-hundred-problems/105.s
-
-# target to generate assembly for a file
-one-hundred-problems/105.cpp.s:
-	$(MAKE) -f CMakeFiles/105.dir/build.make CMakeFiles/105.dir/one-hundred-problems/105.cpp.s
-.PHONY : one-hundred-problems/105.cpp.s
-
 one-hundred-problems/atcoder-market.o: one-hundred-problems/atcoder-market.cpp.o
 
 .PHONY : one-hundred-problems/atcoder-market.o
@@ -1287,60 +890,6 @@ one-hundred-problems/atcoder.s: one-hundred-problems/atcoder.cpp.s
 one-hundred-problems/atcoder.cpp.s:
 	$(MAKE) -f CMakeFiles/atcoder.dir/build.make CMakeFiles/atcoder.dir/one-hundred-problems/atcoder.cpp.s
 .PHONY : one-hundred-problems/atcoder.cpp.s
-
-one-hundred-problems/average-length.o: one-hundred-problems/average-length.cpp.o
-
-.PHONY : one-hundred-problems/average-length.o
-
-# target to build an object file
-one-hundred-problems/average-length.cpp.o:
-	$(MAKE) -f CMakeFiles/average-length.dir/build.make CMakeFiles/average-length.dir/one-hundred-problems/average-length.cpp.o
-.PHONY : one-hundred-problems/average-length.cpp.o
-
-one-hundred-problems/average-length.i: one-hundred-problems/average-length.cpp.i
-
-.PHONY : one-hundred-problems/average-length.i
-
-# target to preprocess a source file
-one-hundred-problems/average-length.cpp.i:
-	$(MAKE) -f CMakeFiles/average-length.dir/build.make CMakeFiles/average-length.dir/one-hundred-problems/average-length.cpp.i
-.PHONY : one-hundred-problems/average-length.cpp.i
-
-one-hundred-problems/average-length.s: one-hundred-problems/average-length.cpp.s
-
-.PHONY : one-hundred-problems/average-length.s
-
-# target to generate assembly for a file
-one-hundred-problems/average-length.cpp.s:
-	$(MAKE) -f CMakeFiles/average-length.dir/build.make CMakeFiles/average-length.dir/one-hundred-problems/average-length.cpp.s
-.PHONY : one-hundred-problems/average-length.cpp.s
-
-one-hundred-problems/counter-order.o: one-hundred-problems/counter-order.cpp.o
-
-.PHONY : one-hundred-problems/counter-order.o
-
-# target to build an object file
-one-hundred-problems/counter-order.cpp.o:
-	$(MAKE) -f CMakeFiles/counter-order.dir/build.make CMakeFiles/counter-order.dir/one-hundred-problems/counter-order.cpp.o
-.PHONY : one-hundred-problems/counter-order.cpp.o
-
-one-hundred-problems/counter-order.i: one-hundred-problems/counter-order.cpp.i
-
-.PHONY : one-hundred-problems/counter-order.i
-
-# target to preprocess a source file
-one-hundred-problems/counter-order.cpp.i:
-	$(MAKE) -f CMakeFiles/counter-order.dir/build.make CMakeFiles/counter-order.dir/one-hundred-problems/counter-order.cpp.i
-.PHONY : one-hundred-problems/counter-order.cpp.i
-
-one-hundred-problems/counter-order.s: one-hundred-problems/counter-order.cpp.s
-
-.PHONY : one-hundred-problems/counter-order.s
-
-# target to generate assembly for a file
-one-hundred-problems/counter-order.cpp.s:
-	$(MAKE) -f CMakeFiles/counter-order.dir/build.make CMakeFiles/counter-order.dir/one-hundred-problems/counter-order.cpp.s
-.PHONY : one-hundred-problems/counter-order.cpp.s
 
 one-hundred-problems/exhaustive-search.o: one-hundred-problems/exhaustive-search.cpp.o
 
@@ -1423,33 +972,6 @@ one-hundred-problems/half-and-half.cpp.s:
 	$(MAKE) -f CMakeFiles/half-and-half.dir/build.make CMakeFiles/half-and-half.dir/one-hundred-problems/half-and-half.cpp.s
 .PHONY : one-hundred-problems/half-and-half.cpp.s
 
-one-hundred-problems/how-many-ways.o: one-hundred-problems/how-many-ways.cpp.o
-
-.PHONY : one-hundred-problems/how-many-ways.o
-
-# target to build an object file
-one-hundred-problems/how-many-ways.cpp.o:
-	$(MAKE) -f CMakeFiles/how-many-ways.dir/build.make CMakeFiles/how-many-ways.dir/one-hundred-problems/how-many-ways.cpp.o
-.PHONY : one-hundred-problems/how-many-ways.cpp.o
-
-one-hundred-problems/how-many-ways.i: one-hundred-problems/how-many-ways.cpp.i
-
-.PHONY : one-hundred-problems/how-many-ways.i
-
-# target to preprocess a source file
-one-hundred-problems/how-many-ways.cpp.i:
-	$(MAKE) -f CMakeFiles/how-many-ways.dir/build.make CMakeFiles/how-many-ways.dir/one-hundred-problems/how-many-ways.cpp.i
-.PHONY : one-hundred-problems/how-many-ways.cpp.i
-
-one-hundred-problems/how-many-ways.s: one-hundred-problems/how-many-ways.cpp.s
-
-.PHONY : one-hundred-problems/how-many-ways.s
-
-# target to generate assembly for a file
-one-hundred-problems/how-many-ways.cpp.s:
-	$(MAKE) -f CMakeFiles/how-many-ways.dir/build.make CMakeFiles/how-many-ways.dir/one-hundred-problems/how-many-ways.cpp.s
-.PHONY : one-hundred-problems/how-many-ways.cpp.s
-
 one-hundred-problems/karaoke.o: one-hundred-problems/karaoke.cpp.o
 
 .PHONY : one-hundred-problems/karaoke.o
@@ -1504,141 +1026,6 @@ one-hundred-problems/lucky-pin.cpp.s:
 	$(MAKE) -f CMakeFiles/lucky-pin.dir/build.make CMakeFiles/lucky-pin.dir/one-hundred-problems/lucky-pin.cpp.s
 .PHONY : one-hundred-problems/lucky-pin.cpp.s
 
-one-hundred-problems/oldest-remains.o: one-hundred-problems/oldest-remains.cpp.o
-
-.PHONY : one-hundred-problems/oldest-remains.o
-
-# target to build an object file
-one-hundred-problems/oldest-remains.cpp.o:
-	$(MAKE) -f CMakeFiles/oldest-remains.dir/build.make CMakeFiles/oldest-remains.dir/one-hundred-problems/oldest-remains.cpp.o
-.PHONY : one-hundred-problems/oldest-remains.cpp.o
-
-one-hundred-problems/oldest-remains.i: one-hundred-problems/oldest-remains.cpp.i
-
-.PHONY : one-hundred-problems/oldest-remains.i
-
-# target to preprocess a source file
-one-hundred-problems/oldest-remains.cpp.i:
-	$(MAKE) -f CMakeFiles/oldest-remains.dir/build.make CMakeFiles/oldest-remains.dir/one-hundred-problems/oldest-remains.cpp.i
-.PHONY : one-hundred-problems/oldest-remains.cpp.i
-
-one-hundred-problems/oldest-remains.s: one-hundred-problems/oldest-remains.cpp.s
-
-.PHONY : one-hundred-problems/oldest-remains.s
-
-# target to generate assembly for a file
-one-hundred-problems/oldest-remains.cpp.s:
-	$(MAKE) -f CMakeFiles/oldest-remains.dir/build.make CMakeFiles/oldest-remains.dir/one-hundred-problems/oldest-remains.cpp.s
-.PHONY : one-hundred-problems/oldest-remains.cpp.s
-
-one-hundred-problems/snuke-festival.o: one-hundred-problems/snuke-festival.cpp.o
-
-.PHONY : one-hundred-problems/snuke-festival.o
-
-# target to build an object file
-one-hundred-problems/snuke-festival.cpp.o:
-	$(MAKE) -f CMakeFiles/binary-search.dir/build.make CMakeFiles/binary-search.dir/one-hundred-problems/snuke-festival.cpp.o
-.PHONY : one-hundred-problems/snuke-festival.cpp.o
-
-one-hundred-problems/snuke-festival.i: one-hundred-problems/snuke-festival.cpp.i
-
-.PHONY : one-hundred-problems/snuke-festival.i
-
-# target to preprocess a source file
-one-hundred-problems/snuke-festival.cpp.i:
-	$(MAKE) -f CMakeFiles/binary-search.dir/build.make CMakeFiles/binary-search.dir/one-hundred-problems/snuke-festival.cpp.i
-.PHONY : one-hundred-problems/snuke-festival.cpp.i
-
-one-hundred-problems/snuke-festival.s: one-hundred-problems/snuke-festival.cpp.s
-
-.PHONY : one-hundred-problems/snuke-festival.s
-
-# target to generate assembly for a file
-one-hundred-problems/snuke-festival.cpp.s:
-	$(MAKE) -f CMakeFiles/binary-search.dir/build.make CMakeFiles/binary-search.dir/one-hundred-problems/snuke-festival.cpp.s
-.PHONY : one-hundred-problems/snuke-festival.cpp.s
-
-one-hundred-problems/switches.o: one-hundred-problems/switches.cpp.o
-
-.PHONY : one-hundred-problems/switches.o
-
-# target to build an object file
-one-hundred-problems/switches.cpp.o:
-	$(MAKE) -f CMakeFiles/switches.dir/build.make CMakeFiles/switches.dir/one-hundred-problems/switches.cpp.o
-.PHONY : one-hundred-problems/switches.cpp.o
-
-one-hundred-problems/switches.i: one-hundred-problems/switches.cpp.i
-
-.PHONY : one-hundred-problems/switches.i
-
-# target to preprocess a source file
-one-hundred-problems/switches.cpp.i:
-	$(MAKE) -f CMakeFiles/switches.dir/build.make CMakeFiles/switches.dir/one-hundred-problems/switches.cpp.i
-.PHONY : one-hundred-problems/switches.cpp.i
-
-one-hundred-problems/switches.s: one-hundred-problems/switches.cpp.s
-
-.PHONY : one-hundred-problems/switches.s
-
-# target to generate assembly for a file
-one-hundred-problems/switches.cpp.s:
-	$(MAKE) -f CMakeFiles/switches.dir/build.make CMakeFiles/switches.dir/one-hundred-problems/switches.cpp.s
-.PHONY : one-hundred-problems/switches.cpp.s
-
-practice-bit/test000.o: practice-bit/test000.cpp.o
-
-.PHONY : practice-bit/test000.o
-
-# target to build an object file
-practice-bit/test000.cpp.o:
-	$(MAKE) -f CMakeFiles/test000.dir/build.make CMakeFiles/test000.dir/practice-bit/test000.cpp.o
-.PHONY : practice-bit/test000.cpp.o
-
-practice-bit/test000.i: practice-bit/test000.cpp.i
-
-.PHONY : practice-bit/test000.i
-
-# target to preprocess a source file
-practice-bit/test000.cpp.i:
-	$(MAKE) -f CMakeFiles/test000.dir/build.make CMakeFiles/test000.dir/practice-bit/test000.cpp.i
-.PHONY : practice-bit/test000.cpp.i
-
-practice-bit/test000.s: practice-bit/test000.cpp.s
-
-.PHONY : practice-bit/test000.s
-
-# target to generate assembly for a file
-practice-bit/test000.cpp.s:
-	$(MAKE) -f CMakeFiles/test000.dir/build.make CMakeFiles/test000.dir/practice-bit/test000.cpp.s
-.PHONY : practice-bit/test000.cpp.s
-
-practice-bit/test001.o: practice-bit/test001.cpp.o
-
-.PHONY : practice-bit/test001.o
-
-# target to build an object file
-practice-bit/test001.cpp.o:
-	$(MAKE) -f CMakeFiles/test001.dir/build.make CMakeFiles/test001.dir/practice-bit/test001.cpp.o
-.PHONY : practice-bit/test001.cpp.o
-
-practice-bit/test001.i: practice-bit/test001.cpp.i
-
-.PHONY : practice-bit/test001.i
-
-# target to preprocess a source file
-practice-bit/test001.cpp.i:
-	$(MAKE) -f CMakeFiles/test001.dir/build.make CMakeFiles/test001.dir/practice-bit/test001.cpp.i
-.PHONY : practice-bit/test001.cpp.i
-
-practice-bit/test001.s: practice-bit/test001.cpp.s
-
-.PHONY : practice-bit/test001.s
-
-# target to generate assembly for a file
-practice-bit/test001.cpp.s:
-	$(MAKE) -f CMakeFiles/test001.dir/build.make CMakeFiles/test001.dir/practice-bit/test001.cpp.s
-.PHONY : practice-bit/test001.cpp.s
-
 practice-bit/test002.o: practice-bit/test002.cpp.o
 
 .PHONY : practice-bit/test002.o
@@ -1665,33 +1052,6 @@ practice-bit/test002.s: practice-bit/test002.cpp.s
 practice-bit/test002.cpp.s:
 	$(MAKE) -f CMakeFiles/test002.dir/build.make CMakeFiles/test002.dir/practice-bit/test002.cpp.s
 .PHONY : practice-bit/test002.cpp.s
-
-practice-bit/test003.o: practice-bit/test003.cpp.o
-
-.PHONY : practice-bit/test003.o
-
-# target to build an object file
-practice-bit/test003.cpp.o:
-	$(MAKE) -f CMakeFiles/test003.dir/build.make CMakeFiles/test003.dir/practice-bit/test003.cpp.o
-.PHONY : practice-bit/test003.cpp.o
-
-practice-bit/test003.i: practice-bit/test003.cpp.i
-
-.PHONY : practice-bit/test003.i
-
-# target to preprocess a source file
-practice-bit/test003.cpp.i:
-	$(MAKE) -f CMakeFiles/test003.dir/build.make CMakeFiles/test003.dir/practice-bit/test003.cpp.i
-.PHONY : practice-bit/test003.cpp.i
-
-practice-bit/test003.s: practice-bit/test003.cpp.s
-
-.PHONY : practice-bit/test003.s
-
-# target to generate assembly for a file
-practice-bit/test003.cpp.s:
-	$(MAKE) -f CMakeFiles/test003.dir/build.make CMakeFiles/test003.dir/practice-bit/test003.cpp.s
-.PHONY : practice-bit/test003.cpp.s
 
 related-problems/bitter-alchemy.o: related-problems/bitter-alchemy.cpp.o
 
@@ -1996,55 +1356,42 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
-	@echo "... counter-order"
-	@echo "... test003"
-	@echo "... oldest-remains"
-	@echo "... half-and-half-practice"
-	@echo "... c__"
-	@echo "... 105-practice"
-	@echo "... binary-search"
 	@echo "... habatsu"
-	@echo "... ninth"
 	@echo "... exhaustive-search"
-	@echo "... switches-practice"
-	@echo "... switches"
 	@echo "... lucky-pin"
+	@echo "... edit_cache"
 	@echo "... half-and-half"
 	@echo "... atcoder"
-	@echo "... 105"
 	@echo "... cakes-and-donuts"
 	@echo "... karaoke"
-	@echo "... two-anagrams"
-	@echo "... average-length"
-	@echo "... how-many-ways"
 	@echo "... making-triangle"
 	@echo "... bitter-alchemy"
+	@echo "... rebuild_cache"
 	@echo "... i18n"
 	@echo "... forth"
 	@echo "... something-on-it"
 	@echo "... duplex-printing"
 	@echo "... rgb-cards"
 	@echo "... test002"
-	@echo "... atcoder-practice"
 	@echo "... tenth"
+	@echo "... ninth"
 	@echo "... eighth"
 	@echo "... maximum-difference"
-	@echo "... first"
 	@echo "... seventh"
 	@echo "... sixth"
-	@echo "... average-length-practice"
 	@echo "... fifth"
-	@echo "... test001"
+	@echo "... c__"
 	@echo "... break-number"
-	@echo "... how-many-ways-practice"
+	@echo "... insertion-sort"
+	@echo "... two-anagrams"
 	@echo "... infinite-coins"
-	@echo "... test000"
-	@echo "... rebuild_cache"
-	@echo "... karaoke-practice"
+	@echo "... first"
 	@echo "... third"
 	@echo "... atcoder-market"
 	@echo "... second"
+	@echo "... algolithm-and-data-structure/insertion-sort.o"
+	@echo "... algolithm-and-data-structure/insertion-sort.i"
+	@echo "... algolithm-and-data-structure/insertion-sort.s"
 	@echo "... first-ten-problems/eighth.o"
 	@echo "... first-ten-problems/eighth.i"
 	@echo "... first-ten-problems/eighth.s"
@@ -2078,42 +1425,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... one-hundred-problems-practice/105-practice.o"
-	@echo "... one-hundred-problems-practice/105-practice.i"
-	@echo "... one-hundred-problems-practice/105-practice.s"
-	@echo "... one-hundred-problems-practice/atcoder-practice.o"
-	@echo "... one-hundred-problems-practice/atcoder-practice.i"
-	@echo "... one-hundred-problems-practice/atcoder-practice.s"
-	@echo "... one-hundred-problems-practice/average-length-practice.o"
-	@echo "... one-hundred-problems-practice/average-length-practice.i"
-	@echo "... one-hundred-problems-practice/average-length-practice.s"
-	@echo "... one-hundred-problems-practice/half-and-half-practice.o"
-	@echo "... one-hundred-problems-practice/half-and-half-practice.i"
-	@echo "... one-hundred-problems-practice/half-and-half-practice.s"
-	@echo "... one-hundred-problems-practice/how-many-ways-practice.o"
-	@echo "... one-hundred-problems-practice/how-many-ways-practice.i"
-	@echo "... one-hundred-problems-practice/how-many-ways-practice.s"
-	@echo "... one-hundred-problems-practice/karaoke-practice.o"
-	@echo "... one-hundred-problems-practice/karaoke-practice.i"
-	@echo "... one-hundred-problems-practice/karaoke-practice.s"
-	@echo "... one-hundred-problems-practice/switches-practice.o"
-	@echo "... one-hundred-problems-practice/switches-practice.i"
-	@echo "... one-hundred-problems-practice/switches-practice.s"
-	@echo "... one-hundred-problems/105.o"
-	@echo "... one-hundred-problems/105.i"
-	@echo "... one-hundred-problems/105.s"
 	@echo "... one-hundred-problems/atcoder-market.o"
 	@echo "... one-hundred-problems/atcoder-market.i"
 	@echo "... one-hundred-problems/atcoder-market.s"
 	@echo "... one-hundred-problems/atcoder.o"
 	@echo "... one-hundred-problems/atcoder.i"
 	@echo "... one-hundred-problems/atcoder.s"
-	@echo "... one-hundred-problems/average-length.o"
-	@echo "... one-hundred-problems/average-length.i"
-	@echo "... one-hundred-problems/average-length.s"
-	@echo "... one-hundred-problems/counter-order.o"
-	@echo "... one-hundred-problems/counter-order.i"
-	@echo "... one-hundred-problems/counter-order.s"
 	@echo "... one-hundred-problems/exhaustive-search.o"
 	@echo "... one-hundred-problems/exhaustive-search.i"
 	@echo "... one-hundred-problems/exhaustive-search.s"
@@ -2123,36 +1440,15 @@ help:
 	@echo "... one-hundred-problems/half-and-half.o"
 	@echo "... one-hundred-problems/half-and-half.i"
 	@echo "... one-hundred-problems/half-and-half.s"
-	@echo "... one-hundred-problems/how-many-ways.o"
-	@echo "... one-hundred-problems/how-many-ways.i"
-	@echo "... one-hundred-problems/how-many-ways.s"
 	@echo "... one-hundred-problems/karaoke.o"
 	@echo "... one-hundred-problems/karaoke.i"
 	@echo "... one-hundred-problems/karaoke.s"
 	@echo "... one-hundred-problems/lucky-pin.o"
 	@echo "... one-hundred-problems/lucky-pin.i"
 	@echo "... one-hundred-problems/lucky-pin.s"
-	@echo "... one-hundred-problems/oldest-remains.o"
-	@echo "... one-hundred-problems/oldest-remains.i"
-	@echo "... one-hundred-problems/oldest-remains.s"
-	@echo "... one-hundred-problems/snuke-festival.o"
-	@echo "... one-hundred-problems/snuke-festival.i"
-	@echo "... one-hundred-problems/snuke-festival.s"
-	@echo "... one-hundred-problems/switches.o"
-	@echo "... one-hundred-problems/switches.i"
-	@echo "... one-hundred-problems/switches.s"
-	@echo "... practice-bit/test000.o"
-	@echo "... practice-bit/test000.i"
-	@echo "... practice-bit/test000.s"
-	@echo "... practice-bit/test001.o"
-	@echo "... practice-bit/test001.i"
-	@echo "... practice-bit/test001.s"
 	@echo "... practice-bit/test002.o"
 	@echo "... practice-bit/test002.i"
 	@echo "... practice-bit/test002.s"
-	@echo "... practice-bit/test003.o"
-	@echo "... practice-bit/test003.i"
-	@echo "... practice-bit/test003.s"
 	@echo "... related-problems/bitter-alchemy.o"
 	@echo "... related-problems/bitter-alchemy.i"
 	@echo "... related-problems/bitter-alchemy.s"
