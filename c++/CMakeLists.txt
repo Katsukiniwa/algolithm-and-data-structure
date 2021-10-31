@@ -34,4 +34,6 @@ add_executable(exhaustive-search one-hundred-problems/exhaustive-search.cpp)
 add_executable(habatsu one-hundred-problems/habatsu.cpp)
 add_executable(test002 practice-bit/test002.cpp)
 
-add_executable(algolithm-and-data-structure/insertion-sort.cpp)
+add_executable(bubble-sort algolithm-and-data-structure/bubble-sort.cpp)
+add_executable(insertion-sort algolithm-and-data-structure/insertion-sort.cpp)
+add_executable(bubble-sort-practice algolithm-and-data-structure-practice/bubble-sort-practice.cpp)
