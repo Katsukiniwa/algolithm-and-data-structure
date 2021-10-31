@@ -38,7 +38,7 @@ int main() {
     a[j + 1] = v;
 
     /**
-     * 各ステップの配列を出力してみる
+     * 各ステップの配列を出力
      */
     cout << "After Step " << i << ": ";
     for (int k = 0; k < n; ++k) cout << a[k] << " ";
