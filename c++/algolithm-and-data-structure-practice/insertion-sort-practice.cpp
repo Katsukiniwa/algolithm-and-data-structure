@@ -9,15 +9,13 @@ int main() {
    */
   int n;
 
+  cin >> n;
+
   /**
    * / 整列したい配列ベクトル
    */
   vector<int> a(n);
 
-  /**
-   * 入力された配列サイズ・配列を取得
-   */
-  cin >> n;
   for (int i = 0; i < n; ++i) {
     cin >> a[i];
   }
