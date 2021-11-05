@@ -41,3 +41,4 @@ add_executable(bubble-sort-practice algolithm-and-data-structure-practice/bubble
 add_executable(stack algolithm-and-data-structure/stack.cpp)
 add_executable(queue algolithm-and-data-structure/queue.cpp)
 add_executable(the-longest-distance related-problems/the-longest-distance.cpp)
+add_executable(sum-of-three-integers related-problems/sum-of-three-integers.cpp)
