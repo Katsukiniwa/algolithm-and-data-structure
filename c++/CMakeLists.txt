@@ -45,3 +45,5 @@ add_executable(sum-of-three-integers related-problems/sum-of-three-integers.cpp)
 add_executable(otoshidama related-problems/otoshidama.cpp)
 add_executable(many-formula related-problems/many-formula.cpp)
 add_executable(liner-search algolithm-and-data-structure/liner-search.cpp)
+
+add_executable(select-mul one-hundred-problems/select-mul.cpp)
