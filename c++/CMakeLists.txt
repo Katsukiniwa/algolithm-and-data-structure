@@ -30,7 +30,7 @@ add_executable(atcoder one-hundred-problems/atcoder.cpp)
 add_executable(half-and-half one-hundred-problems/half-and-half.cpp)
 add_executable(lucky-pin one-hundred-problems/lucky-pin.cpp)
 add_executable(atcoder-market one-hundred-problems/atcoder-market.cpp)
-add_executable(exhaustive-search one-hundred-problems/exhaustive-search.cpp)
+add_executable(exhaustive-search algolithm-and-data-structure/exhaustive-search.cpp)
 add_executable(habatsu one-hundred-problems/habatsu.cpp)
 add_executable(test002 practice-bit/test002.cpp)
 
