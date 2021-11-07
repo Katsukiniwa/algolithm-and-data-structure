@@ -9,7 +9,8 @@ int main() {
   ll ans = 0;
 
   /**
-   * N桁の数字に対して + を入れられる箇所はN-1箇所
+   * N桁の数字に対して+を入れられる箇所はN-1箇所
+   * bitは+が入る場所を表すフラグ
    */
   for (int bit = 0; bit < (1 << (S.size() - 1)); bit++) {
     ll sum = 0;
@@ -17,6 +18,10 @@ int main() {
     for (int i = 0; i < S.size(); i++) {
       T += S[i];
       cout << "i: " <<  i << " " << "bit: " << bit << " " << "T: " << T << endl;
+
+      /**
+       * i が bit に入るかどうか
+       */
       if (bit & (1 << i)) {
         /**
          * @link https://cpprefjp.github.io/reference/string/stoll.html
