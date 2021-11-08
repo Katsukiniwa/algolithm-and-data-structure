@@ -47,3 +47,4 @@ add_executable(many-formula related-problems/many-formula.cpp)
 add_executable(liner-search algolithm-and-data-structure/liner-search.cpp)
 
 add_executable(select-mul one-hundred-problems/select-mul.cpp)
+add_executable(merge-sort algolithm-and-data-structure/merge-sort.cpp)
