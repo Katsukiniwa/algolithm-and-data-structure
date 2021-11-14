@@ -1,3 +1,4 @@
+#include <iostream>
 #include <list>
 #include <unordered_map>
 
@@ -29,30 +30,38 @@ public:
      * unordered_map::endは最終要素の次を指すイテレータを取得する
      */
     if (m.find(key) == m.end()) {
+      cout << -1 << endl;
       return -1;
     }
-    l.splice(l.begin(), l, m[key]);
+
+    /**
+     * 呼び出されるので該当のpairをlの先頭に移動する
+     */
+    l.splice(l.begin(), l, m.at(key));
+
+    cout << m.at(key)->second << endl;
+
     return m.at(key)->second;
   }
 
   void put(int key, int value) {
     /**
-     * mで同じキーの要素が見つかった場合lの先頭にlのうちのm[key]の値を挿入する
+     * mで同じキーの要素が見つかった場合、該当のpairをlの先頭に移動する
      */
     if (m.find(key) != m.end()) {
-      l.splice(l.begin(), l, m[key]);
-      m[key]->second = value;
+      l.splice(l.begin(), l, m.at(key));
+      m.at(key)->second = value;
       return;
     }
 
     /**
      * 上記のif文で同じキーの要素に対しての処理が実行されるので
-     * このif文内の処理実行されるのは新しいpairが渡されかつlが満タンだった場合
+     * このif文内の処理が実行されるのは新しいpairが渡されかつlが満タンだった場合
      */
     if (l.size() == size) {
-
       /**
        * list::backは末尾要素への参照を取得する
+       * firstで取得したペアのkeyを取得する
        */
       auto d_key = l.back().first;
 
@@ -73,13 +82,13 @@ public:
 
 int main() {
   LRUCache lRUCache = *new LRUCache(2);
-  lRUCache.put(1, 1); // cache is {1=1}
-  lRUCache.put(2, 2); // cache is {1=1, 2=2}
-  lRUCache.get(1);    // return 1
-  lRUCache.put(3, 3); // LRU key was 2, evicts key 2, cache is {1=1, 3=3}
-  lRUCache.get(2);    // returns -1 (not found)
-  lRUCache.put(4, 4); // LRU key was 1, evicts key 1, cache is {4=4, 3=3}
-  lRUCache.get(1);    // return -1 (not found)
-  lRUCache.get(3);    // return 3
-  lRUCache.get(4);    // return 4
+  lRUCache.put(1, 2);      // cache is {1=2}
+  lRUCache.put(2, 5);      // cache is {1=2, 2=5}
+  lRUCache.get(1);               // return 2
+  lRUCache.put(3, 6);      // LRU key was 2, evicts key 2, cache is {1=2, 3=6}
+  lRUCache.get(2);               // returns -1 (not found)
+  lRUCache.put(4, 7);      // LRU key was 1, evicts key 1, cache is {4=7, 3=6}
+  lRUCache.get(1);               // return -1 (not found)
+  lRUCache.get(3);               // return 6
+  lRUCache.get(4);               // return 7
 }
