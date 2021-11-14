@@ -53,3 +53,6 @@ add_executable(irreversible-operation atcoder-problems/medium/irreversible-opera
 add_executable(trained-practice atcoder-problems/medium/trained-practice.cpp)
 add_executable(agc040-a atcoder-problems/medium/agc040-a.cpp)
 add_executable(ss atcoder-problems/medium/ss.cpp)
+add_executable(two-sum LeetCode/easy/two-sum.cpp)
+add_executable(lru-cache LeetCode/medium/lru-cache.cpp)
+add_executable(splice LeetCode/practice-sti/splice.cpp)
