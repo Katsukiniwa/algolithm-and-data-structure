@@ -14,6 +14,8 @@ void dfs(const Graph &G, int v, int &first_ptr, int &last_ptr) {
 
   seen[v] = true;
   for (auto next_v : G[v]) {
+    cout << "next_v: " << next_v << " " << "first_ptr: " << first_ptr << " " << "last_ptr: " << last_ptr << endl;
+//    for (auto && i : seen) cout << i << endl;
     if (seen[next_v]) continue;
     dfs(G, next_v, first_ptr, last_ptr);
   }
@@ -35,6 +37,8 @@ int main() {
      * Gは各頂点から繋がった頂点を表現している
      * 例えばG[0]は{1, 4, 11}と繋がっている
      * G = {{1, 4, 11}, {0, 2, 3}, {1, }, {1, }, {0, 5, 8}, {4, 6, 7}, {5, }, {5, }, {4, 9, 10}, {8, }, {8, }, {0, 12, 13}, {11, }, {11, 14}, {13, }}
+     * *************
+     * 入力値
      * 0 1
      * 1 2
      * 1 3
@@ -49,15 +53,16 @@ int main() {
      * 11 12
      * 11 13
      * 13 14
+     * *************
      */
     cin >> a >> b;
     G[a].push_back(b);
     G[b].push_back(a);
   }
 
-  for (auto & j : G) {
-    cout << "0: " << j.at(0) << " " << "1: " << j.at(1) << endl;
-  }
+//  for (auto &j : G) {
+//    cout << "0: " << j.at(0) << " " << "1: " << j.at(1) << endl;
+//  }
 
   // 頂点 0 をスタートとした探索
   seen.assign(N, false); // 全頂点を「未訪問」に初期化
@@ -67,7 +72,7 @@ int main() {
   dfs(G, 0, first_ptr, last_ptr);
 
   // 各頂点 v の行きがけ順、帰りがけ順を出力
-  for (int v = 0; v < N; ++v) {
-    cout << v << ": " << first_order[v] << ", " << last_order[v] << endl;
-  }
+//  for (int v = 0; v < N; ++v) {
+//    cout << v << ": " << first_order[v] << ", " << last_order[v] << endl;
+//  }
 }
