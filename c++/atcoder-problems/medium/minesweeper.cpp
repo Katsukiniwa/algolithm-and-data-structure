@@ -1,43 +1,45 @@
 #include <iostream>
-#include <vector>
 
 using namespace std;
 using ll = long long;
 
-int result(char arg) {
-  if (arg == '.') {
-    return 0;
-  } else if (arg == '#') {
-    return 1;
-  } else {
-    return 0;
-  }
-}
-
 int main() {
   int h, w;
-  char j[55][55];
   cin >> h >> w;
-  for (int l = 0; l < h; ++l) {
-    for (int i = 0; i < w; ++i) {
-      cin >> j[l][i];
-    }
-  }
+
+  string board[50];
+
+  for (int i = 0; i < h; ++i) cin >> board[i];
+
+  const int dx[8] = {1, 0, -1, 0, 1, -1, -1, 1};
+  const int dy[8] = {0, 1, 0, -1, 1, 1, -1, -1};
 
   for (int i = 0; i < h; ++i) {
-    for (int k = 0; k < w; ++k) {
-      if (j[i][k] == '.') {
-        char count = '0' +
-            result(j[i - 1][k - 1]) + result(j[i - 1][k]) + result(j[i - 1][k + 1]) +
-            result(j[i][k - 1]) + result(j[i][k + 1]) +
-            result(j[i + 1][k - 1]) + result(j[i + 1][k]) + result(j[i + 1][k + 1]);
-        j[i][k] = count;
+    for (int j = 0; j < w; ++j) {
+      /**
+       * 爆弾マスは飛ばす
+       */
+      if (board[i][j] == '#') continue;
+
+      int num = 0;
+      for (int d = 0; d < 8; ++d) {
+        const int ni = i + dy[d];
+        const int nj = j + dx[d];
+
+        /**
+         * 8箇所のうちboard配列外は無視する
+         */
+        if (ni < 0 or h <= ni) continue;
+        if (nj < 0 or w <= nj) continue;
+        if (board[ni][nj] == '#') num++;
       }
+      /**
+       * intをcharに変換して置換
+       */
+      board[i][j] = char(num + '0');
     }
   }
 
-  for (int l = 0; l < h; ++l) {
-    for (int i = 0; i < w; ++i) cout << j[l][i];
-    cout << endl;
-  }
+  for (int i = 0; i < h; ++i) cout << board[i] << endl;
+  return 0;
 }
