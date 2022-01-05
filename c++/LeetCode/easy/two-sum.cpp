@@ -3,15 +3,18 @@
 
 using namespace std;
 
-int main() {
-  int target = 0;
-  vector<int> A(100000);
-
-  for (int i = 0; i < A.size() - 1; i++) {
-    for (int j = 0; j < A.size(); j++) {
-      if (A[i] + A[j] == target) {
-        cout << "[i, j]" << endl;
+class Solution {
+public:
+  vector<int> twoSum(vector<int> &nums, int target) {
+    int i = 0, j = 1;
+    for (int k = 0; k < nums.size() - 1; ++k) {
+      for (int l = 1; l < nums.size(); ++l) {
+        if (k != l && nums[k] + nums[l] == target) {
+          i = k;
+          j = l;
+        }
       }
     }
+    return {i, j};
   }
-}
+};
