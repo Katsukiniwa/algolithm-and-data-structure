@@ -7,7 +7,7 @@ using namespace std;
 class Solution {
 public:
   string longestCommonPrefix(vector<string>& strs) {
-    if (strs.size() == 0) return "";
+    if (strs.empty()) return "";
     sort(begin(strs), end(strs));
     string a = strs.at(0);
     string b = strs.at(strs.size() - 1);
