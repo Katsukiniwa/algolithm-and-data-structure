@@ -82,3 +82,4 @@ add_executable(takahashi-information atcoder-problems/medium/takahashi-informati
 add_executable(power-socket atcoder-problems/easy/power-socket.cpp)
 add_executable(rally atcoder-problems/easy/rally.cpp)
 add_executable(valid-parentheses LeetCode/easy/valid-parentheses.cpp)
+add_executable(merge-two-sorted-lists LeetCode/easy/merge-two-sorted-lists.cpp)
