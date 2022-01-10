@@ -87,3 +87,4 @@ add_executable(qualification-simulator atcoder-problems/easy/qualification-simul
 add_executable(tax-rate atcoder-problems/easy/tax-rate.cpp)
 add_executable(can-you-solve-this atcoder-problems/easy/can-you-solve-this.cpp)
 add_executable(bishop atcoder-problems/easy/bishop.cpp)
+add_executable(bingo atcoder-problems/easy/bingo.cpp)
