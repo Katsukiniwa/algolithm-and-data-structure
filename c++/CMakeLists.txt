@@ -96,3 +96,4 @@ add_executable(remove-duplicates-from-sorted-array LeetCode/easy/remove-duplicat
 add_executable(practice-unique LeetCode/practice-stl/practice-unique.cpp)
 add_executable(remove-element LeetCode/easy/remove-element.cpp)
 add_executable(implement-strStr LeetCode/easy/implement-strStr.cpp)
+add_executable(traveling-salesman-around-lake atcoder-problems/easy/traveling-salesman-around-lake.cpp)
