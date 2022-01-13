@@ -100,3 +100,5 @@ add_executable(traveling-salesman-around-lake atcoder-problems/easy/traveling-sa
 add_executable(search-insert-position LeetCode/easy/search-insert-position.cpp)
 add_executable(cookie-exchanges atcoder-problems/easy/cookie-exchanges.cpp)
 add_executable(replacing-integer atcoder-problems/easy/replacing-integer.cpp)
+add_executable(maximum-strategy LeetCode/easy/maximum-strategy.cpp)
+add_executable(length-of-last-word LeetCode/easy/length-of-last-word.cpp)
