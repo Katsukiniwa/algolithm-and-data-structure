@@ -107,3 +107,4 @@ add_executable(divide-the-problems atcoder-problems/easy/divide-the-problems.cpp
 add_executable(add-binary LeetCode/easy/add-binary.cpp)
 add_executable(sqrt LeetCode/easy/sqrt.cpp)
 add_executable(go-to-school atcoder-problems/easy/go-to-school.cpp)
+add_executable(climbing-stairs LeetCode/easy/climbing-stairs.cpp)
