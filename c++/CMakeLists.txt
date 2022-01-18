@@ -112,3 +112,4 @@ add_executable(remove-duplicates-from-sorted-list LeetCode/easy/remove-duplicate
 add_executable(alchemist atcoder-problems/easy/alchemist.cpp)
 add_executable(toll-gates atcoder-problems/easy/toll-gates.cpp)
 add_executable(merge-sorted-array LeetCode/easy/merge-sorted-array.cpp)
+add_executable(collatz-problem atcoder-problems/easy/collatz-problem.cpp)
