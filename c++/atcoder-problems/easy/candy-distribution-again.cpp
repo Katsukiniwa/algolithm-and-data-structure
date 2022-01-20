@@ -16,7 +16,7 @@ int main() {
   while (true) {
     x -= a.at(i);
     i++;
-    if (x == 0) {
+            if (x == 0) {
       cout << i << endl;
       return 0;
     }
