@@ -120,3 +120,4 @@ add_executable(candy-distribution-again atcoder-problems/easy/candy-distribution
 add_executable(chocolate atcoder-problems/easy/chocolate.cpp)
 add_executable(nice-shopping atcoder-problems/easy/nice-shopping.cpp)
 add_executable(counter-order atcoder-problems/easy/counter-order.cpp)
+add_executable(caracal-vs-monster atcoder-problems/easy/caracal-vs-monster.cpp)
