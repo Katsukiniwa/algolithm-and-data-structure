@@ -6,17 +6,23 @@ using namespace std;
 int main() {
   int n, k, q;
   cin >> n >> k >> q;
-  vector<int> v(q);
+  vector<int> a(q);
   vector<int> vn(n);
-  for (int & i : v) {
+  for (int & i : a) {
     cin >> i;
   }
 
+  /**
+   * 開始時点での全員の得点をk-qとする
+   */
   for (int & i : vn) {
     i = k - q;
   }
-  for (int i : v) {
-    vn[i - 1]++;
+  /**
+   * 正解者の得点を1増やす
+   */
+  for (int i : a) {
+    vn.at(i - 1)++;
   }
 
   for (int i : vn) {
