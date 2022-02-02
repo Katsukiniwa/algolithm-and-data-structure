@@ -130,3 +130,4 @@ add_executable(increment-decrement atcoder-problems/easy/increment-decrement.cpp
 add_executable(postal-code atcoder-problems/easy/postal-code.cpp)
 add_executable(coins atcoder-problems/easy/coins.cpp)
 add_executable(prison atcoder-problems/easy/prison.cpp)
+add_executable(attack-survival atcoder-problems/easy/attack-survival.cpp)
