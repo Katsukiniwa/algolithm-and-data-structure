@@ -2,6 +2,7 @@
   "cSpell.words": ["leetcode"],
   "files.associations": {
     "vector": "cpp",
-    "iosfwd": "cpp"
+    "iosfwd": "cpp",
+    "ostream": "cpp"
   }
 }
