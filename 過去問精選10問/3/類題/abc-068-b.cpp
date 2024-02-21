@@ -15,6 +15,7 @@ int waru(int i) {
 }
 
 // TODO: やり直す
+// 解けたけど時間がかかった
 int main() {
   int N;
   cin >> N;

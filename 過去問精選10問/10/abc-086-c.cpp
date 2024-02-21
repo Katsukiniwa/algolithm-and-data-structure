@@ -2,6 +2,7 @@
 #include<math.h>
 using namespace std;
 
+// TODO: やり直す
 int main() {
     int N;
     cin >> N;
