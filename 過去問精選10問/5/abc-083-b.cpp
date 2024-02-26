@@ -11,6 +11,7 @@ int findSumOfDigits(int n) {
     return sum;
 }
 
+// TODO: やり直す
 int main() {
     int N, A, B;
     cin >> N >> A >> B;
