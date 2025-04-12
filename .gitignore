@@ -63,3 +63,6 @@ build-iPhoneSimulator/
 /c++/CMakeFiles
 
 /*/*.dSYM
+
+/**/bin/**
+!/**/bin/.gitkeep
